@@ -1,6 +1,6 @@
 {
   "name": "ember-skeleton",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
@@ -21,7 +21,6 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "ember-bootstrap": "^2.1.2",
     "ember-cli-babel": "^6.16.0",
     "ember-cli-htmlbars": "^2.0.1",
     "svg-repo": "git+ssh://git@github.com/andrew-paterson/svg-repo.git#master"
