@@ -1,0 +1,9 @@
+{{layouts/header-bar authenticated=false systemAlert=systemAlert}}
+<div id="main-content-strip">
+  {{#if systemAlert}}
+    <div class="section-padding-x section-padding-top">
+      {{layouts/system-alerts systemAlert=systemAlert}}
+    </div>
+  {{/if}}
+  {{yield}}
+</div>

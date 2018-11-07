@@ -1,13 +1,13 @@
-general-less-assets
+ember-skeleton
 ==============================================================================
 
-[Short description of the addon.]
+Provides some basic layout components and generic SASS stylesheets.
 
 Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install general-less-assets
+ember install ember-skeleton
 ```
 
 
@@ -23,7 +23,7 @@ Contributing
 ### Installation
 
 * `git clone <repository-url>`
-* `cd general-less-assets`
+* `cd ember-skeleton`
 * `npm install`
 
 ### Linting
