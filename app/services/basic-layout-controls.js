@@ -1,1 +1,1 @@
-export { default } from 'general-less-assets/services/basic-layout-controls';
+export { default } from 'ember-skeleton/services/basic-layout-controls';

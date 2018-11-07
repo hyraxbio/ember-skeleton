@@ -1,1 +1,1 @@
-export { default } from 'general-less-assets/components/layouts/header-bar';
+export { default } from 'ember-skeleton/components/layouts/header-bar';

@@ -1,1 +1,1 @@
-export { default } from 'general-less-assets/components/layouts/private/outer-wrapper';
+export { default } from 'ember-skeleton/components/layouts/private/outer-wrapper';

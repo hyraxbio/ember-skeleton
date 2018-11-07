@@ -1,1 +1,1 @@
-export { default } from 'general-less-assets/services/system-alerts';
+export { default } from 'ember-skeleton/services/system-alerts';

@@ -1,1 +1,1 @@
-export { default } from 'general-less-assets/components/layouts/footer-strip';
+export { default } from 'ember-skeleton/components/layouts/footer-strip';

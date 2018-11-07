@@ -1,1 +1,1 @@
-export { default } from 'general-less-assets/components/layouts/private/main-nav';
+export { default } from 'ember-skeleton/components/layouts/private/main-nav';

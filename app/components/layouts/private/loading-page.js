@@ -1,1 +1,1 @@
-export { default } from 'general-less-assets/components/layouts/private/loading-page';
+export { default } from 'ember-skeleton/components/layouts/private/loading-page';
