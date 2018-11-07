@@ -1,0 +1,1 @@
+export { default } from 'general-less-assets/components/layouts/footer-strip';

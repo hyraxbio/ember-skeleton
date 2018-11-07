@@ -1,0 +1,72 @@
+div.wrapper.sidebar-layout {
+	background: #f6f6f6;
+	box-shadow: inset $sidebar-expanded-width + 10px 0px 6px -6px rgba(0,0,0,0.2);
+}
+
+div.wrapper.sidebar-layout.nav-collapsed {
+	box-shadow: inset $sidebar-collapsed-width + 10px 0px 6px -6px rgba(0,0,0,0.2);
+}
+
+div.wrapper.sidebar-layout.nav-toggled,
+div.wrapper.sidebar-layout.nav-toggled div#main-content-strip {
+	transition: $sidebar-toggle-transition;
+}
+
+div.wrapper.sidebar-layout.text-column .body-content {
+	max-width: 660px;
+}
+
+div.wrapper.sidebar-layout div.sidebar-layout-top-bar {
+	height: $interface-top-bar-height;
+	position: fixed;
+	width: 100%;
+	top: $header-height;
+	z-index: $interface-top-bar-z-index;
+	@include box-shadow-bottom;
+}
+
+div.wrapper.sidebar-layout.top-bar-present div#main-content-strip {
+	padding-top: $interface-top-bar-height;
+}
+
+div.wrapper.sidebar-layout div#main-content-strip {
+	padding-left: $sidebar-expanded-width;
+	width: auto;
+	min-height: 100%;
+	position: relative;
+}
+
+div.wrapper.sidebar-layout.nav-collapsed div#main-content-strip {
+	padding-left: $sidebar-collapsed-width;
+}
+
+div.wrapper.sidebar-layout div#main-content-strip div.container-2 {
+	min-width: 580px;
+}
+
+div.wrapper.sidebar-layout .body-content {
+	max-width: 100%;
+	width: 100%;
+	float: left;
+}
+
+div.wrapper.sidebar-layout + footer {
+	padding-left: $sidebar-expanded-width;
+	transition: $sidebar-toggle-transition;
+}
+
+div.wrapper.sidebar-layout.nav-collapsed + footer {
+	padding-left: $sidebar-collapsed-width;
+	transition: $sidebar-toggle-transition;
+}
+
+div.wrapper.sidebar-layout + footer li {
+	text-align: left;
+}
+
+div.wrapper.sidebar-layout + footer.sidebar-layout li.login {
+	display: none;
+}
+
+
+

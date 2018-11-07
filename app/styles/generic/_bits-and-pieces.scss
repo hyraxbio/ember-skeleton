@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+
+@each $color, $value in $theme-colors {
+  @include text-emphasis-variant(".text-#{$color}", $value);
+}
+
+@each $color, $value in $theme-colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+.border         { border: $border-width solid $border-color !important; }
+.border-top     { border-top: $border-width solid $border-color !important; }
+.border-right   { border-right: $border-width solid $border-color !important; }
+.border-bottom  { border-bottom: $border-width solid $border-color !important; }
+.border-left    { border-left: $border-width solid $border-color !important; }
+
+.border-0        { border: 0 !important; }
+.border-top-0    { border-top: 0 !important; }
+.border-right-0  { border-right: 0 !important; }
+.border-bottom-0 { border-bottom: 0 !important; }
+.border-left-0   { border-left: 0 !important; }
+
+@each $color, $value in $theme-colors {
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+}
+
+.rounded {
+  border-radius: $border-radius !important;
+}
+.rounded-top {
+  border-top-left-radius: $border-radius !important;
+  border-top-right-radius: $border-radius !important;
+}
+.rounded-right {
+  border-top-right-radius: $border-radius !important;
+  border-bottom-right-radius: $border-radius !important;
+}
+.rounded-bottom {
+  border-bottom-right-radius: $border-radius !important;
+  border-bottom-left-radius: $border-radius !important;
+}
+.rounded-left {
+  border-top-left-radius: $border-radius !important;
+  border-bottom-left-radius: $border-radius !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+.hidden {
+  display:none;
+}
+
+
+
+div.input-file-wrapper {
+  padding-top: 12px;
+  position: relative;
+  line-height: 18px;
+}
+
+div.input-file-wrapper input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.input-file-wrapper input:hover {
+  cursor: pointer;
+}
+
+div.input-file-wrapper:hover  {
+  background-color: $app-colour-shade-four;
+}
+
+p.file-chosen,
+.body-content p.file-chosen {
+  margin-top: -3px;
+  float: left;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+hr {
+  border-width: 0;
+  border-top: $body-content-hr-border-top-width solid $body-content-hr-border-top-color;
+  margin: 1em 0;
+}
+
+.all-selected .radio-checkbox-dummy svg path.tick,
+.input-radio-checkbox input:checked + .radio-checkbox-dummy svg path.tick {
+  display: block;
+}
+
+.some-selected .input-radio-checkbox .radio-checkbox-dummy svg path.line {
+  display: block;
+}
+
+/*---General styling for tables---*/
+
+
+
+/*------------------------LINE-HEIGHT------------------------*/
+
+
+
+.clear,
+.clr {
+  clear: both;
+  line-height: 0;
+}
+
+.asterisk {
+  display: inline-block;
+  color: $general-asterisk-color;
+  font-size: $general-asterisk-font-size;
+  font-weight: $general-asterisk-font-weight;
+  line-height: $general-asterisk-line-height;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  bottom: $general-asterisk-baseline-shift;
+  margin-right: 3px;
+}
+
+
+svg {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
+svg.inline {
+  width: 20px;
+  display: inline-block;
+}
+
+div.wrapper.placeholders label.placeholder {
+  display: none;
+}
+
+div.form-container {
+  max-width: 500px;
+}
+
+div.plot-container.plotly div.modebar svg {
+  width: 1em;
+}
+
+img.border {
+  border: 1px solid #ccc;
+}
+
+.draggable-dropzone {
+  padding: 50px;
+  border: 5px dotted #aaa;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+  background: #fff;
+  @include box-shadow-bottom-right;
+}
+
+.draggable-dropzone span {
+  background-color: #aaa;
+  padding: 11px $button-padding-x;
+  color: $button-color;
+  font-size: $button-font-size;
+  line-height: $button-font-size;
+  letter-spacing: $button-letter-spacing;
+  text-transform: $button-text-transform;
+  font-family: $button-font-family;
+  font-weight: $button-font-weight;
+  border-radius: $button-border-radius;
+  -moz-border-radius: $button-border-radius;
+  -webkit-border-radius: $button-border-radius;
+}
+
+.draggable-dropzone.activated {
+  border-color: $app-colour-shade-one;
+  color: $app-colour-shade-one;
+  background-color: #f0f0f0;
+
+}
+
+.monospace {
+  font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
+}
+
+.incrementing-arrow.left-right {
+  height: 30px;
+  width: 13px;
+}
+
+.incrementing-arrow.left-right svg {
+  height: 30px;
+}
+
+.incrementing-arrow.up-down {
+  width: 30px;
+  height: 13px;
+}
+
+.incrementing-arrow.up-down svg {
+  height: 13px;
+}
+
+div.in-page-alert {
+  button svg {
+    float: left;
+    width: auto;
+  }
+  div.ellipsis {
+    width: auto;
+    float: left;
+    svg {
+      width: auto;
+      float: left;
+      height: 10px;
+    }
+  }
+}
+
+div.block-notice {
+  margin-bottom: 25px;
+}
+
+ul.file-download-list {
+  list-style: none;
+}
+
+ul.file-download-list li {
+  margin-bottom: 0.5em;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul.file-download-list li svg {
+  display: inline-block;
+  width: 20px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  fill: #999;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+}

@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('simple-layout');
+  this.route('sidebar-layout');
 });
 
 export default Router;

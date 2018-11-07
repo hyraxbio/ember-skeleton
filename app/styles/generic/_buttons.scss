@@ -1,0 +1,183 @@
+.wrapper {
+  .body-content {
+    .btn {
+      font-size: #{($button-font-size / $body-content-text-font-size)}em;
+    }
+  }
+  button.transparent-bg {
+    background: transparent;
+    border-width: 0
+  }
+
+  .btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: $button-border-width solid transparent;
+    border-radius: $button-border-radius;
+    font-size: $button-font-size;
+    letter-spacing: $button-letter-spacing;
+    text-transform: $button-text-transform;
+    font-family: $button-font-family;
+    font-weight: $button-font-weight;
+    cursor: pointer;
+    padding: $button-padding-y $button-padding-x;
+    &:focus,
+    &.focus {
+      outline: 0;
+    }
+    &.disabled,
+    &:disabled {
+      opacity: 0.5;
+    }
+    &:not(:disabled):not(.disabled) {
+      cursor: pointer;
+    }
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+      background-image: none;
+      &:focus {
+        // @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      }
+    }
+
+    .spin  {
+      text-align: left;
+    }
+
+    svg {
+      margin-right: $button-padding-x - 2px;
+      margin-top: -5px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 16px;
+      width: auto;
+      fill: #fff;
+      &.button-right {
+        margin-right: 0;
+        margin-left: $button-padding-x - 2px;
+      }
+    }
+   svg .tick {
+    width: 22px;
+    }
+    .large svg {
+      height: 30px;
+    }
+  }
+
+  // Future-proof disabling of clicks on `<a>` elements
+  a.btn.disabled,
+  fieldset:disabled a.btn {
+    pointer-events: none;
+  }
+
+  // Button colours
+  @each $color,
+  $value in $theme-colors {
+    .btn-#{$color} {
+      @include button-variant($value);
+      cursor: pointer;
+      &.flashing {
+        animation: btn-flashing-#{$color} 3s infinite;
+        -webkit-animation: btn-flashing-#{$color} 3s infinite;
+      }
+    }
+    @keyframes btn-flashing-#{$color} {
+      0% {background-color: $value; color: #fff}
+      50% {background-color: #fff; color: $value}
+      100% {background-color: $value; color: #fff}
+    }
+
+    @-webkit-keyframes btn-flashing-#{$color} {
+      0% {background-color: $value; color: #fff}
+      50% {background-color: #fff; color: $value}
+      100% {background-color: $value; color: #fff}
+    }
+  }
+
+  @each $color,
+  $value in $theme-colors {
+    .btn-outline-#{$color} {
+      @include button-outline-variant($value);
+      &.flashing {
+        animation: btn-outline-flashing-#{$color} 3s infinite;
+        -webkit-animation: btn-outline-flashing-#{$color} 3s infinite;
+      }
+    }
+    @keyframes btn-outline-flashing-#{$color} {
+      0% {background-color: #fff; color: $value}
+      50% {background-color: $value; color: #fff}
+      100% {background-color: #fff; color: $value}
+    }
+
+    @-webkit-keyframes btn-outline-flashing-#{$color} {
+      0% {background-color: #fff; color: $value}
+      50% {background-color: $value; color: #fff}
+      100% {background-color: #fff; color: $value}
+    }
+  }
+
+  // Make a button look and behave like a link
+  .btn-link {
+    font-weight: $link-font-weight;
+    color: $link-color;
+    text-transform: none;
+    background-color: transparent;
+    letter-spacing: initial;
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: $link-hover-text-decoration;
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    &:focus,
+    &.focus {
+      text-decoration: $link-hover-text-decoration;
+      border-color: transparent;
+    }
+
+    &:disabled,
+    &.disabled {
+      opacity: 1;
+      color: $button-link-disabled-color;
+    }
+
+    // No need for an active state here
+  }
+
+  .body-content {
+    .btn-link {
+      font-size: inherit;
+    }
+  }
+
+  .btn-lg {
+    padding: $button-padding-y + 5px $button-padding-x + 5px;
+  }
+
+  .btn-sm {
+    padding: $button-padding-y - 5px $button-padding-x - 5px;
+  }
+
+  .btn-block {
+    display: block;
+    width: 100%;
+    // Vertically space out multiple block buttons
+    +.btn-block {
+      margin-top: 15px;
+    }
+  }
+
+  // Specificity overrides
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    &.btn-block {
+      width: 100%;
+    }
+  }
+}
