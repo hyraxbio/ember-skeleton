@@ -58,7 +58,6 @@
   }
 
   @each $color, $value in $theme-colors {
-    @debug $color;
     @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 2));
   }
 }
