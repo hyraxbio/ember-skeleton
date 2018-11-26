@@ -113,9 +113,8 @@ body > div.ember-view {
 }
 
 footer, .wrapper:after {
-  height: 18px;
-  padding-top: ($footer-height - 18px)/2;
-  padding-bottom: ($footer-height - 18px)/2;
+  height: $footer-height;
+  width: 100%;
 }
 
 /*---Style the footer and contents---*/

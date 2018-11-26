@@ -43,18 +43,7 @@ div.wrapper.sidebar-layout div#main-content-strip div.container-2 {
 div.wrapper.sidebar-layout .body-content {
 	max-width: 100%;
 	width: 100%;
-	float: left;
 }
-
-// div.wrapper.sidebar-layout + footer {
-// 	padding-left: $sidebar-expanded-width;
-// 	transition: $sidebar-toggle-transition;
-// }
-
-// div.wrapper.sidebar-layout.nav-collapsed + footer {
-// 	padding-left: $sidebar-collapsed-width;
-// 	transition: $sidebar-toggle-transition;
-// }
 
 div.wrapper.sidebar-layout + footer li {
 	text-align: left;
@@ -63,6 +52,3 @@ div.wrapper.sidebar-layout + footer li {
 div.wrapper.sidebar-layout + footer.sidebar-layout li.login {
 	display: none;
 }
-
-
-
