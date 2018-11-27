@@ -40,25 +40,25 @@ div.nav-sidebar ul li {
 
 /*---Top nav sidebar item (Toggles collapse of the menu)---*/
 
-div.nav-sidebar ul li.menu-toggle {
+div.nav-sidebar .menu-toggle {
 	background: $app-colour-shade-three;
 	display: block;
 	height: $sidebar-toggle-menu-list-item-height;
 	border-bottom: 1px solid #666;
 }
 
-div.nav-sidebar li.menu-toggle:hover {
+div.nav-sidebar .menu-toggle:hover {
 	cursor: pointer;
 }
 
 /*---Hamburger menu icon---*/
 
-div.nav-sidebar li.menu-toggle div.hamburger {
+div.nav-sidebar .menu-toggle div.hamburger {
 	float: left;
 	margin: 20px 10px 0;
 }
 
-div.nav-sidebar li.menu-toggle span.hamburger-stripe {
+div.nav-sidebar .menu-toggle span.hamburger-stripe {
 	height: 3px;
 	width: 30px;
 	border-radius: 2px;
@@ -69,7 +69,7 @@ div.nav-sidebar li.menu-toggle span.hamburger-stripe {
 	display: block;
 }
 
-div.nav-sidebar li.menu-toggle svg.nav-collapse {
+div.nav-sidebar .menu-toggle svg.nav-collapse {
 	float: right;
 	margin: 17px 15px 0 0;
 	height: 22px;

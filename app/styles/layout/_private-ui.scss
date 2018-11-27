@@ -1,54 +1,72 @@
 div.wrapper.sidebar-layout {
 	background: #f6f6f6;
-	box-shadow: inset $sidebar-expanded-width + 10px 0px 6px -6px rgba(0,0,0,0.2);
-	display: flex;
-	flex-wrap: wrap;
-}
+	height: 100%;
 
-div.wrapper.sidebar-layout.nav-collapsed {
-	box-shadow: inset $sidebar-collapsed-width + 10px 0px 6px -6px rgba(0,0,0,0.2);
-}
+  &.nav-toggled {
+  	transition: $sidebar-toggle-transition;
+  }
 
-div.wrapper.sidebar-layout.nav-toggled,
-div.wrapper.sidebar-layout.nav-toggled div#main-content-strip {
-	transition: $sidebar-toggle-transition;
-}
+  &.text-column .body-content {
+  	max-width: 660px;
+  }
 
-div.wrapper.sidebar-layout.text-column .body-content {
-	max-width: 660px;
-}
+  div.sidebar-layout-top-bar {
+  	height: $interface-top-bar-height;
+  	position: fixed;
+  	width: 100%;
+  	top: $header-height;
+  	z-index: $interface-top-bar-z-index;
+  	@include box-shadow-bottom;
+  }
 
-div.wrapper.sidebar-layout div.sidebar-layout-top-bar {
-	height: $interface-top-bar-height;
-	position: fixed;
-	width: 100%;
-	top: $header-height;
-	z-index: $interface-top-bar-z-index;
-	@include box-shadow-bottom;
-}
+  &.top-bar-present div#main-content-strip {
+  	padding-top: $interface-top-bar-height;
+  }
 
-div.wrapper.sidebar-layout.top-bar-present div#main-content-strip {
-	padding-top: $interface-top-bar-height;
-}
+  div#main-content-strip {
+  	position: relative;
+  }
 
-div.wrapper.sidebar-layout div#main-content-strip {
-	position: relative;
-	flex-grow: 1;
-}
+  div#main-content-strip div.container-2 {
+  	min-width: 580px;
+  }
 
-div.wrapper.sidebar-layout div#main-content-strip div.container-2 {
-	min-width: 580px;
-}
+  .body-content {
+  	max-width: 100%;
+  	width: 100%;
+  }
 
-div.wrapper.sidebar-layout .body-content {
-	max-width: 100%;
-	width: 100%;
-}
+  .content-container {
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+    display: flex;
+  }
 
-div.wrapper.sidebar-layout + footer li {
-	text-align: left;
-}
+  .column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    flex-shrink: 0;
+  }
 
-div.wrapper.sidebar-layout + footer.sidebar-layout li.login {
-	display: none;
+  .top-left {
+    flex-shrink: 0;
+  }
+
+  .right {
+    box-shadow: inset 10px 0px 6px -6px rgba(0,0,0,0.2);
+  }
+
+  .bottom {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    .test {
+    	flex-grow: 1;
+    }
+  }
 }

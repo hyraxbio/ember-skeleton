@@ -1,13 +1,20 @@
 {{layouts/header-bar private=true systemAlert=systemAlert}}
-{{layouts/private/main-nav}}
-<div id="main-content-strip" class="{{if navCollapsed "nav-collapsed"}} {{if session.hideContent "invisible"}}">
-  {{#if systemAlert}}
-    <div class="section-padding-x section-padding-top">
-      {{layouts/system-alerts systemAlert=systemAlert data-test-id="system-alert"}}
+<section class="content-container">
+  {{layouts/private/main-nav class="column left"}}
+  <div id="main-content" class="{{if navCollapsed "nav-collapsed"}} {{if session.hideContent "invisible"}} column right">
+    <div class="bottom">
+      {{#if systemAlert}}
+        <div class="section-padding-x section-padding-top">
+          {{layouts/system-alerts systemAlert=systemAlert data-test-id="system-alert"}}
+        </div>
+      {{/if}}
+      <div class="test">
+      {{yield}}
+      </div>
+      {{layouts/footer-strip}}
     </div>
-  {{/if}}
-  {{yield}}
-</div>
+  </div>
+</section>
 {{#if session.hideContent}}
   {{layouts/loading-page}}
 {{/if}}

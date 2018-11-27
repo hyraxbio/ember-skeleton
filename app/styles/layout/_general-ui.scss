@@ -102,20 +102,20 @@ body > div.ember-view {
   height: 100%;
 }
 
-.wrapper  {
-  min-height: 100%;
-  margin-bottom: -1*$footer-height;
-}
+// .wrapper  {
+//   min-height: 100%;
+//   margin-bottom: -1*$footer-height;
+// }
 
-.wrapper:after {
-  content: "";
-  display: block;
-}
+// .wrapper:after {
+//   content: "";
+//   display: block;
+// }
 
-footer, .wrapper:after {
-  height: $footer-height;
-  width: 100%;
-}
+// footer, .wrapper:after {
+//   height: $footer-height;
+//   width: 100%;
+// }
 
 /*---Style the footer and contents---*/
 
@@ -124,7 +124,7 @@ footer {
 	background: $footer-background-colour;
 	padding: 12px 0;
 	width: 100% !important;
-	height: $footer-height;
+	// height: $footer-height;
 }
 
 footer ul {
