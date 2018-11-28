@@ -50,7 +50,23 @@
       text-align: left;
     }
 
-
+    svg {
+      margin-right: $button-padding-x - 2px;
+      vertical-align: middle;
+      height: 16px;
+      width: auto;
+      fill: #fff;
+      &.button-right {
+        margin-right: 0;
+        margin-left: $button-padding-x - 2px;
+      }
+    }
+    svg .tick {
+      width: 22px;
+    }
+    &.large svg {
+      height: 30px;
+    }
   }
 
   // Future-proof disabling of clicks on `<a>` elements
@@ -170,22 +186,5 @@
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    svg {
-      margin-right: $button-padding-x - 2px;
-      vertical-align: middle;
-      height: 16px;
-      width: auto;
-      fill: #fff;
-      &.button-right {
-        margin-right: 0;
-        margin-left: $button-padding-x - 2px;
-      }
-    }
-    svg .tick {
-      width: 22px;
-    }
-    &.large svg {
-      height: 30px;
-    }
   }
 }
