@@ -20,24 +20,7 @@
 @import "layout/_public-ui";
 @import "layout/_main-nav";
 
-
 @import "dependency-overrides/_ember-power-select";
 @import "dependency-overrides/_ember-power-calendar";
 @import "dependency-overrides/_ember-basic-dropdown";
 @import "dependency-overrides/_ember-perfect-scrollbar";
-
-// @import "layout/_system-alerts";
-// @import "ember-bootstrap/bootstrap";
-//   // Required
-// @import "ember-bootstrap/functions";
-// @import "ember-bootstrap/variables";
-// @import "ember-bootstrap/mixins";
-
-// // Optional - Bootstrapping/Resetting
-// @import "ember-bootstrap/root";
-// @import "ember-bootstrap/print";
-// @import "ember-bootstrap/reboot";
-
-// // Optional - Everything else
-// @import "ember-bootstrap/type";
-// @import "ember-bootstrap/buttons";

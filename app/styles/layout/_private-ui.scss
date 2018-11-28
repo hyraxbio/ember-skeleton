@@ -19,54 +19,43 @@ div.wrapper.sidebar-layout {
   	@include box-shadow-bottom;
   }
 
-  &.top-bar-present div#main-content-strip {
+  &.top-bar-present div.column.right {
   	padding-top: $interface-top-bar-height;
   }
 
-  div#main-content-strip {
-  	position: relative;
-  }
-
-  div#main-content-strip div.container-2 {
-  	min-width: 580px;
-  }
-
-  .body-content {
-  	max-width: 100%;
-  	width: 100%;
-  }
-
-  .content-container {
+  .columns-container {
     height: 100%;
     overflow: hidden;
     margin: 0px;
     display: flex;
-  }
-
-  .column {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .left {
-    flex-shrink: 0;
-  }
-
-  .top-left {
-    flex-shrink: 0;
-  }
-
-  .right {
-    box-shadow: inset 10px 0px 6px -6px rgba(0,0,0,0.2);
-  }
-
-  .bottom {
-    flex-grow: 1;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    .test {
-    	flex-grow: 1;
+    .column {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      &.left {
+        flex-shrink: 0;
+        .top-left {
+          flex-shrink: 0;
+        }
+      }
+      &.right {
+        position: relative;
+        box-shadow: inset 10px 0px 6px -6px rgba(0,0,0,0.2);
+        flex-grow: 1;
+        .body-content {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+      .bottom {
+        flex-grow: 1;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        .main-content {
+          flex-grow: 1;
+        }
+      }
     }
   }
 }

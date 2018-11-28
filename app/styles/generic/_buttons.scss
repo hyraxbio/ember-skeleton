@@ -4,7 +4,7 @@
       font-size: #{($button-font-size / $body-content-text-font-size)}em;
     }
   }
-  button.transparent-bg {
+  button.btn-content {
     background: transparent;
     border-width: 0
   }

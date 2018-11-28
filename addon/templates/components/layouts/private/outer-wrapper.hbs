@@ -1,14 +1,14 @@
 {{layouts/header-bar private=true systemAlert=systemAlert}}
-<section class="content-container">
+<section class="columns-container">
   {{layouts/private/main-nav class="column left"}}
-  <div id="main-content" class="{{if navCollapsed "nav-collapsed"}} {{if session.hideContent "invisible"}} column right">
+  <div class="{{if navCollapsed "nav-collapsed"}} {{if session.hideContent "invisible"}} column right">
     <div class="bottom">
       {{#if systemAlert}}
         <div class="section-padding-x section-padding-top">
           {{layouts/system-alerts systemAlert=systemAlert data-test-id="system-alert"}}
         </div>
       {{/if}}
-      <div class="test">
+      <div class="main-content">
       {{yield}}
       </div>
       {{layouts/footer-strip}}

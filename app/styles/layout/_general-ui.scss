@@ -58,6 +58,9 @@ header {
 	@include box-shadow-bottom;
 	box-sizing: border-box;
 	width: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*-------------------
@@ -70,9 +73,8 @@ div.logo-container {
 	padding: 10px;
 	float: left;
 	background-color: #fafafa;
-	/*box-shadow: $right-box-shadow;*/
-
 }
+
 div.logo-container svg,
 div.logo-container svg  {
 	height: $header-height - 2*$header-padding-vertical;
