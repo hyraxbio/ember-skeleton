@@ -27,6 +27,9 @@ body {
       text-decoration: $link-hover-text-decoration;
       cursor: pointer;
     }
+    &.no-underline:hover {
+      text-decoration: none;
+    }
   }
 
   .right-aligned-text {
