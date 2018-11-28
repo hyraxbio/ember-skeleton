@@ -14,11 +14,11 @@
 
 .box-arrow:after {
 	border-color: transparent;
-	border-width: 12px;
+	border-width: 7px;
 }
 .box-arrow:before {
 	border-color: transparent;
-	border-width: 13px;
+	border-width: 8px;
 }
 
 /*--------------------------Direction Up----------------------------*/
@@ -84,7 +84,7 @@
 
 .box-arrow.arrow-position-left:before,
 .box-arrow.arrow-position-left:after {
-   left: 30px;
+   left: 10px;
 }
 
 .box-arrow.arrow-position-left:before {
@@ -95,7 +95,7 @@
 
 .box-arrow.arrow-position-right:before,
 .box-arrow.arrow-position-right:after {
-   right: 30px;
+   right: 10px;
 }
 
 .box-arrow.arrow-position-right:before {
@@ -106,7 +106,7 @@
 
 .box-arrow.arrow-position-top:before,
 .box-arrow.arrow-position-top:after {
-   top: 30px;
+   top: 10px;
 }
 
 .box-arrow.arrow-position-top:before {
@@ -117,7 +117,7 @@
 
 .box-arrow.arrow-position-bottom:before,
 .box-arrow.arrow-position-bottom:after {
-   bottom: 30px;
+   bottom: 10px;
 }
 
 .box-arrow.arrow-position-bottom:before {

@@ -259,3 +259,12 @@ ul.file-download-list li svg {
 *::after {
   box-sizing: border-box; // 1
 }
+
+div.pop-up-box {
+  padding: 15px;
+  background: #fff;
+  @include box-shadow-bottom-right;
+  border: 1px solid #bbb;
+  border-radius: $button-border-radius;
+  margin: 10px 0;
+}
