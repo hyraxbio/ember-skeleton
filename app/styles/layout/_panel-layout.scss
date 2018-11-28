@@ -1,28 +1,28 @@
-div.wrapper.public h1 {
+div.wrapper.panel-layout h1 {
 	text-align: center;
 }
 
-div.wrapper.public .body-content {
+div.wrapper.panel-layout .body-content {
 	max-width: 600px;
 	margin: 0 auto;
 }
 
-div.wrapper.public #main-content-strip div.container-2 {
+div.wrapper.panel-layout #main-content-strip div.container-2 {
 	min-height: 0;
 }
 
-div.wrapper.public #main-content-strip div.container-1 {
+div.wrapper.panel-layout #main-content-strip div.container-1 {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-div.wrapper.public div.action-buttons {
+div.wrapper.panel-layout div.action-buttons {
 	margin: 17px 17px 0 0;
 	float: right;
 }
 
-div.wrapper.public a.action {
+div.wrapper.panel-layout a.action {
 	display: block;
 	font-weight: 700;
 	color: $app-colour-shade-three;
@@ -37,7 +37,7 @@ div.wrapper.public a.action {
 	margin-left: 17px;
 }
 
-div.wrapper.public a.action.signup {
+div.wrapper.panel-layout a.action.signup {
 	background-color: $app-colour-shade-three;
 	color: #fff;
 	padding-left: 15px;
@@ -45,33 +45,33 @@ div.wrapper.public a.action.signup {
 
 }
 
-div.wrapper.public a.action:hover {
+div.wrapper.panel-layout a.action:hover {
 	text-decoration: none;
 }
 
-div.wrapper.public div.action-buttons a.active {
+div.wrapper.panel-layout div.action-buttons a.active {
 	display: none;
 }
 
-div.wrapper.public div.form-container {
+div.wrapper.panel-layout div.form-container {
 	max-width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-div.wrapper.public + footer .container-1 {
+div.wrapper.panel-layout + footer .container-1 {
 	position: relative;
 	float: right;
 	right: 50%;
 }
 
-div.wrapper.public + footer ul {
+div.wrapper.panel-layout + footer ul {
 	position: relative;
 	float: right;
 	right: -50%;
 }
 
-div.wrapper.public + footer li.logout {
+div.wrapper.panel-layout + footer li.logout {
 	display: none;
 }
 

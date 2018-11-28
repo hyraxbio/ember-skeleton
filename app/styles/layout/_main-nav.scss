@@ -54,7 +54,7 @@ div.nav-sidebar .menu-toggle span.hamburger-stripe {
   width: 30px;
   border-radius: 2px;
   -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
+  -webkit-border-radius: 2px;
   background: #fff;
   margin: 0 0 4px 0;
   display: block;
@@ -84,13 +84,14 @@ div.nav-sidebar a {
 }
 
 div.nav-sidebar a:hover  {
+  color: #fff;
   background-color: #666;
   text-decoration: none;
 }
 
 div.nav-sidebar a.active {
   background-color: #777;
-  color: $link-hover-color;
+  color: #fff;
   cursor: default;
   border-top-color: #777;
 }

@@ -1,5 +1,5 @@
-div.wrapper.sidebar-layout {
-	background: #f6f6f6;
+.wrapper.sidebar-layout {
+	background-color: #f6f6f6;
 	height: 100%;
 
   &.nav-toggled {
@@ -11,16 +11,16 @@ div.wrapper.sidebar-layout {
   }
 
   div.sidebar-layout-top-bar {
-  	height: $interface-top-bar-height;
+  	height: $sidebar-layout-top-bar-height;
   	position: fixed;
   	width: 100%;
   	top: $header-height;
-  	z-index: $interface-top-bar-z-index;
+  	z-index: $sidebar-layout-top-bar-z-index;
   	@include box-shadow-bottom;
   }
 
   &.top-bar-present div.column.right {
-  	padding-top: $interface-top-bar-height;
+  	padding-top: $sidebar-layout-top-bar-height;
   }
 
   .columns-container {
