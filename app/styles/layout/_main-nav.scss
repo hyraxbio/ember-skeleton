@@ -1,115 +1,102 @@
-
-
-/*---Nav sidebar as a whole---*/
-
 div.nav-sidebar {
-	// position: fixed;
-	// left: 0;
-	// top: $header-height;
-	// z-index: $sidebar-z-index;
-	width: $sidebar-expanded-width;
-	overflow: hidden;
-	background: #333;
-	// height: 100%;
+  width: $sidebar-expanded-width;
+  overflow: hidden;
+  background: #333;
 }
 
 div.nav-sidebar.nav-collapsed  {
-	width: $sidebar-collapsed-width;
+  width: $sidebar-collapsed-width;
 }
 
 div.nav-sidebar.nav-toggled {
-	transition: $sidebar-toggle-transition;
+  transition: $sidebar-toggle-transition;
 }
 
 div.nav-sidebar ul {
-	// float: left;
-	padding: 0;
-	margin: 0;
-	list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-
-/*---Nav sidebar items generic styles---*/
 
 div.nav-sidebar ul li {
-	margin: 0;
-	list-style: none;
-	height: $sidebar-nav-item-height;
-	width: 200px;
-	height: $sidebar-nav-item-height;
+  margin: 0;
+  list-style: none;
+  height: $sidebar-nav-item-height;
+  width: 200px;
+  font-size: 1.6em;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid #2b2b2b;
+  text-transform: uppercase;
+  color: #bbb;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
-/*---Top nav sidebar item (Toggles collapse of the menu)---*/
-
 div.nav-sidebar .menu-toggle {
-	background: $app-colour-shade-three;
-	display: block;
-	height: $sidebar-toggle-menu-list-item-height;
-	border-bottom: 1px solid #666;
+  background: $app-colour-shade-three;
+  display: block;
+  height: $sidebar-toggle-menu-list-item-height;
+  border-bottom: 1px solid #666;
 }
 
 div.nav-sidebar .menu-toggle:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
-/*---Hamburger menu icon---*/
-
 div.nav-sidebar .menu-toggle div.hamburger {
-	float: left;
-	margin: 20px 10px 0;
+  float: left;
+  margin: 20px 10px 0;
 }
 
 div.nav-sidebar .menu-toggle span.hamburger-stripe {
-	height: 3px;
-	width: 30px;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
+  height: 3px;
+  width: 30px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-	background: #fff;
-	margin: 0 0 4px 0;
-	display: block;
+  background: #fff;
+  margin: 0 0 4px 0;
+  display: block;
 }
 
 div.nav-sidebar .menu-toggle svg.nav-collapse {
-	float: right;
-	margin: 17px 15px 0 0;
-	height: 22px;
-	width: 30px;
-	fill: #fff;
+  float: right;
+  margin: 17px 15px 0 0;
+  height: 22px;
+  width: 30px;
+  fill: #fff;
 }
 
-/*---Main nav links---*/
-
 div.nav-sidebar a {
-	display: block;
-	text-decoration: none;
-	font-size: 1.6em;
-	font-weight: 400;
-	letter-spacing: 0.3px;
-	color: #fff;
-	float: left;
-	width: 100%;
-	line-height: $sidebar-nav-item-height;
-	border-bottom: 1px solid #2b2b2b;
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #fff;
+  border-bottom: 1px solid #2b2b2b;
+  display: flex;
+  align-items: center;
+  height: $sidebar-nav-item-height;
+  flex-grow: 1;
 }
 
 div.nav-sidebar a:hover  {
-	background-color: #666;
+  background-color: #666;
 }
 
 div.nav-sidebar a.active {
-	background-color: #777;
-	color: #fff;
-	cursor: default;
-	border-top-color: #777;
+  background-color: #777;
+  color: #fff;
+  cursor: default;
+  border-top-color: #777;
 }
 
-/*---Main nav link icons---*/
-
-div.nav-sidebar a svg {
-	width: $sidebar-collapsed-width;
-	float: left;
+div.nav-sidebar li svg {
+  fill: #fff;
+  width: $sidebar-collapsed-width;
 	height: $sidebar-nav-item-height;
-	text-align: center;
-	padding: 11px;
-	fill: #fff;
+	padding: 13px;
 }

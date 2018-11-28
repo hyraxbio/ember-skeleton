@@ -1,4 +1,4 @@
-{{layouts/header-bar private=true systemAlert=systemAlert}}
+{{layouts/header/header-bar private=true systemAlert=systemAlert}}
 <section class="columns-container">
   {{layouts/private/main-nav class="column left"}}
   <div class="{{if navCollapsed "nav-collapsed"}} {{if session.hideContent "invisible"}} column right">
@@ -11,7 +11,7 @@
       <div class="main-content">
       {{yield}}
       </div>
-      {{layouts/footer-strip}}
+      {{layouts/footer/footer-strip}}
     </div>
   </div>
 </section>
