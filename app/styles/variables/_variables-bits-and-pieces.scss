@@ -49,7 +49,8 @@ $link-font-weight: 700 !default;
 $link-color: $app-colour-shade-three !default;
 $link-text-decoration: none !default;
 $link-hover-color: $link-color !default;
-$link-hover-text-decoration: underline !default;
+$link-hover-text-decoration: none !default;
+$body-content-link-hover-text-decoration: underline !default;
 
 $body-content-form-label-color: $body-content-text-color !default;
 $body-content-form-label-float: none !default;

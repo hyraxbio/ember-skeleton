@@ -47,120 +47,101 @@ body {
 div.wrapper  {
 	padding-top: $header-height;
 	box-sizing: border-box;
-}
 
-header {
-	background-color: $header-background-color;
-	height: $header-height;
-	position: fixed;
-	top: 0;
-	z-index: $header-z-index;
-	@include box-shadow-bottom;
-	box-sizing: border-box;
-	width: 100%;
-	display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-/*-------------------
-MAIN SITE LOGO STYLES
--------------------*/
+	header {
+		background-color: $header-background-color;
+		height: $header-height;
+		position: fixed;
+		top: 0;
+		z-index: $header-z-index;
+		@include box-shadow-bottom;
+		box-sizing: border-box;
+		width: 100%;
+		display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	}
 
-div.logo-container {
-	width: $sidebar-expanded-width;
-	box-sizing: border-box;
-	padding: 10px;
-	float: left;
-	background-color: #fafafa;
-}
+	/*-------------------
+	MAIN SITE LOGO STYLES
+	-------------------*/
 
-div.logo-container svg,
-div.logo-container svg  {
-	height: $header-height - 2*$header-padding-vertical;
-	width: auto;
-	float: left;
-}
+	div.logo-container {
+		width: $sidebar-expanded-width;
+		box-sizing: border-box;
+		padding: 10px;
+		float: left;
+		background-color: #fafafa;
+	}
 
-div.logo-container a {
-	display: block;
-}
-div.logo-container a:link,
-div.logo-container a:visited,
-div.logo-container a:hover {
-	text-decoration: none;
-}
+	div.logo-container svg,
+	div.logo-container svg  {
+		height: $header-height - 2*$header-padding-vertical;
+		width: auto;
+		float: left;
+	}
 
-div.logo-container img {
-	width: 100%;
-	height: auto;
-}
+	div.logo-container a {
+		display: block;
+	}
+	div.logo-container a:link,
+	div.logo-container a:visited,
+	div.logo-container a:hover {
+		text-decoration: none;
+	}
 
-/*---Fix footer to bottom of screen if content doesn't reach the bottom---*/
+	div.logo-container img {
+		width: 100%;
+		height: auto;
+	}
 
-html,
-body,
-body > div.ember-view {
-  height: 100%;
-}
+	html,
+	body,
+	body > div.ember-view {
+	  height: 100%;
+	}
 
-// .wrapper  {
-//   min-height: 100%;
-//   margin-bottom: -1*$footer-height;
-// }
+	footer {
+		box-sizing: border-box;
+		background: $footer-background-colour;
+		padding: 12px 0;
+		width: 100% !important;
+	}
 
-// .wrapper:after {
-//   content: "";
-//   display: block;
-// }
+	footer ul {
+		font-size: 1em;
+		margin: 0;
+		padding: 0px 0;
+	}
 
-// footer, .wrapper:after {
-//   height: $footer-height;
-//   width: 100%;
-// }
+	footer ul li {
+		list-style: none;
+		text-align: center;
+		color: $footer-info-color;
+		font-style: $footer-info-font-style;
+		font-weight: $footer-info-font-weight;
+		font-family: $footer-info-font-family;
+		text-transform: $footer-info-text-transform;
+		font-size: $footer-info-font-size;
+		float: left;
+		margin-right: 15px;
+	}
 
-/*---Style the footer and contents---*/
+	footer ul li a {
+		color: $footer-info-link-color;
+		text-decoration: $footer-info-link-text-decoration;
+		font-weight: 300;
+	}
 
-footer {
-	box-sizing: border-box;
-	background: $footer-background-colour;
-	padding: 12px 0;
-	width: 100% !important;
-	// height: $footer-height;
-}
+	footer ul li a:hover {
+		color: $footer-info-link-hover-color;
+		text-decoration: $footer-info-link-hover-text-decoration;
+	}
 
-footer ul {
-	font-size: 1em;
-	margin: 0;
-	padding: 0px 0;
-}
-
-footer ul li {
-	list-style: none;
-	text-align: center;
-	color: $footer-info-color;
-	font-style: $footer-info-font-style;
-	font-weight: $footer-info-font-weight;
-	font-family: $footer-info-font-family;
-	text-transform: $footer-info-text-transform;
-	font-size: $footer-info-font-size;
-	float: left;
-	margin-right: 15px;
-}
-
-footer ul li a {
-	color: $footer-info-link-color;
-	text-decoration: $footer-info-link-text-decoration;
-	font-weight: 300;
-}
-
-footer ul li a:hover {
-	color: $footer-info-link-hover-color;
-	text-decoration: $footer-info-link-hover-text-decoration;
-}
-
-div.centred-logo-vertical {
-	max-width: 240px;
-	margin: 0 auto;
-	margin-top: 30px;
+	div.centred-logo-vertical {
+		max-width: 240px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
 }

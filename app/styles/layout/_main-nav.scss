@@ -85,11 +85,12 @@ div.nav-sidebar a {
 
 div.nav-sidebar a:hover  {
   background-color: #666;
+  text-decoration: none;
 }
 
 div.nav-sidebar a.active {
   background-color: #777;
-  color: #fff;
+  color: $link-hover-color;
   cursor: default;
   border-top-color: #777;
 }
