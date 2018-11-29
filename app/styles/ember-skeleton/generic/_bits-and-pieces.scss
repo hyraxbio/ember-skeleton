@@ -139,38 +139,6 @@ img.border {
   border: 1px solid #ccc;
 }
 
-.draggable-dropzone {
-  padding: 50px;
-  border: 5px dotted #aaa;
-  border-radius: 5px;
-  text-align: center;
-  margin-bottom: 15px;
-  background: #fff;
-  @include box-shadow-bottom-right;
-}
-
-.draggable-dropzone span {
-  background-color: #aaa;
-  padding: 11px $button-padding-x;
-  color: $button-color;
-  font-size: $button-font-size;
-  line-height: $button-font-size;
-  letter-spacing: $button-letter-spacing;
-  text-transform: $button-text-transform;
-  font-family: $button-font-family;
-  font-weight: $button-font-weight;
-  border-radius: $button-border-radius;
-  -moz-border-radius: $button-border-radius;
-  -webkit-border-radius: $button-border-radius;
-}
-
-.draggable-dropzone.activated {
-  border-color: $app-colour-shade-one;
-  color: $app-colour-shade-one;
-  background-color: #f0f0f0;
-
-}
-
 .monospace {
   font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
 }
