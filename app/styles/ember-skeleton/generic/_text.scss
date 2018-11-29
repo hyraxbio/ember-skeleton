@@ -53,68 +53,68 @@ blockquote.align-right {
   border-right: $blockquote-border-width solid $blockquote-border-color;
   padding-right: 1em;
 }
-}
 
 .body-content {
-.body-content {
-  font-size: 1em;
-}
-color: $body-content-text-color;
-font-family: $main-font-family;
-font-style: $body-content-text-font-style;
-font-size: $body-content-text-font-size;
-font-weight: $body-content-text-font-weight;
-text-align: left;
-h1,
-h2,
-h3,
-h4 {
-  color: $body-content-header-color;
-  text-transform: $body-content-header-text-transform;
-  text-align: inherit;
-  font-family: $body-content-header-font-family;
-  font-weight: $body-content-header-font-weight;
-  margin-bottom: $body-content-header-margin-bottom;
-  font-style: $body-content-header-font-style;
-  line-height: 150%;
-  padding: 0;
-  background-color: transparent;
-}
-h1 {
-  font-size: #{($body-content-header-h1-font-size/$body-content-text-font-size)}em;
-}
-h2 {
-  font-size: #{($body-content-header-h2-font-size/$body-content-text-font-size)}em;
-}
-h3 {
-  font-size: #{($body-content-header-h3-font-size/$body-content-text-font-size)}em;
-}
-h4 {
-  font-size: #{($body-content-header-h4-font-size/$body-content-text-font-size)}em;
-}
-p {
-  text-align: $body-content-text-text-align;
-  margin-bottom: $body-content-paragraph-space-after;
-  margin-top: 0;
-}
-p, dd, dt, ul li, ol li {
-  line-height: $body-content-text-line-height;
-}
-ul, ol {
-  margin-bottom: $body-content-paragraph-space-after;
-  padding: 0px;
-}
-ul ul, ul ol, ol ul, ol ol {
-  margin-bottom: 0;
-}
-ul li, ol li {
+  .body-content {
+    font-size: 1em;
+  }
+  color: $body-content-text-color;
   font-family: $main-font-family;
-  margin-left: 1em;
-  padding-left: 0.5em;
-}
-sup, sub {
-  font-size: 0.7em;
-}
-a:hover {
-  text-decoration: $body-content-link-hover-text-decoration;
+  font-style: $body-content-text-font-style;
+  font-size: $body-content-text-font-size;
+  font-weight: $body-content-text-font-weight;
+  text-align: left;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $body-content-header-color;
+    text-transform: $body-content-header-text-transform;
+    text-align: inherit;
+    font-family: $body-content-header-font-family;
+    font-weight: $body-content-header-font-weight;
+    margin-bottom: $body-content-header-margin-bottom;
+    font-style: $body-content-header-font-style;
+    line-height: 150%;
+    padding: 0;
+    background-color: transparent;
+  }
+  h1 {
+    font-size: #{($body-content-header-h1-font-size/$body-content-text-font-size)}em;
+  }
+  h2 {
+    font-size: #{($body-content-header-h2-font-size/$body-content-text-font-size)}em;
+  }
+  h3 {
+    font-size: #{($body-content-header-h3-font-size/$body-content-text-font-size)}em;
+  }
+  h4 {
+    font-size: #{($body-content-header-h4-font-size/$body-content-text-font-size)}em;
+  }
+  p {
+    text-align: $body-content-text-text-align;
+    margin-bottom: $body-content-paragraph-space-after;
+    margin-top: 0;
+  }
+  p, dd, dt, ul li, ol li {
+    line-height: $body-content-text-line-height;
+  }
+  ul, ol {
+    margin-bottom: $body-content-paragraph-space-after;
+    padding: 0px;
+  }
+  ul ul, ul ol, ol ul, ol ol {
+    margin-bottom: 0;
+  }
+  ul li, ol li {
+    font-family: $main-font-family;
+    margin-left: 1em;
+    padding-left: 0.5em;
+  }
+  sup, sub {
+    font-size: 0.7em;
+  }
+  a:hover {
+    text-decoration: $body-content-link-hover-text-decoration;
+  }
 }
