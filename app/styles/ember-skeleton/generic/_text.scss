@@ -1,10 +1,7 @@
-body {
+.ember-application {
   font-size: 62.5%;
   color: $body-color;
   font-family: $main-font-family;
-}
-
-.wrapper {
   h1, h2, h3, h4 {
     color: $page-header-color;
     font-size: $page-header-font-size;
