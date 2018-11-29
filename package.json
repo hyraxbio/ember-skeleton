@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "ember-cli-babel": "^6.16.0",
-    "ember-cli-htmlbars": "^2.0.1"
+    "ember-cli-htmlbars": "^2.0.1",
+    "svg-repo": "git+ssh://git@github.com/andrew-paterson/svg-repo.git#master"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.3",
@@ -52,8 +53,7 @@
     "eslint-plugin-node": "^7.0.1",
     "loader.js": "^4.7.0",
     "qunit-dom": "^0.8.0",
-    "sass": "^1.14.3",
-    "svg-repo": "git+ssh://git@github.com/andrew-paterson/svg-repo.git#master"
+    "sass": "^1.14.3"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
