@@ -1,1 +1,0 @@
-export { default } from 'ember-skeleton/components/layouts/header/header-bar';

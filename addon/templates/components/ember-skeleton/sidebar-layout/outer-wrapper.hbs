@@ -1,0 +1,20 @@
+{{ember-skeleton/header/header-bar private=true systemAlert=systemAlert}}
+<section class="columns-container">
+  {{ember-skeleton/sidebar-layout/main-nav class="column left-column"}}
+  <div class="{{if navCollapsed "nav-collapsed"}} {{if session.hideContent "invisible"}} column right-column">
+    <div class="column-bottom">
+      {{#if systemAlert}}
+        <div class="section-padding-x section-padding-top">
+          {{ember-skeleton/system-alerts systemAlert=systemAlert data-test-id="system-alert"}}
+        </div>
+      {{/if}}
+      <div class="main-content">
+      {{yield}}
+      </div>
+      {{ember-skeleton/footer/footer-strip}}
+    </div>
+  </div>
+</section>
+{{#if session.hideContent}}
+  {{ember-skeleton/loading-page}}
+{{/if}}
