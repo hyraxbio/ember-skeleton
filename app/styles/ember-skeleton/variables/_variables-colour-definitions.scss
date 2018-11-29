@@ -60,14 +60,17 @@ $dark:        $gray-dark !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "primary":     $primary,
+  "secondary":   $secondary,
+  "success":     $success,
+  "info":        $info,
+  "warning":     $warning,
+  "danger":      $danger,
+  "light":       $light,
+  "dark":        $dark,
+  "gray-light":  $gray-light,
+  "gray-medium": $gray-medium,
+  "gray-dark":   $gray-dark
 ), $theme-colors);
 
 // Set a specific jump point for requesting color jumps
@@ -193,7 +196,7 @@ $yiq-text-light: #fff !default;
 
 @mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
   color: $color;
-  background-color: transparent;
+  background-color: $button-outline-background-color;
   background-image: none;
   border-color: $color;
   &:hover {

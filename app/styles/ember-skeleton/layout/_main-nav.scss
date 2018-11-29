@@ -20,7 +20,7 @@ div.main-nav {
     margin: 0;
     list-style: none;
     height: $sidebar-nav-item-height;
-    width: 200px;
+    width: $sidebar-expanded-width;
     font-size: 1.6em;
     letter-spacing: 0.3px;
     border-bottom: 1px solid #2b2b2b;
@@ -36,6 +36,7 @@ div.main-nav {
     display: block;
     height: $sidebar-toggle-menu-list-item-height;
     border-bottom: 1px solid #666;
+    width: $sidebar-expanded-width;
   }
 
    .menu-toggle:hover {

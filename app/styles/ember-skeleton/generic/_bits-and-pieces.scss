@@ -58,33 +58,10 @@
   display:none;
 }
 
-
-
 div.input-file-wrapper {
   padding-top: 12px;
   position: relative;
   line-height: 18px;
-}
-
-div.input-file-wrapper input {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-div.input-file-wrapper input:hover {
-  cursor: pointer;
-}
-
-div.input-file-wrapper:hover  {
-  background-color: $app-colour-shade-four;
-}
-
-p.file-chosen,
-.body-content p.file-chosen {
-  margin-top: -3px;
-  float: left;
 }
 
 img {
