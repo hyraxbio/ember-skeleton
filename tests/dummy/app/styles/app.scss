@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,600,700,900');
 
-@import "variables/_variables-colour-definitions";
-@import "variables/_variables-bits-and-pieces";
-@import "variables/_variables-layout";
-@import "mixins/_misc";
+@import "ember-skeleton/variables/_variables-colour-definitions";
+@import "ember-skeleton/variables/_variables-bits-and-pieces";
+@import "ember-skeleton/variables/_variables-layout";
+@import "ember-skeleton/mixins/_misc";
 
-@import "layout/_html-and-body-elements";
-@import "generic/_list-group";
-@import "generic/_list-group";
-@import "generic/_badge";
-@import "generic/_alert";
-@import "generic/_bits-and-pieces";
-@import "generic/_text";
-@import "generic/_buttons";
-@import "generic/_tables";
-@import "generic/_inputs-and-labels";
-@import "generic/_bootstrap-tooltips";
-@import "generic/_box-arrows";
+@import "ember-skeleton/layout/_html-and-body-elements";
+@import "ember-skeleton/generic/_list-group";
+@import "ember-skeleton/generic/_list-group";
+@import "ember-skeleton/generic/_badge";
+@import "ember-skeleton/generic/_alert";
+@import "ember-skeleton/generic/_bits-and-pieces";
+@import "ember-skeleton/generic/_text";
+@import "ember-skeleton/generic/_buttons";
+@import "ember-skeleton/generic/_tables";
+@import "ember-skeleton/generic/_inputs-and-labels";
+@import "ember-skeleton/generic/_bootstrap-tooltips";
+@import "ember-skeleton/generic/_box-arrows";
 
-@import "layout/_general-ui";
-@import "layout/_sidebar-layout";
-@import "layout/_panel-layout";
-@import "layout/_main-nav";
+@import "ember-skeleton/layout/_general-ui";
+@import "ember-skeleton/layout/_sidebar-layout";
+@import "ember-skeleton/layout/_panel-layout";
+@import "ember-skeleton/layout/_main-nav";
 
-@import "dependency-overrides/_ember-power-select";
-@import "dependency-overrides/_ember-power-calendar";
-@import "dependency-overrides/_ember-basic-dropdown";
-@import "dependency-overrides/_ember-perfect-scrollbar";
+@import "ember-skeleton/dependency-overrides/_ember-power-select";
+@import "ember-skeleton/dependency-overrides/_ember-power-calendar";
+@import "ember-skeleton/dependency-overrides/_ember-basic-dropdown";
+@import "ember-skeleton/dependency-overrides/_ember-perfect-scrollbar";
