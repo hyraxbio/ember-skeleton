@@ -1,8 +1,8 @@
 {{layouts/header/header-bar private=true systemAlert=systemAlert}}
 <section class="columns-container">
-  {{layouts/private/main-nav class="column left"}}
-  <div class="{{if navCollapsed "nav-collapsed"}} {{if session.hideContent "invisible"}} column right">
-    <div class="bottom">
+  {{layouts/sidebar-layout/main-nav class="column left-column"}}
+  <div class="{{if navCollapsed "nav-collapsed"}} {{if session.hideContent "invisible"}} column right-column">
+    <div class="column-bottom">
       {{#if systemAlert}}
         <div class="section-padding-x section-padding-top">
           {{layouts/system-alerts systemAlert=systemAlert data-test-id="system-alert"}}

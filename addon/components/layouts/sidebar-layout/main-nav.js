@@ -1,11 +1,11 @@
 import Component from '@ember/component';
 import { inject as service } from '@ember/service';
-import layout from '../../../templates/components/layouts/private/main-nav';
+import layout from '../../../templates/components/layouts/sidebar-layout/main-nav';
 
 export default Component.extend({
   layout,
   tagName: 'div',
-  classNames: ['nav-sidebar'],
+  classNames: ['main-nav'],
   classNameBindings: ['basicLayoutControls.navCollapsed:nav-collapsed', 'basicLayoutControls.navToggled:nav-toggled'],
   basicLayoutControls: service(),
 

@@ -5,6 +5,8 @@
 @import "variables/_variables-layout";
 @import "mixins/_misc";
 
+@import "layout/_html-and-body-elements";
+@import "generic/_list-group";
 @import "generic/_list-group";
 @import "generic/_badge";
 @import "generic/_alert";
@@ -17,8 +19,8 @@
 @import "generic/_box-arrows";
 
 @import "layout/_general-ui";
-@import "layout/_private-ui";
-@import "layout/_public-ui";
+@import "layout/_sidebar-layout";
+@import "layout/_panel-layout";
 @import "layout/_main-nav";
 
 @import "dependency-overrides/_ember-power-select";

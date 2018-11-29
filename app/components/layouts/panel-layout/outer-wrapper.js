@@ -1,0 +1,1 @@
+export { default } from 'ember-skeleton/components/layouts/panel-layout/outer-wrapper';

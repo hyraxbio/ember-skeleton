@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import { observer } from '@ember/object';
 import { once } from '@ember/runloop';
 import { inject as service } from '@ember/service';
-import layout from '../../../templates/components/layouts/private/outer-wrapper';
+import layout from '../../../templates/components/layouts/sidebar-layout/outer-wrapper';
 
 export default Component.extend({
   layout,

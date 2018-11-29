@@ -79,7 +79,7 @@
       height: $radio-button-checkbox-width-height;
       box-sizing: border-box;
       position: absolute;
-      top: $radio-button-checkbox-vertical-offset;
+      top: 0;
       left: 0px;
     }
     &:checked:after {
