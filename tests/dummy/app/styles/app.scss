@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,600,700,900');
 
 @import "ember-skeleton/variables/_variables-colour-definitions";
-@import "ember-skeleton/variables/_variables-bits-and-pieces";
+@import "ember-skeleton/functions/_functions";
+@import "ember-skeleton/mixins/_colour-variants";
 @import "ember-skeleton/variables/_variables-layout";
+@import "ember-skeleton/variables/_variables-bits-and-pieces";
 @import "ember-skeleton/mixins/_misc";
 
 @import "ember-skeleton/layout/_html-and-body-elements";

@@ -186,3 +186,15 @@ button {
   display: inline-flex;
   align-items: center;
 }
+
+.button-group {
+  display: flex;
+  & > * {
+    margin-right: 15px;
+  }
+  &.flush-right-edge {
+    & > *:last-child {
+      margin-right: 0;
+    }
+  }
+}
