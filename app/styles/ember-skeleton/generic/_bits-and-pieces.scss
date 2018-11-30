@@ -26,6 +26,12 @@
   }
 }
 
+@each $color, $value in $theme-colors {
+  .fill-#{$color} {
+    @include fill-variant($value);
+  }
+}
+
 .rounded {
   border-radius: $border-radius !important;
 }

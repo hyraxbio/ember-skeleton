@@ -3,16 +3,25 @@
     font-size: #{($button-font-size / $body-content-text-font-size)}em;
   }
 }
-button.btn-content {
+.btn-content {
+  padding: 0;
   background: transparent;
   border-width: 0;
   &:focus, &:active {
     outline: none;
   }
+  svg {
+    margin-right: 10px;
+    &.button-right {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+  }
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -162,10 +171,6 @@ $value in $theme-colors {
 
 .btn-sm {
   height: $button-height - 10px;
-}
-
-.btn-full-width {
-  width: 100%;
 }
 
 .btn-block {
