@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,600,700,900');
 
-@import "ember-skeleton/variables/_variables-colour-definitions";
+@import "ember-skeleton/variables/_colour-definitions";
+@import "ember-skeleton/variables/_bootstrap-theme-colors";
 @import "ember-skeleton/functions/_functions";
-@import "ember-skeleton/mixins/_colour-variants";
-@import "ember-skeleton/variables/_variables-layout";
-@import "ember-skeleton/variables/_variables-bits-and-pieces";
-@import "ember-skeleton/mixins/_misc";
+@import "ember-skeleton/variables/_layout";
+@import "ember-skeleton/variables/_bits-and-pieces";
 
-@import "ember-skeleton/layout/_html-and-body-elements";
+@import "ember-skeleton/mixins/_misc";
+@import "ember-skeleton/mixins/_element-colour-variants";
+
 @import "ember-skeleton/generic/_list-group";
 @import "ember-skeleton/generic/_list-group";
 @import "ember-skeleton/generic/_badge";
@@ -20,6 +21,7 @@
 @import "ember-skeleton/generic/_bootstrap-tooltips";
 @import "ember-skeleton/generic/_box-arrows";
 
+@import "ember-skeleton/layout/_html-and-body-elements";
 @import "ember-skeleton/layout/_general-ui";
 @import "ember-skeleton/layout/_sidebar-layout";
 @import "ember-skeleton/layout/_panel-layout";

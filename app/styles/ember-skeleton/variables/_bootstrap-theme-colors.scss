@@ -1,8 +1,3 @@
-$app-colour-shade-one:   red !default;
-$app-colour-shade-two:   orange !default;
-$app-colour-shade-three: #bbb !default;
-$app-colour-shade-four:  green !default;
-
 $blue:        #007bff !default;
 $indigo:      #6610f2 !default;
 $purple:      #6f42c1 !default;
@@ -48,5 +43,3 @@ $yiq-contrasted-threshold: 160 !default;
 // Customize the light and dark text colors for use in our YIQ color contrast function.
 $yiq-text-dark: #222 !default;
 $yiq-text-light: #fff !default;
-
-
