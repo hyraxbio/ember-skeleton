@@ -3,11 +3,11 @@
   {{ember-skeleton/sidebar-layout/main-nav class="column left-column"}}
   <div class="{{if navCollapsed "nav-collapsed"}} {{if session.hideContent "invisible"}} column right-column">
     <div class="column-bottom">
-      {{#if systemAlert}}
+      {{!-- {{#if systemAlert}}
         <div class="section-padding-x section-padding-top">
           {{ember-skeleton/system-alerts systemAlert=systemAlert data-test-id="system-alert"}}
         </div>
-      {{/if}}
+      {{/if}} --}}
       <div class="main-content">
       {{yield}}
       </div>

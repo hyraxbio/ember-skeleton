@@ -3,11 +3,12 @@
   {{#if systemAlert}}
     <div class="section-padding-x section-padding-top">
       {{ember-skeleton/system-alerts systemAlert=systemAlert}}
-      <div class="main-content">
+    {{/if}}
+    <div class="main-content">
       {{yield}}
       </div>
       {{ember-skeleton/footer/footer-strip}}
     </div>
-  {{/if}}
+
   {{yield}}
 </div>
