@@ -1,14 +1,15 @@
 {{ember-skeleton/header/header-bar authenticated=false systemAlert=systemAlert}}
-<div id="todo">
+<section class="panel-container">
   {{#if systemAlert}}
     <div class="section-padding-x section-padding-top">
       {{ember-skeleton/system-alerts systemAlert=systemAlert}}
-    {{/if}}
-    <div class="main-content">
-      {{yield}}
-      </div>
-      {{ember-skeleton/footer/footer-strip}}
     </div>
-
-  {{yield}}
-</div>
+  {{/if}}
+  <div class="main-content">
+    {{yield}}
+  </div>
+  {{ember-skeleton/footer/footer-strip}}
+</section>
+{{#if session.hideContent}}
+  {{ember-skeleton/loading-page}}
+{{/if}}
