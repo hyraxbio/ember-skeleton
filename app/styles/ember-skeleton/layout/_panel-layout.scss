@@ -1,10 +1,30 @@
-div.wrapper.panel-layout h1 {
-	text-align: center;
-}
+div.wrapper.panel-layout {
+  height: 100%;
+  overflow: hidden;
+  h1 {
+	 text-align: center;
+  }
 
-div.wrapper.panel-layout .body-content {
-	max-width: 600px;
-	margin: 0 auto;
+  .body-content {
+  	max-width: 600px;
+  	margin: 0 auto;
+  }
+
+  .panel-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    .main-content {
+      flex-grow: 1;
+    }
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 

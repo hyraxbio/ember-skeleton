@@ -35,7 +35,6 @@ textarea {
   margin: 0;
   padding: $input-top-bottom-padding $input-side-padding;
   text-indent: 8px;
-  box-sizing: border-box;
   font-size: $input-font-size;
   &:hover {
     border-color: $input-hover-border-color;
@@ -72,11 +71,9 @@ input[type=checkbox] {
     border: 2px solid $input-border-color;
     content: "";
     background-color: $input-background-color;
-    box-sizing: border-box;
     border: 2px solid $input-hover-border-color;
     width: $radio-button-checkbox-width-height;
     height: $radio-button-checkbox-width-height;
-    box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0px;

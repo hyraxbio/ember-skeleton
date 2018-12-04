@@ -11,6 +11,12 @@ body {
 
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container  {
 	width: 100%;
 	max-width: $desktop-content-container-max-width;
@@ -44,8 +50,6 @@ body {
 
 div.wrapper  {
 	padding-top: $header-height;
-	box-sizing: border-box;
-
 
 	header {
 		background-color: $header-background-color;
@@ -54,7 +58,6 @@ div.wrapper  {
 		top: 0;
 		z-index: $header-z-index;
 		@include box-shadow-bottom;
-		box-sizing: border-box;
 		width: 100%;
 		display: flex;
 	  align-items: center;
@@ -67,7 +70,6 @@ div.wrapper  {
 
 	div.logo-container {
 		width: $sidebar-expanded-width;
-		box-sizing: border-box;
 		padding: 10px;
 		float: left;
 		background-color: #fafafa;
@@ -94,43 +96,43 @@ div.wrapper  {
 		height: auto;
 	}
 
-
-
 	footer {
-		box-sizing: border-box;
 		background: $footer-background-colour;
 		padding: 12px 0;
 		width: 100% !important;
-	}
 
-	footer ul {
-		font-size: 1em;
-		margin: 0;
-		padding: 0px 0;
-	}
+		ul {
+			font-size: 1em;
+			margin: 0;
+			padding: 0px 0;
 
-	footer ul li {
-		list-style: none;
-		text-align: center;
-		color: $footer-info-color;
-		font-style: $footer-info-font-style;
-		font-weight: $footer-info-font-weight;
-		font-family: $footer-info-font-family;
-		text-transform: $footer-info-text-transform;
-		font-size: $footer-info-font-size;
-		float: left;
-		margin-right: 15px;
-	}
+			li {
+				list-style: none;
+				text-align: center;
+				color: $footer-info-color;
+				font-style: $footer-info-font-style;
+				font-weight: $footer-info-font-weight;
+				font-family: $footer-info-font-family;
+				text-transform: $footer-info-text-transform;
+				font-size: $footer-info-font-size;
+				float: left;
 
-	footer ul li a {
-		color: $footer-info-link-color;
-		text-decoration: $footer-info-link-text-decoration;
-		font-weight: 300;
-	}
+				&:not(:last-child) {
+					margin-right: 15px;
+				}
 
-	footer ul li a:hover {
-		color: $footer-info-link-hover-color;
-		text-decoration: $footer-info-link-hover-text-decoration;
+				a {
+					color: $footer-info-link-color;
+					text-decoration: $footer-info-link-text-decoration;
+					font-weight: 300;
+				}
+
+				a:hover {
+					color: $footer-info-link-hover-color;
+					text-decoration: $footer-info-link-hover-text-decoration;
+				}
+			}
+		}
 	}
 
 	div.centred-logo-vertical {

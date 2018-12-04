@@ -33,7 +33,6 @@ $day-selected-text-color--hover: $day-selected-text-color;
   background: #fff;
   border: 1px solid #ccc;
   width: $row-width + 20px;
-  box-sizing: border-box;
   padding: 10px;
 
   .ember-power-calendar-week:first-child {
