@@ -8,13 +8,16 @@
           {{ember-skeleton/system-alerts systemAlert=systemAlert data-test-id="system-alert"}}
         </div>
       {{/if}} --}}
-      <div class="main-content">
+      <div class="main-content {{basicLayoutControls.hideContent}}">
+        {{basicLayoutControls.hideContent}}
         {{yield}}
       </div>
+      {{#if basicLayoutControls.hideContent}}
+        <div class="loading-content">
+          {{ember-skeleton/loading-page}}
+        </div>
+      {{/if}}
       {{ember-skeleton/footer/footer-strip}}
     </div>
   </div>
 </section>
-{{#if basicLayoutControls.hideContent}}
-  {{ember-skeleton/loading-page}}
-{{/if}}

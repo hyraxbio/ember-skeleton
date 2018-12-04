@@ -64,10 +64,6 @@ div.wrapper  {
 	  justify-content: space-between;
 	}
 
-	/*-------------------
-	MAIN SITE LOGO STYLES
-	-------------------*/
-
 	div.logo-container {
 		width: $sidebar-expanded-width;
 		padding: 10px;
@@ -133,6 +129,7 @@ div.wrapper  {
 				}
 			}
 		}
+
 	}
 
 	div.centred-logo-vertical {
@@ -140,4 +137,8 @@ div.wrapper  {
 		margin: 0 auto;
 		margin-top: 30px;
 	}
+	&.hide-content .main-content {
+		display: none;
+	}
+
 }

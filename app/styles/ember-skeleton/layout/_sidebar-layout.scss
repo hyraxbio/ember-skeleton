@@ -54,7 +54,7 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        .main-content {
+        .main-content, .loading-content {
           flex-grow: 1;
         }
       }

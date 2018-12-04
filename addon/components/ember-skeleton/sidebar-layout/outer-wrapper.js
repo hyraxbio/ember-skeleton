@@ -6,13 +6,15 @@ import layout from '../../../templates/components/ember-skeleton/sidebar-layout/
 
 export default Component.extend({
   layout,
+  basicLayoutControls: service(),
   tagName: 'div',
   classNames: ['wrapper', 'sidebar-layout'],
   classNameBindings: ['classes', 'basicLayoutControls.hideContent:hide-content:show-content', 'contentHeader:content-header'],
-  basicLayoutControls: service(),
+
 
   didInsertElement: function() {
     var self = this;
+    console.log(this.get('basicLayoutControls.hideContent'));
     this.set('initialLoad', true);
     if (this.get('basicLayoutControls.hideContent')) {
       setTimeout(function() {
