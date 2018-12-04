@@ -23,7 +23,7 @@ export default Component.extend({
     }
   },
 
-  turnOffInitialLoad: observer('session.hideContent', function() {
+  turnOffInitialLoad: observer('basicLayoutControls.hideContent', function() {
     if (this.get('basicLayoutControls.hideContent') === false) {
       this.set('initialLoad', false);
     }

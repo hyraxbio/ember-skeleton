@@ -1,7 +1,7 @@
 {{ember-skeleton/header/header-bar systemAlert=systemAlert}}
 <section class="columns-container">
   {{ember-skeleton/sidebar-layout/main-nav class="column left-column"}}
-  <div class="{{if navCollapsed "nav-collapsed"}} {{if session.hideContent "invisible"}} column right-column">
+  <div class="{{if navCollapsed "nav-collapsed"}} {{if basicLayoutControls.hideContent "invisible"}} column right-column">
     <div class="column-bottom">
       {{!-- {{#if systemAlert}}
         <div class="section-padding-x section-padding-top">
@@ -15,6 +15,6 @@
     </div>
   </div>
 </section>
-{{#if session.hideContent}}
+{{#if basicLayoutControls.hideContent}}
   {{ember-skeleton/loading-page}}
 {{/if}}
