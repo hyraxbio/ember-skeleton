@@ -85,7 +85,7 @@ $input-color: #333 !default;
 $input-border-color: #c9c9c9 !default;
 $input-background-color: #fff !default;
 $input-hover-border-color: #999 !default;
-$input-focus-border-color: blue !default;
+$input-focus-border-color: $app-colour-shade-three !default;
 $input-valid-border-color: #80a57c !default;
 $input-valid-background-color: #E5F2E4 !default;
 $input-invalid-border-color: #C67F8B !default;
