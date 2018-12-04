@@ -8,14 +8,8 @@ export default Component.extend({
   layout,
   tagName: 'div',
   classNames: ['wrapper', 'sidebar-layout'],
-  classNameBindings: ['classes', 'basicLayoutControls.navCollapsed:nav-collapsed', 'basicLayoutControls.navToggled:nav-toggled', 'basicLayoutControls.userUiState.freezeNavigation:nav-frozen', 'basicLayoutControls.hideContent:hide-content:show-content'],
+  classNameBindings: ['classes', 'basicLayoutControls.hideContent:hide-content:show-content', 'contentHeader:content-header'],
   basicLayoutControls: service(),
-
-  willRender: function() {
-    once(this, function() {
-      this.set('basicLayoutControls.navCollapsed', JSON.parse(localStorage.getItem('userNavCollapsed')));
-    });
-  },
 
   didInsertElement: function() {
     var self = this;
