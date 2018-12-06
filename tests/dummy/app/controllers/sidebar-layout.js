@@ -14,6 +14,6 @@ export default ApplicationController.extend({
       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores magnam praesentium quae quod ipsa ducimus ex, soluta ut suscipit consequatur tempore qui nulla et, eligendi sint quasi excepturi est. Perferendis.'
     }
     this.set('systemAlert', test);
-    this.set('basicLayoutControls.hideContent', true);
+
   }
 });
