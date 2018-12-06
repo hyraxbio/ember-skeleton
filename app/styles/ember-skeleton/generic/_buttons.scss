@@ -3,6 +3,7 @@
     font-size: #{($button-font-size / $body-content-text-font-size)}em;
   }
 }
+
 .btn-content {
   padding: 0;
   background: transparent;
@@ -11,11 +12,7 @@
     outline: none;
   }
   svg {
-    margin-right: 10px;
-    &.button-right {
-      margin-right: 0;
-      margin-left: 10px;
-    }
+    margin: 0;
   }
 }
 
