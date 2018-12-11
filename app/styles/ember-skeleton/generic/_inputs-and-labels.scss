@@ -34,7 +34,6 @@ textarea {
   font-family: $input-font-family;
   margin: 0;
   padding: $input-top-bottom-padding $input-side-padding;
-  text-indent: 8px;
   font-size: $input-font-size;
   &:hover {
     border-color: $input-hover-border-color;
@@ -46,7 +45,8 @@ textarea {
 }
 
 .input {
-  padding-top: 6px;
+  display: inline-flex;
+  align-items: center;
 }
 
 textarea {
