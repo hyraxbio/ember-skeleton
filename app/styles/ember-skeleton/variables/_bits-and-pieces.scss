@@ -12,7 +12,7 @@ $page-header-font-weight: 700 !default;
 $page-header-margin-bottom: $desktop-page-section-padding-y !default;
 $page-header-line-height: 100% !default;
 $page-header-font-style: normal !default;
-$page-header-color: $app-colour-shade-three !default;
+$page-header-color: $primary !default;
 
 /*-------------------------------------------------------------------------
 DEFAULT BODY CONTENT TEXT STYLES {CORRESPONDS TO "02-bits-and-pieces.less"}
@@ -46,7 +46,7 @@ $body-content-paragraph-text-align: justify !default;
 $body-content-paragraph-line-height: 170% !default;
 
 $link-font-weight: 700 !default;
-$link-color: $app-colour-shade-three !default;
+$link-color: $primary !default;
 $link-text-decoration: none !default;
 $link-hover-color: $link-color !default;
 $link-hover-text-decoration: none !default;
@@ -63,7 +63,7 @@ $body-content-hr-border-top-width: 1px !default;
 /*------------------------------
 DEFAULT INTERFACE ELEMENT STYLES
 ------------------------------*/
-$general-asterisk-color: $app-colour-shade-three !default;
+$general-asterisk-color: $primary !default;
 $general-asterisk-font-size: 44px !default;
 $general-asterisk-line-height: 0px !default;
 $general-asterisk-font-weight: 700 !default;
@@ -85,7 +85,7 @@ $input-color: #333 !default;
 $input-border-color: #c9c9c9 !default;
 $input-background-color: #fff !default;
 $input-hover-border-color: #999 !default;
-$input-focus-border-color: $app-colour-shade-three !default;
+$input-focus-border-color: $primary !default;
 $input-valid-border-color: #80a57c !default;
 $input-valid-background-color: #E5F2E4 !default;
 $input-invalid-border-color: #C67F8B !default;
@@ -109,7 +109,7 @@ $input-top-bottom-padding: 2px !default;
 $input-border-radius: 3px !default;
 
 $button-color: #fff !default;
-$button-background-color: $app-colour-shade-three !default;
+$button-background-color: $primary !default;
 $button-padding-y: 10px !default;
 $button-font-family: 'Lato', Arial, sans-serif !default;
 $button-font-size: 1.4em !default;
@@ -138,7 +138,7 @@ TABLE STYLES
 
 $table-border-style: solid !default;
 $table-border-color: #ccc !default;
-$table-row-hover-background-color: lighten($app-colour-shade-one, 55%) !default;
+$table-row-hover-background-color: lighten($secondary, 55%) !default;
 
 $table-cell-padding-top: 6px !default;
 $table-cell-padding-bottom: 6px !default;
