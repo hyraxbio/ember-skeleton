@@ -13,7 +13,7 @@ export default function hyraxEmberAssetsThemeColorString(string) {
       matchStrings: ['failed', 'error']
     },
     {
-      returnString: 'primary',
+      returnString: 'gray-medium',
       matchStrings: ['pending']
     }
   ];
