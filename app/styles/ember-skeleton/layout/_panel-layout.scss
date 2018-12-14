@@ -2,14 +2,15 @@ div.wrapper.panel-layout {
   height: 100%;
   overflow: hidden;
   h1 {
-	 text-align: center;
+   text-align: center;
   }
 
   .body-content {
-  	max-width: 600px;
-  	margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    .form-container {
+      margin: 0 auto;
+    }
   }
 
   .panel-container {
@@ -26,7 +27,6 @@ div.wrapper.panel-layout {
     display: flex;
     justify-content: center;
   }
-
 }
 
 
