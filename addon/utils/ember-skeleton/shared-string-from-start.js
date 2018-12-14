@@ -1,4 +1,3 @@
-
 export default function sharedStringFromStart(array) {
   var A = array.concat().sort(),
     a1 = A[0],

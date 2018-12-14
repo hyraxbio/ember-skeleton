@@ -1,5 +1,5 @@
 import { helper } from '@ember/component/helper';
-import humaniseStringUtil from 'sanger-frontend-version-three/utils/ember-skeleton/humanise-string';
+import humaniseStringUtil from 'ember-skeleton/utils/ember-skeleton/humanise-string';
 
 export function emberExtendedFieldsHumaniseString(params/*, hash*/) {
   if (!params[0]) { return params; }

@@ -1,4 +1,3 @@
-
 export default function naturalSort(a, b) {
   var ax = [],
     bx = [];
