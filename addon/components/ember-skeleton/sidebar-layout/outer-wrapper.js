@@ -14,7 +14,6 @@ export default Component.extend({
 
   didInsertElement: function() {
     var self = this;
-    console.log(this.get('basicLayoutControls.hideContent'));
     this.set('initialLoad', true);
     if (this.get('basicLayoutControls.hideContent')) {
       setTimeout(function() {

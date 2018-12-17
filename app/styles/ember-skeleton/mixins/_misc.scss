@@ -39,9 +39,3 @@
 	-moz-box-shadow: 3px 3px 6px rgba(0,0,0,$opacity);
 	-webkit-box-shadow: 3px 3px 6px rgba(0,0,0,$opacity);
 }
-
-@mixin border-radius($radiusSize: 3px) {
-	border-radius: $radiusSize;
-	-moz-border-radius: $radiusSize;
-	-webkit-border-radius: $radiusSize;
-}
