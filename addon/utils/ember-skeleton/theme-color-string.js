@@ -2,7 +2,7 @@ export default function hyraxEmberAssetsThemeColorString(string) {
   var stringObjects = [
     {
       returnString: 'success',
-      matchStrings: ['completed', 'passed', 'active']
+      matchStrings: ['completed', 'passed', 'active', 'accepted']
     },
     {
       returnString: 'warning',
@@ -10,7 +10,7 @@ export default function hyraxEmberAssetsThemeColorString(string) {
     },
     {
       returnString: 'danger',
-      matchStrings: ['failed', 'error']
+      matchStrings: ['failed', 'error', 'revoked', 'rejected']
     },
     {
       returnString: 'gray-medium',
