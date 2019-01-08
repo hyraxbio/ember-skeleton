@@ -1,7 +1,7 @@
 div.main-nav {
   width: $sidebar-expanded-width;
   overflow: hidden;
-  background: #333;
+  background: $sidebar-background;
   &.nav-collapsed  {
     width: $sidebar-collapsed-width;
   }
@@ -23,15 +23,16 @@ div.main-nav {
     width: $sidebar-expanded-width;
     font-size: 1.6em;
     letter-spacing: 0.3px;
-    border-bottom: 1px solid #2b2b2b;
+    border-bottom: 1px solid darken($sidebar-background, 10%);
     text-transform: uppercase;
-    color: #bbb;
+    color: $gray-light;
     display: flex;
     align-items: center;
+    background: $gray-dark;
   }
 
    .menu-toggle {
-    background: $primary;
+    background: $sidebar-toggle-menu-background;
     display: block;
     height: $sidebar-toggle-menu-list-item-height;
     border-bottom: 1px solid #666;
@@ -53,7 +54,7 @@ div.main-nav {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    background: #fff;
+    background: $sidebar-nav-item-color;
     margin: 0 0 4px 0;
     display: block;
   }
@@ -63,7 +64,7 @@ div.main-nav {
     margin: 17px 15px 0 0;
     height: 22px;
     width: 30px;
-    fill: #fff;
+    fill: $sidebar-nav-item-color;
   }
 
    a {
@@ -72,9 +73,8 @@ div.main-nav {
     font-size: 1em;
     text-transform: none;
     font-weight: 400;
-    letter-spacing: 0.3px;
-    color: #fff;
-    border-bottom: 1px solid #2b2b2b;
+    color: $sidebar-nav-item-color;
+    border-bottom: 1px solid darken($sidebar-background, 10%);
     display: flex;
     align-items: center;
     height: $sidebar-nav-item-height;
@@ -82,22 +82,21 @@ div.main-nav {
   }
 
    a:hover  {
-    color: #fff;
-    background-color: #666;
+    color: $sidebar-nav-item-active-hover-color;
+    background-color: #777;
     text-decoration: none;
   }
 
    a.active {
     background-color: #777;
-    color: #fff;
+    color: $sidebar-nav-item-active-hover-color;
     cursor: default;
-    border-top-color: #777;
   }
 
    li svg {
     fill: #fff;
     width: $sidebar-collapsed-width;
   	height: $sidebar-nav-item-height;
-  	padding: 13px;
+  	padding: 12px 13px;
   }
 }

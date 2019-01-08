@@ -99,6 +99,7 @@
       fill: color-yiq($background);
     }
   &:hover {
+    color: color-yiq($background);
     background: $hover-background;
     border-color:$hover-background;
   }

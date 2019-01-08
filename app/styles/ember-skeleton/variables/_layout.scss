@@ -25,16 +25,19 @@ $header-padding-horizontal: 10px !default;
 $header-padding-vertical: 10px !default;
 $header-background-color: #fafafa !default;
 
+$sidebar-background: $gray-dark !default;
 $sidebar-layout-top-bar-height: 54px !default;
-
-$sidebar-nav-item-height: 50px !default;
+$sidebar-toggle-menu-background: darken($gray-medium, 20%) !default;
+$sidebar-nav-item-height: 44px !default;
+$sidebar-nav-item-color: #ddd !default;
+$sidebar-nav-item-active-hover-color: #fff !default;
 $sidebar-expanded-width: 200px !default;
 $sidebar-collapsed-width: 50px !default;
 $sidebar-toggle-transition: all 0.3s ease-in-out !default;
 $sidebar-toggle-menu-list-item-height: 54px !default;
 
 $footer-height: 40px !default;
-$footer-background-colour: #999 !default;
+$footer-background-colour: $gray-medium !default;
 
 /*----------------------------------------------------------------
 FOOTER STRIP TEXT STYLES {CORRESPOND TO "02-bits-and-pieces.less"}
@@ -54,3 +57,4 @@ $spacer-sm: 4px !default;
 $spacer-md: 8px !default;
 $spacer-lg: 16px !default;
 $spacer-xl: 32px !default;
+

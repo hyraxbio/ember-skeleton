@@ -12,7 +12,7 @@ $page-header-font-weight: 700 !default;
 $page-header-margin-bottom: $desktop-page-section-padding-y !default;
 $page-header-line-height: 100% !default;
 $page-header-font-style: normal !default;
-$page-header-color: $primary !default;
+$page-header-color: #666 !default;
 
 /*-------------------------------------------------------------------------
 DEFAULT BODY CONTENT TEXT STYLES {CORRESPONDS TO "02-bits-and-pieces.less"}
@@ -153,9 +153,9 @@ $table-cell-font-size: $body-content-text-font-size !default;
 $table-cell-text-transform: none !default;
 $table-cell-text-align: left !default;
 
-$table-header-cell-color: $table-cell-color !default;
-$table-header-cell-background-color: #eee !default;
-$table-header-cell-border-color: darken($table-border-color, 10%) !default;
+$table-header-cell-color: #fff !default;
+$table-header-cell-background-color: #bbb !default;
+$table-header-cell-border-color: darken($table-header-cell-background-color, 10%) !default;
 $table-header-cell-background-image: none !default;
 $table-header-cell-text-transform: none !default;
 $table-header-cell-text-align: left !default;
