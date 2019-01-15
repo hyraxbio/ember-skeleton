@@ -1,9 +1,9 @@
 div.main-nav {
-  width: $sidebar-expanded-width;
+  max-width: $sidebar-expanded-width;
   overflow: hidden;
   background: $sidebar-background;
   &.nav-collapsed  {
-    width: $sidebar-collapsed-width;
+    max-width: $sidebar-collapsed-width;
   }
 
   &.nav-toggled {
@@ -23,7 +23,6 @@ div.main-nav {
     width: $sidebar-expanded-width;
     font-size: 1.6em;
     letter-spacing: 0.3px;
-    border-bottom: 1px solid darken($sidebar-background, 10%);
     text-transform: uppercase;
     color: $gray-light;
     display: flex;
@@ -74,7 +73,6 @@ div.main-nav {
     text-transform: none;
     font-weight: 400;
     color: $sidebar-nav-item-color;
-    border-bottom: 1px solid darken($sidebar-background, 10%);
     display: flex;
     align-items: center;
     height: $sidebar-nav-item-height;
