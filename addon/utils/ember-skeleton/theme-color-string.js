@@ -1,4 +1,4 @@
-export default function hyraxEmberAssetsThemeColorString(string) {
+export default function themeColorString(string) {
   var stringObjects = [
     {
       returnString: 'success',
@@ -14,7 +14,7 @@ export default function hyraxEmberAssetsThemeColorString(string) {
     },
     {
       returnString: 'gray-medium',
-      matchStrings: ['pending']
+      matchStrings: ['pending', 'processing']
     }
   ];
   var themeColor;
