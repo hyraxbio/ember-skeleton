@@ -16,6 +16,9 @@
     }
   }
 }
+.flex {
+  display: flex;
+}
 
 .flex-columns {
   display: flex;
@@ -32,5 +35,9 @@
 
 .flex-space-between {
   justify-content: space-between;
+}
+
+.flex-justify-center {
+  justify-content: center;
 }
 
