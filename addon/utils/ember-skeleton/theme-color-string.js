@@ -1,4 +1,5 @@
-export default function themeColorString(string) {
+export default function themeColorString(string, hash) {
+  string = string.toLowerCase();
   var stringObjects = [
     {
       returnString: 'success',
@@ -17,6 +18,17 @@ export default function themeColorString(string) {
       matchStrings: ['pending', 'processing']
     }
   ];
+  for (var key in hash) {
+    stringObjects.forEach(stringObject => {
+      if (stringObject.matchStrings.indexOf(key) > -1) {
+        stringObject.matchStrings.splice(stringObject.matchStrings.indexOf(key));
+      }
+    });
+    var currentObject = stringObjects.find(stringObject => {
+      return stringObject.returnString === hash[key];
+    });
+    currentObject.matchStrings = currentObject.matchStrings.concat([key]);
+  }
   var themeColor;
   stringObjects.forEach(stringObject => {
     if (stringObject.matchStrings.indexOf(string) > -1) {
