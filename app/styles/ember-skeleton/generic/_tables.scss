@@ -4,24 +4,21 @@ table {
   -webkit-border-radius: 0px;
   border-collapse: collapse;
   border: 1px $table-border-style $table-border-color;
-
+  font-size: 1em;
 }
 
 table th {
   color: $table-header-cell-color;
   background-color: $table-header-cell-background-color;
-  font-size: $table-header-cell-font-size/$body-content-text-font-size;
+  font-size: #{$table-header-cell-font-size/$body-content-text-font-size}em;
   text-transform: $table-header-cell-text-transform;
   text-align: $table-header-cell-text-align;
   font-family: $table-header-cell-font-family;
   font-weight: $table-header-cell-font-weight;
   padding: $table-cell-padding-top $table-cell-padding-left-right $table-cell-padding-bottom;
   border: 1px $table-border-style $table-header-cell-border-color;
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  font-size: $table-header-cell-font-size/$body-content-text-font-size;
   line-height: 100%;
+  
 }
 
 table td {
@@ -40,6 +37,10 @@ table.compact-table {
     background-color: #fff;
     border-color: #d9d9d9;
     padding: 5px 10px;
+    svg {
+      width: 20px;
+      // TODO SVG dimensions
+    }
   }
   /*---Make every second row a different colour---*/
 
