@@ -33,14 +33,18 @@ $spacers: (
   }
 }
 
-svg.svg-10 {
-  width: 10px;
+svg.svg-sm {
+  width: 4px;
 }
 
-svg.svg-20 {
-  width: 20px;
+svg.svg-md {
+  width: 8px;
 }
 
-svg.svg-30 {
-  width: 30px;
+svg.svg-lg {
+  width: 16px;
+}
+
+svg.svg-xl {
+  width: 32px;
 }
