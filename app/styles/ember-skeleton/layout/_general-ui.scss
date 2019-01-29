@@ -11,12 +11,6 @@ body {
 
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .container  {
 	width: 100%;
 	max-width: $desktop-content-container-max-width;

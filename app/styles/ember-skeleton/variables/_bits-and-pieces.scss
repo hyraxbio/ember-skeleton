@@ -34,7 +34,6 @@ $body-content-header-h4-font-size: 1.8em !default;
 
 $body-content-text-font-size: 1.5em !default;
 $body-content-text-line-height: 170% !default;
-$body-content-text-text-align: justify !default;
 $body-content-text-color: #333 !default;
 $body-content-text-font-style: normal !default;
 $body-content-text-font-weight: 400 !default;
@@ -189,7 +188,7 @@ $border-width: 1px !default;
 $border-color: #ccc !default;
 $border-radius: 3px !default;
 
-$badge-font-weight: 600 !default;
+$badge-font-weight: 700 !default;
 $badge-padding-y: 8px !default;
 $badge-padding-x: 10px !default;
 $badge-border-radius: 3px !default;
@@ -230,3 +229,8 @@ $footer-info-link-color: #fff !default;
 $footer-info-link-text-decoration: none !default;
 $footer-info-link-hover-color: #fff !default;
 $footer-info-link-hover-text-decoration: none !default;
+
+$spacer-sm: 4px !default;
+$spacer-md: 8px !default;
+$spacer-lg: 16px !default;
+$spacer-xl: 32px !default;

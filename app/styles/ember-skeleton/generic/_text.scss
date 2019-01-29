@@ -31,13 +31,6 @@ a,
   }
 }
 
-.right-aligned-text {
-  text-align: right;
-  p {
-    text-align: right;
-  }
-}
-
 blockquote {
   margin-left: 0;
   margin-right: 40px;
@@ -63,7 +56,6 @@ blockquote.align-right {
   font-style: $body-content-text-font-style;
   font-size: $body-content-text-font-size;
   font-weight: $body-content-text-font-weight;
-  text-align: left;
   h1,
   h2,
   h3,
@@ -92,7 +84,6 @@ blockquote.align-right {
     font-size: #{($body-content-header-h4-font-size/$body-content-text-font-size)}em;
   }
   p {
-    text-align: $body-content-text-text-align;
     margin-bottom: $body-content-paragraph-space-after;
     margin-top: 0;
   }
