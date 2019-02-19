@@ -47,5 +47,9 @@
     .bottom-row {
       overflow-y: auto;
     }
+
+    .main-nav .bottom-row {
+      overflow: hidden;
+    }
   }
 }

@@ -1,5 +1,5 @@
 export default function themeColorString(string, hash) {
-  if (!string) { return; }
+  if (!string) { return hash.default; }
   string = string.toLowerCase();
   var stringObjects = [
     {

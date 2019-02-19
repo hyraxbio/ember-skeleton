@@ -6,8 +6,8 @@
     </div>
     {{svg-repo/icons/icon-collapse-menu class="nav-collapse"}}
 </div>
-<div class="bottom-row">
-<ul>
-  {{component mainMenuItemsComponent}}
-</ul>
-</div>
+{{#ember-skeleton/sidebar-layout/main-nav-scrollable}}
+  <ul>
+    {{component mainMenuItemsComponent}}
+  </ul>
+{{/ember-skeleton/sidebar-layout/main-nav-scrollable}}
