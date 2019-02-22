@@ -3,5 +3,5 @@ export default function humaniseString(string) {
   var charsArray = string.split('');
   charsArray[0] = charsArray[0].toUpperCase();
 
-  return charsArray.join('').replace('_', ' ');
+  return charsArray.join('').replace(/_/g, ' ');
 }
