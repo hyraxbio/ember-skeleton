@@ -1,8 +1,10 @@
 import Component from '@ember/component';
 import layout from '../../../templates/components/ember-skeleton/panel-layout/outer-wrapper';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
   layout,
+  basicLayoutControls: service(),
   classNames: ['wrapper', 'panel-layout'],
-  classNameBindings: ['classes', 'session.placeholdersSupported:placeholders'],
+  classNameBindings: ['classes', 'basicLayoutControls.hideContent:hide-content:show-content'],
 });

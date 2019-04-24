@@ -61,7 +61,7 @@ div.wrapper  {
 	div.logo-container {
 		width: $sidebar-expanded-width;
 		padding: 10px;
-		float: left;
+		flex-shrink: 0;
 		background-color: #fafafa;
 	}
 

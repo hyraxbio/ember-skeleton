@@ -5,6 +5,10 @@
   border: $alert-border-width solid transparent;
   @include border-radius($alert-border-radius);
   overflow: hidden;
+  
+}
+.body-content .alert {
+  font-size: #{$alert-font-size/$body-content-text-font-size}em;
 }
 
 .alert-heading {
@@ -39,3 +43,4 @@
     @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
   }
 }
+

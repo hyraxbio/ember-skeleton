@@ -1,12 +1,13 @@
 import Component from '@ember/component';
 import { observer } from '@ember/object';
-import { once } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 import layout from '../../../templates/components/ember-skeleton/sidebar-layout/outer-wrapper';
+import { computed } from '@ember/object';
 
 export default Component.extend({
   layout,
   basicLayoutControls: service(),
+  emberSkeleton: service(),
   tagName: 'div',
   classNames: ['wrapper', 'sidebar-layout'],
   classNameBindings: ['classes', 'basicLayoutControls.hideContent:hide-content:show-content', 'contentHeader:content-header'],
@@ -23,6 +24,10 @@ export default Component.extend({
       }, 20000);
     }
   },
+
+  headerComponent: computed('emberSkeleton.settings.headerComponent', function() {
+    return this.get('emberSkeleton.settings.headerComponent');
+  }),
 
   turnOffInitialLoad: observer('basicLayoutControls.hideContent', function() {
     if (this.get('basicLayoutControls.hideContent') === false) {

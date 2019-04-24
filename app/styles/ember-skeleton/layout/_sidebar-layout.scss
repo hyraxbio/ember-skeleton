@@ -39,13 +39,11 @@
       position: relative;
       box-shadow: inset 10px 0px 6px -6px rgba(0,0,0,0.2);
       overflow-x: auto;
-      .body-content {
-        max-width: 100%;
-        width: 100%;
-      }
     }
     .bottom-row {
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      flex-shrink: 0;
     }
 
     .main-nav .bottom-row {

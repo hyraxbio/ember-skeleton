@@ -1,19 +1,15 @@
-{{ember-skeleton/header/header-bar systemAlert=systemAlert}}
+{{component emberSkeleton.headerComponent headerProps=headerProps}}
 <section class="sidebar-layout-columns-container flex-columns">
   {{ember-skeleton/sidebar-layout/main-nav class="column left-column sidebar-layout-left-column flex-column"}}
-  <div class="{{if navCollapsed "nav-collapsed"}} {{if basicLayoutControls.hideContent "invisible"}} column right-column sidebar-layout-right-column flex-column flex-expand">
+  <div class="{{if navCollapsed "nav-collapsed"}} column right-column sidebar-layout-right-column flex-column flex-expand">
     <div class="bottom-row flex-expand flex-column height-100">
-      {{!-- {{#if systemAlert}}
-        <div class="section-padding-x section-padding-top">
-          {{ember-skeleton/system-alerts systemAlert=systemAlert data-test-id="system-alert"}}
-        </div>
-      {{/if}} --}}
-      <div class="main-content {{basicLayoutControls.hideContent}} flex-expand">
+      <div class="main-content flex-expand">
         {{yield}}
+        {{emberSkeleton.loadingComponent}}
       </div>
       {{#if basicLayoutControls.hideContent}}
         <div class="loading-content flex-expand">
-          {{ember-skeleton/loading-page}}
+          {{component emberSkeleton.loadingComponent}}
         </div>
       {{/if}}
       {{ember-skeleton/footer/footer-strip}}

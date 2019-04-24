@@ -13,6 +13,13 @@
   }
   svg {
     margin: 0;
+    height: 16px;
+    width: auto;
+    margin-right: $spacer-md;
+    &.button-right {
+      margin-right: 0;
+      margin-left: $spacer-md;
+    }
   }
 }
 
@@ -125,6 +132,12 @@ $value in $theme-colors {
     50% {background-color: $value; color: #fff}
     100% {background-color: #fff; color: $value}
   }
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
 }
 
 // Make a button look and behave like a link

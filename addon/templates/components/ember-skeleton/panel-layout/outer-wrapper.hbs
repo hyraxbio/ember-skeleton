@@ -1,13 +1,13 @@
-{{ember-skeleton/header/header-bar authenticated=false systemAlert=systemAlert}}
+{{component headerComponent authenticated=false systemAlert=systemAlert headerProps=headerProps}}
 <section class="panel-container">
-{{!--   {{#if systemAlert}}
-    <div class="section-padding-x section-padding-top">
-      {{ember-skeleton/system-alerts systemAlert=systemAlert}}
-    </div>
-  {{/if}} --}}
-  <div class="main-content">
+  <div class="main-content {{if basicLayoutControls.hideContent "invisible"}}">
     {{yield}}
   </div>
+  {{#if basicLayoutControls.hideContent}}
+    <div class="loading-content flex-expand">
+      {{ember-skeleton/loading-page}}
+    </div>
+  {{/if}}
   {{ember-skeleton/footer/footer-strip}}
 </section>
 {{#if basicLayoutControls.hideContent}}
