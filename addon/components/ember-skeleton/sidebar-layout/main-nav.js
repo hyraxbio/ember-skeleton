@@ -6,15 +6,14 @@ export default Component.extend({
   layout,
   tagName: 'div',
   classNames: ['main-nav'],
-  classNameBindings: ['basicLayoutControls.navCollapsed:nav-collapsed', 'basicLayoutControls.navToggled:nav-toggled'],
-  basicLayoutControls: service(),
+  classNameBindings: ['emberSkeleton.navCollapsed:nav-collapsed', 'emberSkeleton.navToggled:nav-toggled'],
   emberSkeleton: service(),
 
   actions: {
     toggleFullNav: function() {
-      this.toggleProperty('basicLayoutControls.navCollapsed');
-      localStorage.setItem('userNavCollapsed', this.get('basicLayoutControls.navCollapsed'));
-      this.set('basicLayoutControls.navToggled', true);
+      this.toggleProperty('emberSkeleton.navCollapsed');
+      localStorage.setItem('userNavCollapsed', this.get('emberSkeleton.navCollapsed'));
+      this.set('emberSkeleton.navToggled', true);
     },
   }
 });

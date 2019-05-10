@@ -1,9 +1,9 @@
 {{component emberSkeleton.headerComponent headerProps=headerProps}}
 <section class="panel-container">
-  <div class="main-content {{if basicLayoutControls.hideContent "invisible"}}">
+  <div class="main-content {{if emberSkeleton.hideContent "invisible"}}">
     {{yield}}
   </div>
-  {{#if basicLayoutControls.hideContent}}
+  {{#if emberSkeleton.hideContent}}
     <div class="loading-content flex-expand">
       {{component emberSkeleton.loadingComponent}}
     </div>

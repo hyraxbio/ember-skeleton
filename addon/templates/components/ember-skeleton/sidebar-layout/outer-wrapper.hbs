@@ -6,7 +6,7 @@
       <div class="main-content flex-expand">
         {{yield}}
       </div>
-      {{#if basicLayoutControls.hideContent}}
+      {{#if emberSkeleton.hideContent}}
         <div class="loading-content flex-expand">
           {{component emberSkeleton.loadingComponent}}
         </div>

@@ -6,20 +6,19 @@ import { computed } from '@ember/object';
 
 export default Component.extend({
   layout,
-  basicLayoutControls: service(),
   emberSkeleton: service(),
   tagName: 'div',
   classNames: ['wrapper', 'sidebar-layout'],
-  classNameBindings: ['classes', 'basicLayoutControls.hideContent:hide-content:show-content', 'contentHeader:content-header'],
+  classNameBindings: ['classes', 'emberSkeleton.hideContent:hide-content:show-content', 'contentHeader:content-header'],
 
 
   didInsertElement: function() {
     var self = this;
     this.set('initialLoad', true);
-    if (this.get('basicLayoutControls.hideContent')) {
+    if (this.get('emberSkeleton.hideContent')) {
       setTimeout(function() {
         if (self.get('initialLoad')) {
-          self.set('basicLayoutControls.hideContent', false);
+          self.set('emberSkeleton.hideContent', false);
         }
       }, 20000);
     }
@@ -29,8 +28,8 @@ export default Component.extend({
     return this.get('emberSkeleton.settings.headerComponent');
   }),
 
-  turnOffInitialLoad: observer('basicLayoutControls.hideContent', function() {
-    if (this.get('basicLayoutControls.hideContent') === false) {
+  turnOffInitialLoad: observer('emberSkeleton.hideContent', function() {
+    if (this.get('emberSkeleton.hideContent') === false) {
       this.set('initialLoad', false);
     }
   }),
