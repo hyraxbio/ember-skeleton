@@ -8,8 +8,7 @@ export default Component.extend({
   classNames: ['main-nav'],
   classNameBindings: ['basicLayoutControls.navCollapsed:nav-collapsed', 'basicLayoutControls.navToggled:nav-toggled'],
   basicLayoutControls: service(),
-
-  mainMenuItemsComponent: 'main-nav-items',
+  emberSkeleton: service(),
 
   actions: {
     toggleFullNav: function() {

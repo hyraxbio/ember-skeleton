@@ -1,7 +1,8 @@
 import Service from '@ember/service';
 
 export default Service.extend({
-  headerComponent: 'ember-skeleton/header-bar',
-  loadingComponent: 'ember-skeleton/loading-page'
-
+  headerComponent: 'ember-skeleton/header',
+  loadingComponent: 'ember-skeleton/loading-page',
+  footerComponent: 'ember-skeleton/footer',
+  mainNavItemsComponent: 'main-nav-items'
 });

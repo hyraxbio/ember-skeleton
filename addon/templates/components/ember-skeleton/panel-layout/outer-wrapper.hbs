@@ -1,15 +1,12 @@
-{{component headerComponent authenticated=false systemAlert=systemAlert headerProps=headerProps}}
+{{component emberSkeleton.headerComponent headerProps=headerProps}}
 <section class="panel-container">
   <div class="main-content {{if basicLayoutControls.hideContent "invisible"}}">
     {{yield}}
   </div>
   {{#if basicLayoutControls.hideContent}}
     <div class="loading-content flex-expand">
-      {{ember-skeleton/loading-page}}
+      {{component emberSkeleton.loadingComponent}}
     </div>
   {{/if}}
-  {{ember-skeleton/footer/footer-strip}}
+  {{component emberSkeleton.footerComponent}}
 </section>
-{{#if basicLayoutControls.hideContent}}
-  {{ember-skeleton/loading-page}}
-{{/if}}

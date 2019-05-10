@@ -5,6 +5,7 @@ import { inject as service } from '@ember/service';
 export default Component.extend({
   layout,
   basicLayoutControls: service(),
+  emberSkeleton: service(),
   classNames: ['wrapper', 'panel-layout'],
   classNameBindings: ['classes', 'basicLayoutControls.hideContent:hide-content:show-content'],
 });

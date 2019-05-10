@@ -5,14 +5,13 @@
     <div class="bottom-row flex-expand flex-column height-100">
       <div class="main-content flex-expand">
         {{yield}}
-        {{emberSkeleton.loadingComponent}}
       </div>
       {{#if basicLayoutControls.hideContent}}
         <div class="loading-content flex-expand">
           {{component emberSkeleton.loadingComponent}}
         </div>
       {{/if}}
-      {{ember-skeleton/footer/footer-strip}}
+      {{component emberSkeleton.footerComponent}}
     </div>
   </div>
 </section>
