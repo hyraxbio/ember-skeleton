@@ -5,7 +5,7 @@ export default function themeColorString(string, hash) {
   var stringObjects = [
     {
       returnString: 'success',
-      matchStrings: ['completed', 'passed', 'active', 'accepted']
+      matchStrings: ['complete', 'completed', 'passed', 'active', 'accepted']
     },
     {
       returnString: 'warning',
