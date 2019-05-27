@@ -128,22 +128,14 @@ div.block-notice {
   margin-bottom: 25px;
 }
 
-ul.file-download-list {
+.list-style-none {
   list-style: none;
 }
 
-ul.file-download-list li {
-  margin-bottom: 0.5em;
+.list-style-none li, 
+.body-content .list-style-none li {
   padding-left: 0;
   margin-left: 0;
-}
-
-ul.file-download-list li svg {
-  display: inline-block;
-  width: 20px;
-  margin: 0 10px 0 0;
-  vertical-align: middle;
-  fill: #999;
 }
 
 div.pop-up-box {

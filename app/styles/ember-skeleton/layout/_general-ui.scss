@@ -67,9 +67,8 @@ div.wrapper  {
 
 	div.logo-container svg,
 	div.logo-container svg  {
-		height: $header-height - 2*$header-padding-vertical;
+		height: $header-height - 2*$header-padding-vertical - 4px;
 		width: auto;
-		float: left;
 	}
 
 	div.logo-container a {
