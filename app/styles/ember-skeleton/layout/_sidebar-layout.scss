@@ -43,11 +43,11 @@
     .bottom-row {
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
-      flex-shrink: 0;
     }
 
     .main-nav .bottom-row {
       overflow: hidden;
+      height: 100%;
     }
   }
 }

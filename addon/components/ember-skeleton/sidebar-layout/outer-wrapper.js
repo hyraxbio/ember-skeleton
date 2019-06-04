@@ -9,7 +9,7 @@ export default Component.extend({
   emberSkeleton: service(),
   tagName: 'div',
   classNames: ['wrapper', 'sidebar-layout'],
-  classNameBindings: ['classes', 'emberSkeleton.hideContent:hide-content:show-content', 'contentHeader:content-header'],
+  classNameBindings: ['classes', 'emberSkeleton.hideContent:hide-content:show-content', 'contentHeader:content-header', 'emberSkeleton.navFrozen:nav-frozen'],
 
 
   didInsertElement: function() {
