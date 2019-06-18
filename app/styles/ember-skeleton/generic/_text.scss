@@ -31,22 +31,6 @@ a,
   }
 }
 
-blockquote {
-  margin-left: 0;
-  margin-right: 40px;
-  border-left: $blockquote-border-width solid $blockquote-border-color;
-  padding-left: 1em;
-}
-
-blockquote.align-right {
-  margin-left: 40px;
-  border-left-width: 0;
-  padding-left: 0;
-  margin-right: 0;
-  border-right: $blockquote-border-width solid $blockquote-border-color;
-  padding-right: 1em;
-}
-
 .body-content {
   .body-content {
     font-size: 1em;

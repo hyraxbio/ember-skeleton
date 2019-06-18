@@ -1,0 +1,36 @@
+$body-content-form-label-color: $body-content-text-color !default;
+$body-content-form-label-float: none !default;
+$body-content-form-label-font-weight: 400 !default;
+
+$label-color: #444 !default;
+$label-font-family: $main-font-family !default;
+$label-font-size: $body-content-text-font-size !default;
+$label-font-weight: 400 !default;
+$label-line-height: 100% !default;
+
+$input-color: #333 !default;
+$input-border-color: #c9c9c9 !default;
+$input-background-color: #fff !default;
+$input-hover-border-color: #999 !default;
+$input-focus-border-color: $primary !default;
+$input-valid-border-color: #80a57c !default;
+$input-valid-background-color: #E5F2E4 !default;
+$input-invalid-border-color: #C67F8B !default;
+$input-invalid-background-color: #F5E1E5 !default;
+$input-warning-border-color: #E97C0C !default;
+$input-warning-background-color: lighten(#FBC56D, 10%) !default;
+
+$input-border-width: 1px !default;
+$input-border-style: solid !default;
+$input-height: 40px !default;
+$input-font-family: $main-font-family !default;
+$input-font-style: normal !default;
+$input-text-transform: none !default;
+$input-font-size: $body-content-text-font-size !default;
+$input-font-weight: inherit !default;
+$input-line-height: 100% !default;
+$input-margin-top: 0px !default;
+$input-margin-bottom: 30px !default;
+$input-side-padding: 8px !default;
+$input-top-bottom-padding: 2px !default;
+$input-border-radius: 3px !default;

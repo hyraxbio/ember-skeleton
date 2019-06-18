@@ -1,7 +1,16 @@
 @import "ember-skeleton/variables/_bootstrap-theme-colors";
 @import "ember-skeleton/functions/_functions";
-@import "ember-skeleton/variables/_layout";
+@import "ember-skeleton/variables/_utilities";
+@import "ember-skeleton/variables/_z-index";
+@import "ember-skeleton/variables/_body";
+@import "ember-skeleton/variables/_header";
+@import "ember-skeleton/variables/_footer";
+@import "ember-skeleton/variables/_sidebar";
 @import "ember-skeleton/variables/_bits-and-pieces";
+@import "ember-skeleton/variables/_text";
+@import "ember-skeleton/variables/_tables";
+@import "ember-skeleton/variables/_buttons";
+@import "ember-skeleton/variables/_inputs-and-labels";
 @import "ember-skeleton/mixins/_misc";
 @import "ember-skeleton/mixins/_element-colour-variants";
 @import "ember-skeleton/mixins/_border-radius.scss";
@@ -23,7 +32,9 @@
 
   @import "ember-skeleton/layout/_utilities";
   @import "ember-skeleton/layout/_flex-layouts";
-  @import "ember-skeleton/layout/_general-ui";
+  @import "ember-skeleton/layout/_header";
+  @import "ember-skeleton/layout/_footer";
+  @import "ember-skeleton/layout/_misc";
   @import "ember-skeleton/layout/_sidebar-layout";
   @import "ember-skeleton/layout/_panel-layout";
   @import "ember-skeleton/layout/_main-nav";

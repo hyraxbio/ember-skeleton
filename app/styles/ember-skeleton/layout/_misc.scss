@@ -1,0 +1,12 @@
+div.wrapper  {
+	padding-top: $header-height;
+	&.hide-content .main-content {
+		display: none;
+	}
+}
+
+div.centred-logo-vertical {
+	max-width: 240px;
+	margin: 0 auto;
+	margin-top: 30px;
+}

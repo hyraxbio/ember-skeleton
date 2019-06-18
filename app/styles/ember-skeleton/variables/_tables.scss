@@ -1,0 +1,27 @@
+$table-border-style: solid !default;
+$table-border-color: #ccc !default;
+$table-row-hover-background-color: lighten($secondary, 55%) !default;
+
+$table-cell-padding-top: 6px !default;
+$table-cell-padding-bottom: 6px !default;
+$table-cell-padding-left-right: 18px !default;
+$table-cell-text-line-height: 100% !default;
+$table-cell-background-color: #fff !default;
+$table-cell-background-image: none !default;
+$table-cell-color: $body-content-text-color !default;
+$table-cell-font-family: $main-font-family !default;
+$table-cell-font-style: normal !default;
+$table-cell-font-size: $body-content-text-font-size !default;
+$table-cell-text-transform: none !default;
+$table-cell-text-align: left !default;
+
+$table-header-cell-color: #fff !default;
+$table-header-cell-background-color: #bbb !default;
+$table-header-cell-border-color: darken($table-header-cell-background-color, 10%) !default;
+$table-header-cell-background-image: none !default;
+$table-header-cell-text-transform: none !default;
+$table-header-cell-text-align: left !default;
+$table-header-cell-font-family: $main-font-family !default;
+$table-header-cell-font-weight: 700 !default;
+$table-header-cell-font-style: normal !default;
+$table-header-cell-font-size: 1.5em !default;
