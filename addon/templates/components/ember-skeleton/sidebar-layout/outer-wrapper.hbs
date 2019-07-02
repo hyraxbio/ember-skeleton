@@ -3,11 +3,11 @@
   {{ember-skeleton/sidebar-layout/main-nav class="column left-column sidebar-layout-left-column flex-column"}}
   <div class="{{if navCollapsed "nav-collapsed"}} column right-column sidebar-layout-right-column flex-column flex-expand">
     <div class="bottom-row flex-expand flex-column height-100">
-      <div class="main-content flex-expand padding-xl">
+      <div class="main-content flex-expand">
         {{yield}}
       </div>
       {{#if emberSkeleton.hideContent}}
-        <div class="loading-content flex-expand padding-xl">
+        <div class="loading-content flex-expand">
           {{component emberSkeleton.loadingComponent}}
         </div>
       {{/if}}

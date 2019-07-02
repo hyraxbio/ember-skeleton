@@ -108,26 +108,6 @@ img.border {
   height: 13px;
 }
 
-div.in-page-alert {
-  button svg {
-    float: left;
-    width: auto;
-  }
-  div.ellipsis {
-    width: auto;
-    float: left;
-    svg {
-      width: auto;
-      float: left;
-      height: 10px;
-    }
-  }
-}
-
-div.block-notice {
-  margin-bottom: 25px;
-}
-
 .list-style-none {
   list-style: none;
 }
@@ -147,24 +127,4 @@ div.pop-up-box {
   margin: 10px 0;
 }
 
-.close-button {
-  width: 24px;
-  height: 24px;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.close-button svg {
-  max-height: 13px;
-  fill: #bbb;
-  margin-right: 0;
-}
 
-.close-button:hover {
-  cursor: pointer;
-  background: #bbb;
-}
-.close-button:hover svg {
-  fill: #fff;
-}

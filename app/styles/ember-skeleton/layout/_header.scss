@@ -14,11 +14,13 @@ header {
     padding: 10px;
     flex-shrink: 0;
     background-color: #fafafa;
+    overflow: hidden;
+    height: $header-height;
   }
   
   div.logo-container svg,
   div.logo-container svg  {
-    height: $header-height - 2*$header-padding-vertical - 4px;
+    height: $header-height - 2*$header-padding-vertical;
     width: auto;
   }
   

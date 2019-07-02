@@ -43,6 +43,9 @@
     .bottom-row {
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
+      .content-container {
+        position: relative;
+      }
     }
 
     .main-nav .bottom-row {
