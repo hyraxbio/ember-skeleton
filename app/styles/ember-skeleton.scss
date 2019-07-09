@@ -15,6 +15,8 @@
 @import "ember-skeleton/mixins/_element-colour-variants";
 @import "ember-skeleton/mixins/_border-radius.scss";
 @import "ember-skeleton/layout/_html-and-body-elements";
+@import "ember-skeleton/generic/_spinning-svg";
+
 .ember-application {
   @import "ember-skeleton/generic/_list-group";
   @import "ember-skeleton/generic/_badge";
@@ -26,10 +28,7 @@
   @import "ember-skeleton/generic/_inputs-and-labels";
   @import "ember-skeleton/generic/_bootstrap-tooltips";
   @import "ember-skeleton/generic/_box-arrows";
-  @import "ember-skeleton/generic/_spinning-svg";
-
   @import "ember-skeleton/bootstrap/utilities/_borders";
-
   @import "ember-skeleton/layout/_utilities";
   @import "ember-skeleton/layout/_flex-layouts";
   @import "ember-skeleton/layout/_header";
