@@ -31,6 +31,34 @@ a,
   }
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: $body-content-header-color;
+  text-transform: $body-content-header-text-transform;
+  font-family: $body-content-header-font-family;
+  font-weight: $body-content-header-font-weight;
+  margin-bottom: $body-content-header-margin-bottom;
+  font-style: $body-content-header-font-style;
+  margin-top: 0;
+  line-height: 150%;
+  padding: 0;
+  background-color: transparent;
+}
+h1 {
+  font-size: $body-content-header-h1-font-size;
+}
+h2 {
+  font-size: $body-content-header-h2-font-size;
+}
+h3 {
+  font-size: $body-content-header-h3-font-size;
+}
+h4 {
+  font-size: $body-content-header-h4-font-size;
+}
+
 .body-content {
   .body-content {
     font-size: 1em;
@@ -40,21 +68,7 @@ a,
   font-style: $body-content-text-font-style;
   font-size: $body-content-text-font-size;
   font-weight: $body-content-text-font-weight;
-  h1,
-  h2,
-  h3,
-  h4 {
-    color: $body-content-header-color;
-    text-transform: $body-content-header-text-transform;
-    font-family: $body-content-header-font-family;
-    font-weight: $body-content-header-font-weight;
-    margin-bottom: $body-content-header-margin-bottom;
-    font-style: $body-content-header-font-style;
-    margin-top: 0;
-    line-height: 150%;
-    padding: 0;
-    background-color: transparent;
-  }
+ 
   h1 {
     font-size: #{($body-content-header-h1-font-size/$body-content-text-font-size)}em;
   }

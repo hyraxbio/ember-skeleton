@@ -80,6 +80,10 @@
   &.btn-lg svg {
     height: 30px;
   }
+  &.btn-lc {
+    text-transform: none;
+    letter-spacing: 0;
+  }
 }
 
 // Future-proof disabling of clicks on `<a>` elements

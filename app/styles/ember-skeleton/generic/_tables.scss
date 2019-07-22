@@ -29,7 +29,7 @@ table td {
   padding: $table-cell-padding-top $table-cell-padding-left-right $table-cell-padding-bottom;
   font-size: 1em;
   border: 1px $table-border-style $table-border-color;
-  border-bottom-width: 0;
+  // border-bottom-width: 0;
 }
 
 table.compact-table {
