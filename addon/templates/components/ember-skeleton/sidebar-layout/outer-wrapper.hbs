@@ -1,6 +1,5 @@
 {{component emberSkeleton.headerComponent headerProps=headerProps}}
 <section class="sidebar-layout-columns-container flex-columns">
-  {{!-- {{ember-skeleton/sidebar-layout/main-nav class="column left-column sidebar-layout-left-column flex-column" sidebarProps=sidebarProps}} --}}
   {{component emberSkeleton.sidebarComponent sidebarProps=sidebarProps class="column left-column sidebar-layout-left-column flex-column"}}
   <div class="{{if navCollapsed "nav-collapsed"}} column right-column sidebar-layout-right-column flex-column flex-expand">
     <div class="bottom-row flex-expand flex-column height-100">
