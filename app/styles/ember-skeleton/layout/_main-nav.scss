@@ -30,37 +30,30 @@ div.main-nav {
     background: $gray-dark;
   }
 
-   .menu-toggle {
+  .menu-toggle {
     background: $sidebar-toggle-menu-background;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     height: $sidebar-toggle-menu-list-item-height;
     border-bottom: 1px solid #666;
     width: $sidebar-expanded-width;
   }
 
-   .menu-toggle:hover {
-    cursor: pointer;
-  }
-
-   .menu-toggle div.hamburger {
-    float: left;
-    margin: 20px 10px 0;
-  }
-
-   .menu-toggle span.hamburger-stripe {
+  .menu-toggle span.hamburger-stripe {
     height: 3px;
     width: 30px;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     background: $sidebar-nav-item-color;
-    margin: 0 0 4px 0;
     display: block;
   }
 
-   .menu-toggle svg.nav-collapse {
-    float: right;
-    margin: 17px 15px 0 0;
+  .menu-toggle span.hamburger-stripe:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  .menu-toggle svg.nav-collapse {
     height: 22px;
     width: 30px;
     fill: $sidebar-nav-item-color;

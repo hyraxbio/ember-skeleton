@@ -1,8 +1,4 @@
-svg.spinner {
-  display: none;
-}
-
-svg.spinner.on {
+.spinner.on {
   display: block;
   -webkit-animation: spinning-cog 1.3s infinite ease;
   -moz-animation: spinning-cog 1.3s infinite ease;

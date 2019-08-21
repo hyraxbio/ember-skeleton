@@ -29,7 +29,15 @@ export default function themeColorString(string, hash) {
     var currentObject = stringObjects.find(stringObject => {
       return stringObject.returnString === hash[key];
     });
-    currentObject.matchStrings = currentObject.matchStrings.concat([key]);
+    if (currentObject) {
+      currentObject.matchStrings = currentObject.matchStrings.concat([key]);
+    } else {
+      stringObjects.push({
+        returnString: hash[key],
+        matchStrings: [key]
+      });
+    }
+    
   }
   var themeColor;
   stringObjects.forEach(stringObject => {

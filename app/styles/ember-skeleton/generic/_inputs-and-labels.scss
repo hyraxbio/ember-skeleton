@@ -42,6 +42,11 @@ textarea {
     outline: none;
     border-color: $input-focus-border-color;
   }
+  &:disabled {
+    background-color: $input-disabled-background-color;
+    color: $input-disabled-color;
+    border-color: $input-disabled-border-color;
+  }
 }
 
 .input {

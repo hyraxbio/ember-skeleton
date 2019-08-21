@@ -11,16 +11,16 @@
   &:focus, &:active {
     outline: none;
   }
-  svg {
-    margin: 0;
-    height: 16px;
-    width: auto;
-    margin-right: $spacer-md;
-    &.button-right {
-      margin-right: 0;
-      margin-left: $spacer-md;
-    }
-  }
+  // svg {
+  //   margin: 0;
+  //   height: 16px;
+  //   width: auto;
+  //   margin-right: $spacer-md;
+  //   &.button-right {
+  //     margin-right: 0;
+  //     margin-left: $spacer-md;
+  //   }
+  // }
 }
 
 .btn {
@@ -83,6 +83,9 @@
   &.btn-lc {
     text-transform: none;
     letter-spacing: 0;
+  }
+  .spinner:not(.on) {
+    display: none;
   }
 }
 
