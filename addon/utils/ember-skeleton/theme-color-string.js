@@ -1,6 +1,8 @@
 export default function themeColorString(string, hash) {
   if (!string && !hash) { return; }
-  if (!string) { return hash.default; }
+  hash = hash || {};
+  var defaultValue = hash.default || 'gray-medium';
+  if (!string) { return defaultValue; }
   string = string.toLowerCase();
   var stringObjects = [
     {
@@ -45,5 +47,6 @@ export default function themeColorString(string, hash) {
       themeColor = stringObject.returnString;
     }
   });
+  themeColor = themeColor || defaultValue;
   return themeColor;
 }

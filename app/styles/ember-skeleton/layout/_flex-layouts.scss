@@ -20,6 +20,10 @@
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .flex-columns {
   display: flex;
 }
@@ -31,6 +35,10 @@
 
 .flex-expand {
   flex-grow: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .flex-justify-space-between {
