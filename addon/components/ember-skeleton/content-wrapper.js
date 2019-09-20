@@ -3,5 +3,5 @@ import layout from '../../templates/components/ember-skeleton/content-wrapper';
 
 export default Component.extend({
   layout,
-  classNames: ['padding-xl', 'content-container']
+  classNames: ['padding-xxl', 'content-container']
 });

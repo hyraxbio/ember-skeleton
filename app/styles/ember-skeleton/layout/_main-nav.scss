@@ -21,7 +21,7 @@ div.main-nav {
     list-style: none;
     height: $sidebar-nav-item-height;
     width: $sidebar-expanded-width;
-    font-size: 1.6em;
+    font-size: $main-nav-item-font-size;
     letter-spacing: 0.3px;
     text-transform: uppercase;
     color: $gray-light;
@@ -40,8 +40,8 @@ div.main-nav {
   }
 
   .menu-toggle span.hamburger-stripe {
-    height: 3px;
-    width: 30px;
+    height: 2px;
+    width: 26px;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -54,8 +54,7 @@ div.main-nav {
   }
 
   .menu-toggle svg.nav-collapse {
-    height: 22px;
-    width: 30px;
+    height: 18px;
     fill: $sidebar-nav-item-color;
   }
 
@@ -88,7 +87,7 @@ div.main-nav {
     fill: #fff;
     width: $sidebar-collapsed-width;
   	height: $sidebar-nav-item-height;
-  	padding: 12px 13px;
+  	padding: 10px 10px;
   }
 }
 

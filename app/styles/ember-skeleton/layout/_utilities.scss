@@ -8,7 +8,8 @@ $spacers: (
   sm: $spacer-sm,
   md: $spacer-md,
   lg: $spacer-lg,
-  xl: $spacer-xl
+  xl: $spacer-xl,
+  xxl: $spacer-xxl
 );
 
 @each $spacing-type in 'padding', 'margin' {

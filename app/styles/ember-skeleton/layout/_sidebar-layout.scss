@@ -45,6 +45,10 @@
       -webkit-overflow-scrolling: touch;
       .content-container {
         position: relative;
+        .body-content {
+          display: inline-flex;
+          flex-direction: column;
+        }
       }
     }
 

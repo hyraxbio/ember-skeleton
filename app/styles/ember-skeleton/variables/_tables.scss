@@ -2,9 +2,9 @@ $table-border-style: solid !default;
 $table-border-color: #ccc !default;
 $table-row-hover-background-color: lighten($secondary, 55%) !default;
 
-$table-cell-padding-top: 6px !default;
-$table-cell-padding-bottom: 6px !default;
-$table-cell-padding-left-right: 18px !default;
+$table-cell-padding-y: $spacer-md !default;
+$table-cell-padding-bottom: $spacer-md !default;
+$table-cell-padding-x: $spacer-lg !default;
 $table-cell-text-line-height: 100% !default;
 $table-cell-background-color: #fff !default;
 $table-cell-background-image: none !default;
@@ -24,4 +24,4 @@ $table-header-cell-text-align: left !default;
 $table-header-cell-font-family: $main-font-family !default;
 $table-header-cell-font-weight: 700 !default;
 $table-header-cell-font-style: normal !default;
-$table-header-cell-font-size: 1.5em !default;
+$table-header-cell-font-size: $body-content-text-font-size !default;

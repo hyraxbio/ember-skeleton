@@ -1,13 +1,14 @@
 footer {
   background: $footer-background-colour;
-  padding: 12px 0;
   width: 100% !important;
+  padding: $spacer-lg $spacer-xxl;
+  display: flex;
 
   ul {
     font-size: 1em;
     margin: 0;
     padding: 0px 0;
-
+    display: flex;
     li {
       list-style: none;
       text-align: center;
@@ -17,7 +18,6 @@ footer {
       font-family: $footer-info-font-family;
       text-transform: $footer-info-text-transform;
       font-size: $footer-info-font-size;
-      float: left;
 
       &:not(:last-child) {
         margin-right: 15px;
@@ -35,4 +35,8 @@ footer {
       }
     }
   }
+}
+
+.panel-layout footer {
+  justify-content: center;
 }

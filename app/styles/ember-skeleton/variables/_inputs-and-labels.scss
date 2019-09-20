@@ -25,7 +25,7 @@ $input-disabled-background-color: #eee !default;
 
 $input-border-width: 1px !default;
 $input-border-style: solid !default;
-$input-height: 40px !default;
+$input-height: $spacer-xxl !default;
 $input-font-family: $main-font-family !default;
 $input-font-style: normal !default;
 $input-text-transform: none !default;
@@ -33,7 +33,10 @@ $input-font-size: $body-content-text-font-size !default;
 $input-font-weight: inherit !default;
 $input-line-height: 100% !default;
 $input-margin-top: 0px !default;
-$input-margin-bottom: 30px !default;
-$input-side-padding: 8px !default;
-$input-top-bottom-padding: 2px !default;
+$input-margin-bottom: $spacer-xl !default;
+$input-side-padding: $spacer-md !default;
+$input-top-bottom-padding: $spacer-sm !default;
 $input-border-radius: 3px !default;
+
+$radio-checkbox-selected-background-size: 11px !default;
+$radio-checkbox-selected-background-position: center 3px !default;
