@@ -50,30 +50,53 @@ humaniseString(['action_required', 'sentenceCase']);
 
 ### Theme Color String
 
-Receives a string and returns a string which corresponds to the theme colours defined in your SCSS. It contains some default associations, but you can pass custom associations in the template when you call the helper.
-
-#### Default associations
-
-    {
-      returnString: 'success',
-      matchStrings: ['complete', 'completed', 'passed', 'active', 'accepted']
-    },
-    {
-      returnString: 'warning',
-      matchStrings: ['action_required', 'absent']
-    },
-    {
-      returnString: 'danger',
-      matchStrings: ['failed', 'error', 'revoked', 'rejected']
-    },
-    {
-      returnString: 'gray-medium',
-      matchStrings: ['pending', 'processing']
-    }
+Receives a string and returns another string, based on the settings in the ember-skeleton service (If they exist) ans the hash passed when calling the helper in a template.
 
 `{{ember-skeleton/theme-color-string "present" present="success" absent="danger"}}`
 
 **`// success`**
+
+`{{ember-skeleton/theme-color-string "absent" present="success" absent="danger"}}`
+
+**`// danger`**
+
+#### Default associations
+
+These can be set in `app/services/ember-skeleton` in the consuming app, as shown below. Note that you can also override `defaultThemeColorString`, which is what the helper will return if the string passed does not match anything in the default settings, nor in the hash passed to the helper. 
+
+    import Service from '@ember/service';
+
+    export default Service.extend({
+      init() {
+        this._super(...arguments);
+        this.themeColorStringDefaults = [{
+          returnString: 'success',
+          matchStrings: ['complete', 'active', 'accepted']
+        },
+        {
+          returnString: 'warning',
+          matchStrings: ['absent']
+        },
+        {
+          returnString: 'danger',
+          matchStrings: ['failed', 'error', 'revoked', 'rejected']
+        },
+        {
+          returnString: 'gray-medium',
+          matchStrings: ['pending', 'processing']
+        }];
+      },
+      ...
+      defaultThemeColorString: 'gray-medium',
+    });
+
+`{{ember-skeleton/theme-color-string "complete"}}`
+
+**`// success`**
+
+`{{ember-skeleton/theme-color-string "unmatched-string"}}`
+
+**`// gray-medium`** (Because of `defaultThemeColorString: 'gray-medium'`)
 
 #### Usage in JavaScript
 
@@ -109,7 +132,7 @@ customInflector([number], {singular:"item was", plural:"items were"});
 
 Returns a human readable filesize, after receiving a number of bytes as the only argument.
 
-`{{}}
+`{{ember-skeleton/readable-file-size 2345345234}}`
 
 #### Usage in JavaScript
 

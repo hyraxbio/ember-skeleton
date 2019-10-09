@@ -1,30 +1,14 @@
-import { helper } from '@ember/component/helper';
+import Helper from '@ember/component/helper';
+import { inject as service } from '@ember/service';
 
-export function themeColorString(params, hash) {
+export function themeColorString(params, hash, defaultAssociations) {
   var string = params[0];
   if (!string && !hash) { return; }
   hash = hash || {};
   var defaultValue = hash.default || 'gray-medium';
   if (!string) { return defaultValue; }
   string = string.toLowerCase();
-  var stringObjects = [
-    {
-      returnString: 'success',
-      matchStrings: ['complete', 'completed', 'passed', 'active', 'accepted']
-    },
-    {
-      returnString: 'warning',
-      matchStrings: ['action_required', 'absent']
-    },
-    {
-      returnString: 'danger',
-      matchStrings: ['failed', 'error', 'revoked', 'rejected']
-    },
-    {
-      returnString: 'gray-medium',
-      matchStrings: ['pending', 'processing']
-    }
-  ];
+  var stringObjects = defaultAssociations;
   for (var key in hash) {
     stringObjects.forEach(stringObject => {
       if (stringObject.matchStrings.indexOf(key) > -1) {
@@ -54,4 +38,11 @@ export function themeColorString(params, hash) {
   return themeColor;
 }
 
-export default helper(themeColorString);
+export default Helper.extend({
+  emberSkeleton: service(),
+
+  compute(params, hash) {
+    var defaultAssociations = this.get('emberSkeleton.themeColorStringDefaults');
+    return themeColorString(params, hash, defaultAssociations);
+  }
+});
