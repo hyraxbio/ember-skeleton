@@ -1,4 +1,7 @@
-export default function themeColorString(string, hash) {
+import { helper } from '@ember/component/helper';
+
+export function themeColorString(params, hash) {
+  var string = params[0];
   if (!string && !hash) { return; }
   hash = hash || {};
   var defaultValue = hash.default || 'gray-medium';
@@ -50,3 +53,5 @@ export default function themeColorString(string, hash) {
   themeColor = themeColor || defaultValue;
   return themeColor;
 }
+
+export default helper(themeColorString);

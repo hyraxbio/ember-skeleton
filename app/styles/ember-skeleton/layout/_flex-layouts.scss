@@ -20,12 +20,20 @@
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .inline-flex {
   display: inline-flex;
 }
 
 .flex-columns {
   display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
 }
 
 .flex-column {

@@ -112,6 +112,12 @@ img.border {
   list-style: none;
 }
 
+li.no-indent,
+.body-content li.no-indent  {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .list-style-none li, 
 .body-content .list-style-none li {
   padding-left: 0;

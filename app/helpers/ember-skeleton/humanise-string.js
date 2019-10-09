@@ -1,9 +1,1 @@
-import { helper } from '@ember/component/helper';
-import humaniseStringUtil from 'ember-skeleton/utils/ember-skeleton/humanise-string';
-
-export function emberExtendedFieldsHumaniseString(params/*, hash*/) {
-  if (!params[0]) { return params; }
-  return humaniseStringUtil(params[0]);
-}
-
-export default helper(emberExtendedFieldsHumaniseString);
+export { default, humaniseString } from 'ember-skeleton/helpers/ember-skeleton/humanise-string';

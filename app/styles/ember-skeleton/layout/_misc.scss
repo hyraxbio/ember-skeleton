@@ -17,3 +17,7 @@ div.centred-logo-vertical {
 	margin-right: auto;
 }
 
+.box-shadow {
+  @include box-shadow(bottomRight);
+}
+

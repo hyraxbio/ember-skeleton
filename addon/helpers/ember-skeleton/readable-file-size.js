@@ -1,4 +1,7 @@
-export default function readableFileSize(numberOfBytes) {
+import { helper } from '@ember/component/helper';
+
+export function readableFileSize(params) {
+  var numberOfBytes = params[0];
   let readableSize;
   let units;
   numberOfBytes = numberOfBytes || 0;
@@ -14,10 +17,12 @@ export default function readableFileSize(numberOfBytes) {
   } else if (numberOfBytes > 1000000 && numberOfBytes <= 1000000000) {
     readableSize = (numberOfBytes / 1000000).toFixed(2);
     units = ' MB';
-  } else if (numberOfBytes > 1000000000 && numberOfBytes <= 1000000000000) {
+  } else if (numberOfBytes > 1000000000) {
     readableSize = (numberOfBytes / 1000000000).toFixed(2);
     units = ' GB';
   }
   let prettySize = readableSize + units;
   return prettySize;
 }
+
+export default helper(readableFileSize);
