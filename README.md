@@ -141,7 +141,59 @@ import { readableFileSize } from 'ember-skeleton/helpers/ember-skeleton/readable
 ...
 readableFileSize([23523532345]);
 ```
+### Replace String
 
+Receives a string to search for as the first argument, and then either a search tem and a replace term (simple search), or an array of search and replace hashes (advanced search). Note that the value of the `default` hash will be returned if the string is not found in any of the hashes.
+
+#### Simple Usage
+
+`{{ember-skeleton/replace-string "spain" "spain" "europe"}}`
+
+**`// europe`**
+
+#### Advanced Usage
+
+    {{ember-skeleton/replace-string "qc_pending" 
+      advanced=(array 
+        (hash
+          find="spain"
+          replace="europe"
+        )
+        (hash
+          find="south-africa"
+          replace="africa"
+        )
+      )
+    }}
+
+Note that you can pass an array as the `find` property in your advanced search hashes.
+
+    {{ember-skeleton/replace-string "south-africa" 
+      advanced=(array 
+        (hash
+          find=(array "spain" "italy" "france")
+          replace="europe"
+        )
+        (hash
+          find=(array "south-africa" "ethiopia" "namibia")
+          replace="africa"
+        )
+      ) default="unknown"
+    }}
+
+**`// africa`**
+
+#### Default
+
+`{{ember-skeleton/replace-string "not-a-real-country" "spain" "europe" default="unknown"}}`
+
+**`// unknown`**
+
+If there are no matches and no default is passed, the original string is returned.
+
+`{{ember-skeleton/replace-string "not-a-real-country" "spain" "europe"}}`
+
+**`// not-a-real-country`**
 
 Contributing
 ------------------------------------------------------------------------------
