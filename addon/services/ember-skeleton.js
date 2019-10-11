@@ -6,5 +6,4 @@ export default Service.extend({
   footerComponent: 'ember-skeleton/footer',
   mainNavItemsComponent: 'main-nav-items',
   sidebarComponent: 'ember-skeleton/sidebar-layout/sidebar',
-  defaultThemeColorString: 'gray-medium',
 });

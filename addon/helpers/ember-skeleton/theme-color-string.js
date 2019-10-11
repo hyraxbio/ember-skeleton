@@ -8,7 +8,7 @@ export function themeColorString(params, hash, defaultAssociations) {
   var defaultValue = hash.default || 'gray-medium';
   if (!string) { return defaultValue; }
   string = string.toLowerCase();
-  var stringObjects = defaultAssociations;
+  var stringObjects = defaultAssociations || hash.defaultAssociations || [];
   for (var key in hash) {
     stringObjects.forEach(stringObject => {
       if (stringObject.matchStrings.indexOf(key) > -1) {

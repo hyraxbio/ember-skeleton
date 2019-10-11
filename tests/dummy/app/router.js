@@ -7,8 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  // Routes for tests
   this.route('simple-layout');
   this.route('sidebar-layout');
+  this.route('theme-color-string-acceptance');
 });
 
 export default Router;
