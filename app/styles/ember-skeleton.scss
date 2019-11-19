@@ -18,31 +18,27 @@
 @import "ember-skeleton/layout/_html-and-body-elements";
 @import "ember-skeleton/generic/_spinning-svg";
 
-.ember-application {
-  @import "ember-skeleton/generic/_list-group";
-  @import "ember-skeleton/generic/_badge";
-  @import "ember-skeleton/generic/_alert";
-  @import "ember-skeleton/generic/_bits-and-pieces";
-  @import "ember-skeleton/generic/_text";
-  @import "ember-skeleton/generic/_buttons";
-  @import "ember-skeleton/generic/_tables";
-  @import "ember-skeleton/generic/_inputs-and-labels";
-  @import "ember-skeleton/generic/_bootstrap-tooltips";
-  @import "ember-skeleton/generic/_box-arrows";
-  @import "ember-skeleton/bootstrap/utilities/_borders";
-  @import "ember-skeleton/layout/_utilities";
-  @import "ember-skeleton/layout/_flex-layouts";
-  @import "ember-skeleton/layout/_header";
-  @import "ember-skeleton/layout/_footer";
-  @import "ember-skeleton/layout/_misc";
-  @import "ember-skeleton/layout/_sidebar-layout";
-  @import "ember-skeleton/layout/_panel-layout";
-  @import "ember-skeleton/layout/_main-nav";
+@import "ember-skeleton/generic/_list-group";
+@import "ember-skeleton/generic/_badge";
+@import "ember-skeleton/generic/_alert";
+@import "ember-skeleton/generic/_bits-and-pieces";
+@import "ember-skeleton/generic/_text";
+@import "ember-skeleton/generic/_buttons";
+@import "ember-skeleton/generic/_tables";
+@import "ember-skeleton/generic/_inputs-and-labels";
+@import "ember-skeleton/generic/_bootstrap-tooltips";
+@import "ember-skeleton/generic/_box-arrows";
+@import "ember-skeleton/bootstrap/utilities/_borders";
+@import "ember-skeleton/layout/_utilities";
+@import "ember-skeleton/layout/_flex-layouts";
+@import "ember-skeleton/layout/_header";
+@import "ember-skeleton/layout/_footer";
+@import "ember-skeleton/layout/_misc";
+@import "ember-skeleton/layout/_sidebar-layout";
+@import "ember-skeleton/layout/_panel-layout";
+@import "ember-skeleton/layout/_main-nav";
 
-  @import "ember-skeleton/dependency-overrides/_ember-power-calendar";
-  @import "ember-skeleton/dependency-overrides/_ember-basic-dropdown";
-  @import "ember-skeleton/dependency-overrides/_ember-perfect-scrollbar";
-  @import "ember-skeleton/dependency-overrides/_ember-power-select";
-  @import "ember-skeleton/dependency-overrides/_ember-power-select";
-  @import "ember-skeleton/ie";
-}
+@import "ember-skeleton/dependency-overrides/_ember-power-calendar";
+@import "ember-skeleton/dependency-overrides/_ember-basic-dropdown";
+@import "ember-skeleton/dependency-overrides/_ember-perfect-scrollbar";
+@import "ember-skeleton/dependency-overrides/_ember-power-select";

@@ -247,6 +247,95 @@ If there are no matches and no default is passed, the original string is returne
 
 **`// not-a-real-country`**
 
+# Layouts
+
+## Sidebar layout
+
+Invoked as below. If content header is true, the class `content-header` is added to the wrapper div, and the styles add additional padding to the top of the right hand section (The main section) allowing an additional fixed bar to be placed at the top of the section.
+
+    {{#ember-skeleton/sidebar-layout/outer-wrapper contentHeader=true}}`
+    ...
+    {{/ember-skeleton/sidebar-layout/outer-wrapper}}
+
+# Styles
+
+## Fill and Stroke
+
+The colour variants defined are extended to set the colour of both the fill and stroke properties. Example classes from the default bootstrap colour variants:
+
+`fill-danger`, `fill-success`, `fill-warning`
+`stroke-danger`, `stroke-success`, `stroke-warning`
+
+### Overriding fill and stroke for elements inside an svg
+
+Note the following variables:
+
+    $svg-foreground-graphic-fill
+    $svg-foreground-graphic-stroke-color
+
+By adding the class `foreground-graphic` to any element inside an svg, the fill and stoke colours will be whatever the corresponding varaibles are set to (Default is `#fff`). 
+
+## Overlay background and fill classes
+
+By default the following two sets of classes add a semi transparent css background that produce a semi transprent background. The number represents the opacity as a percentage.
+
+### Background
+
+`overlay-bg-black-10` `overlay-bg-black-20` `overlay-bg-black-50` 
+`overlay-bg-white-10` `overlay-bg-white-20` `overlay-bg-white-50` 
+
+### Fill
+
+`overlay-fill-black-10` `overlay-fill-black-20` `overlay-fill-black-50` 
+`overlay-fill-white-10` `overlay-fill-white-20` `overlay-fill-white-50` 
+
+### Custom overlay background classes
+
+Add new colours by passing a map to the the variable `$overlay-colours`
+
+    $overlay-colours: (
+      "green": "0,255,0",
+      "red": "255,0,0"
+    );
+
+Override the default levels by defining the variable `$overlay-levels`. Note that this will override the default levels entirely, so you need to include the defaults if you want to use them.
+
+    $overlay-levels: 5, 10;
+
+The above examples would result in the following CSS:
+
+    .overlay-bg-green-5 {
+      background: rgba( 0,255,0 , 0.05 );
+    }
+
+    .overlay-bg-green-10 {
+      background: rgba( 0,255,0 , 0.1 );
+    }
+
+    .overlay-bg-red-5 {
+      background: rgba( 255,0,0 , 0.05 );
+    }
+
+    .overlay-bg-red-10 {
+      background: rgba( 255,0,0 , 0.1 );
+    }
+
+    .overlay-fill-green-5 {
+      background: rgba( 0,255,0 , 0.05 );
+    }
+
+    .overlay-fill-green-10 {
+      background: rgba( 0,255,0 , 0.1 );
+    }
+
+    .overlay-fill-red-5 {
+      background: rgba( 255,0,0 , 0.05 );
+    }
+
+    .overlay-fill-red-10 {
+      background: rgba( 255,0,0 , 0.1 );
+    }
+
 Contributing
 ------------------------------------------------------------------------------
 

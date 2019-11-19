@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+// @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 
 @each $color, $value in $theme-colors {
   @include text-emphasis-variant(".text-#{$color}", $value);
@@ -20,6 +20,35 @@
   .fill-#{$color} {
     @include fill-variant($value);
   }
+
+  .stroke-#{$color} {
+    @include stroke-variant($value);
+  }
+}
+
+
+@each $colorName, $rgbValue in $overlay-colours {
+  @each $level in $overlay-levels {
+    .overlay-bg-#{$colorName}-#{$level} {
+      $cssValue: "rgba("#{$rgbValue}","#{$level/100}")";
+      background: #{$cssValue};
+      fill: #{$cssValue};
+    }
+  }
+}
+
+@each $colorName, $rgbValue in $overlay-colours {
+  @each $level in $overlay-levels {
+    .overlay-fill-#{$colorName}-#{$level} {
+      $cssValue: "rgba("#{$rgbValue}","#{$level/100}")";
+      fill: #{$cssValue};
+    }
+  }
+}
+
+.foreground-graphic {
+  fill: $svg-foreground-graphic-fill;
+  stroke: $svg-foreground-graphic-stroke-color;
 }
 
 .hidden {
