@@ -35,61 +35,61 @@ h1,
 h2,
 h3,
 h4 {
-  color: $body-content-header-color;
-  text-transform: $body-content-header-text-transform;
-  font-family: $body-content-header-font-family;
-  font-weight: $body-content-header-font-weight;
-  margin-bottom: $body-content-header-margin-bottom;
-  font-style: $body-content-header-font-style;
+  color: $body-text-header-color;
+  text-transform: $body-text-header-text-transform;
+  font-family: $body-text-header-font-family;
+  font-weight: $body-text-header-font-weight;
+  margin-bottom: $body-text-header-margin-bottom;
+  font-style: $body-text-header-font-style;
   margin-top: 0;
   line-height: 150%;
   padding: 0;
   background-color: transparent;
 }
 h1 {
-  font-size: $body-content-header-h1-font-size;
+  font-size: $body-text-header-h1-font-size;
 }
 h2 {
-  font-size: $body-content-header-h2-font-size;
+  font-size: $body-text-header-h2-font-size;
 }
 h3 {
-  font-size: $body-content-header-h3-font-size;
+  font-size: $body-text-header-h3-font-size;
 }
 h4 {
-  font-size: $body-content-header-h4-font-size;
+  font-size: $body-text-header-h4-font-size;
 }
 
-.body-content {
-  .body-content {
+.body-text {
+  .body-text {
     font-size: 1em;
   }
-  color: $body-content-text-color;
+  color: $body-text-color;
   font-family: $main-font-family;
-  font-style: $body-content-text-font-style;
-  font-size: $body-content-text-font-size;
-  font-weight: $body-content-text-font-weight;
+  font-style: $body-text-font-style;
+  font-size: $body-text-font-size;
+  font-weight: $body-text-font-weight;
  
   h1 {
-    font-size: #{($body-content-header-h1-font-size/$body-content-text-font-size)}em;
+    font-size: #{($body-text-header-h1-font-size/$body-text-font-size)}em;
   }
   h2 {
-    font-size: #{($body-content-header-h2-font-size/$body-content-text-font-size)}em;
+    font-size: #{($body-text-header-h2-font-size/$body-text-font-size)}em;
   }
   h3 {
-    font-size: #{($body-content-header-h3-font-size/$body-content-text-font-size)}em;
+    font-size: #{($body-text-header-h3-font-size/$body-text-font-size)}em;
   }
   h4 {
-    font-size: #{($body-content-header-h4-font-size/$body-content-text-font-size)}em;
+    font-size: #{($body-text-header-h4-font-size/$body-text-font-size)}em;
   }
   p {
-    margin-bottom: $body-content-paragraph-space-after;
+    margin-bottom: $body-text-paragraph-space-after;
     margin-top: 0;
   }
   p, dd, dt, ul li, ol li {
-    line-height: $body-content-text-line-height;
+    line-height: $body-text-line-height;
   }
   ul, ol {
-    margin-bottom: $body-content-paragraph-space-after;
+    margin-bottom: $body-text-paragraph-space-after;
     padding: 0px;
   }
   ul ul, ul ol, ol ul, ol ol {
@@ -104,7 +104,7 @@ h4 {
     font-size: 0.7em;
   }
   // a:hover {
-  //   text-decoration: $body-content-link-hover-text-decoration;
+  //   text-decoration: $body-text-link-hover-text-decoration;
   // }
 }
 

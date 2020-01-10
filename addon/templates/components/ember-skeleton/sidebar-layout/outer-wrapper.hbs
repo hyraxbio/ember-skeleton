@@ -1,22 +1,20 @@
 {{component emberSkeleton.headerComponent headerProps=headerProps}}
-<section class="sidebar-layout-columns-container flex-columns">
+<section id="columns">
   {{#ember-skeleton/sidebar-layout/sidebar 
-    class="column left-column sidebar-layout-left-column flex-column"
+    class="sidebar"
     toggleSidebarExpanded=(action "toggleSidebarExpanded")  
   }}
     {{component emberSkeleton.sidebarComponent sidebarProps=sidebarProps}}
   {{/ember-skeleton/sidebar-layout/sidebar}}
-  <div class="{{if sidebarCollapsed "sidebar-collapsed"}} column right-column sidebar-layout-right-column flex-column flex-expand">
-    <div class="bottom-row flex-expand flex-column height-100">
-      <div class="main-content flex-expand">
-        {{yield}}
-      </div>
-      {{#if emberSkeleton.hideContent}}
-        <div class="loading-content flex-expand">
-          {{component emberSkeleton.loadingComponent}}
-        </div>
-      {{/if}}
-      {{component emberSkeleton.footerComponent}}
+  <div class="main">
+    <div class="content {{if emberSkeleton.hideContent "hidden"}}">
+      {{yield}}
     </div>
+    {{#if emberSkeleton.hideContent}}
+      <div class="loading-content flex-expand">
+        {{component emberSkeleton.loadingComponent}}
+      </div>
+    {{/if}}
+    {{component emberSkeleton.footerComponent}}
   </div>
 </section>

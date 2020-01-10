@@ -1,10 +1,10 @@
-$body-content-form-label-color: $body-content-text-color !default;
-$body-content-form-label-float: none !default;
-$body-content-form-label-font-weight: 400 !default;
+$body-text-form-label-color: $body-text-color !default;
+$body-text-form-label-float: none !default;
+$body-text-form-label-font-weight: 400 !default;
 
 $label-color: #444 !default;
 $label-font-family: $main-font-family !default;
-$label-font-size: $body-content-text-font-size !default;
+$label-font-size: $body-text-font-size !default;
 $label-font-weight: 400 !default;
 $label-line-height: 100% !default;
 
@@ -29,7 +29,7 @@ $input-height: $spacer-xxl !default;
 $input-font-family: $main-font-family !default;
 $input-font-style: normal !default;
 $input-text-transform: none !default;
-$input-font-size: $body-content-text-font-size !default;
+$input-font-size: $body-text-font-size !default;
 $input-font-weight: inherit !default;
 $input-line-height: 100% !default;
 $input-margin-top: 0px !default;

@@ -1,6 +1,6 @@
-.body-content {
+.body-text {
   .btn {
-    font-size: #{($button-font-size / $body-content-text-font-size)}em;
+    font-size: #{($button-font-size / $body-text-font-size)}em;
   }
 }
 
@@ -179,7 +179,7 @@ $value in $theme-colors {
   // No need for an active state here
 }
 
-.body-content {
+.body-text {
   .btn-link {
     font-size: inherit;
   }

@@ -8,7 +8,7 @@ export default Component.extend({
   emberSkeleton: service(),
   tagName: 'div',
   classNames: ['wrapper', 'sidebar-layout'],
-  classNameBindings: ['classes', 'emberSkeleton.hideContent:hide-content:show-content', 'contentHeader:content-header', 'emberSkeleton.navFrozen:nav-frozen'],
+  classNameBindings: ['emberSkeleton.hideContent:hide-content:show-content', 'contentHeader:content-header', 'emberSkeleton.navFrozen:nav-frozen'],
   attributeBindings: ['dataTestId:data-test-id'],
   dataTestId: 'ember-skeleton-sidebar-layout',
 
@@ -18,7 +18,6 @@ export default Component.extend({
 
   actions: {
     toggleSidebarExpanded() {
-      console.log('togg')
       this.toggleProperty('emberSkeleton.sidebarCollapsed');
       localStorage.setItem('userSidebarCollapsed', this.get('emberSkeleton.sidebarCollapsed'));
       this.set('emberSkeleton.sidebarToggled', true);

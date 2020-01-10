@@ -7,8 +7,8 @@
   overflow: hidden;
   
 }
-.body-content .alert {
-  font-size: #{$alert-font-size/$body-content-text-font-size}em;
+.body-text .alert {
+  font-size: #{$alert-font-size/$body-text-font-size}em;
 }
 
 .alert-heading {
