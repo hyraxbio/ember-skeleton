@@ -5,6 +5,9 @@ table {
   border-collapse: collapse;
   border: 1px $table-border-style $table-border-color;
   font-size: 1em;
+  &.striped tr:nth-child(even) td {
+    background-color: #f4f4f4;
+  }
 }
 
 table th {
@@ -18,7 +21,6 @@ table th {
   padding: $table-cell-padding-y $table-cell-padding-x;
   border: 1px $table-border-style $table-header-cell-border-color;
   line-height: 100%;
-  
 }
 
 table td {
@@ -29,36 +31,16 @@ table td {
   padding: $table-cell-padding-y $table-cell-padding-x;
   font-size: 1em;
   border: 1px $table-border-style $table-border-color;
-  // border-bottom-width: 0;
 }
 
 .compact-table {
   tr td {
     background-color: #fff;
     border-color: #d9d9d9;
-    padding: 3px 3px;
+    padding: 3px 10px;
     svg {
       width: 20px;
       // TODO SVG dimensions
     }
-  }
-  /*---Make every second row a different colour---*/
-
-  &.striped tr:nth-child(even) td {
-    background-color: #f4f4f4;
-  }
-
-  tr.table-header td {
-    border-bottom-width: 0;
-  }
-
-  tr th {
-    background-color: #aaa;
-    color: #f9f9f9;
-    font-weight: 700;
-    border: 1px solid #888;
-    padding: 3px 10px;
-    height: inherit;
-    line-height: inherit;
   }
 }

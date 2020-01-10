@@ -1,5 +1,4 @@
 import Component from '@ember/component';
-import { observer } from '@ember/object';
 import { inject as service } from '@ember/service';
 import layout from '../../../templates/components/ember-skeleton/sidebar-layout/outer-wrapper';
 import { computed } from '@ember/object';
@@ -13,25 +12,16 @@ export default Component.extend({
   attributeBindings: ['dataTestId:data-test-id'],
   dataTestId: 'ember-skeleton-sidebar-layout',
 
-  didInsertElement: function() {
-    var self = this;
-    this.set('initialLoad', true);
-    if (this.get('emberSkeleton.hideContent')) {
-      setTimeout(function() {
-        if (self.get('initialLoad')) {
-          self.set('emberSkeleton.hideContent', false);
-        }
-      }, 20000);
-    }
-  },
-
   headerComponent: computed('emberSkeleton.settings.headerComponent', function() {
     return this.get('emberSkeleton.settings.headerComponent');
   }),
 
-  turnOffInitialLoad: observer('emberSkeleton.hideContent', function() {
-    if (this.get('emberSkeleton.hideContent') === false) {
-      this.set('initialLoad', false);
+  actions: {
+    toggleSidebarExpanded() {
+      console.log('togg')
+      this.toggleProperty('emberSkeleton.sidebarCollapsed');
+      localStorage.setItem('userSidebarCollapsed', this.get('emberSkeleton.sidebarCollapsed'));
+      this.set('emberSkeleton.sidebarToggled', true);
     }
-  }),
+  }
 });

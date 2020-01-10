@@ -14,7 +14,8 @@ export function humaniseString(params) {
     return string.toLowerCase();
   } else if (casing === "sentenceCase") {
     return toSentenceCase(string);
-
+  } else if (casing === "upperCase") {
+    return string.toUpperCase();
   } else {
     return toTitleCase(string);
   }

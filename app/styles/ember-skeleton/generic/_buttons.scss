@@ -11,6 +11,9 @@
   &:focus, &:active {
     outline: none;
   }
+  &:hover {
+    cursor: pointer;
+  }
   // svg {
   //   margin: 0;
   //   height: 16px;
@@ -235,7 +238,7 @@ input[type="button"] {
   }
 }
 
-button {
+.btn {
   cursor: pointer;
   display: inline-flex;
   align-items: center;

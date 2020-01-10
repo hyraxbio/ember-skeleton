@@ -81,6 +81,10 @@ Replaces underscores with spaces in the string, and applies one of three casing 
 
 **`// action required`**
 
+`{{ember-skeleton/humanise-string "Action_required" "upperCase"}}`
+
+**`// ACTION REQUIRED`**
+
 #### Usage in JavaScript
 
 ```
