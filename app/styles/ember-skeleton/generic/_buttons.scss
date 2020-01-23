@@ -107,6 +107,10 @@ $value in $theme-colors {
     &.flashing {
       animation: btn-flashing-#{$color} 3s infinite;
       -webkit-animation: btn-flashing-#{$color} 3s infinite;
+      svg {
+        animation: btn-flashing-svg-#{$color} 3s infinite;
+        -webkit-animation: btn-flashing-svg-#{$color} 3s infinite;
+      }
     }
   }
   @keyframes btn-flashing-#{$color} {
@@ -120,6 +124,18 @@ $value in $theme-colors {
     50% {background-color: #fff; color: $value}
     100% {background-color: $value; color: #fff}
   }
+
+  @keyframes btn-flashing-svg-#{$color} {
+    0% {fill: #fff}
+    50% {fill: $value}
+    100% {fill: #fff}
+  }
+
+  @-webkit-keyframes btn-flashing-svg-#{$color} {
+    0% {fill: #fff}
+    50% {fill: $value}
+    100% {fill: #fff}
+  }
 }
 
 @each $color,
@@ -129,6 +145,10 @@ $value in $theme-colors {
     &.flashing {
       animation: btn-outline-flashing-#{$color} 3s infinite;
       -webkit-animation: btn-outline-flashing-#{$color} 3s infinite;
+      svg {
+        animation: btn-outline-flashing-svg-#{$color} 3s infinite;
+        -webkit-animation: btn-outline-flashing-svg-#{$color} 3s infinite;
+      }
     }
   }
   @keyframes btn-outline-flashing-#{$color} {
@@ -138,9 +158,21 @@ $value in $theme-colors {
   }
 
   @-webkit-keyframes btn-outline-flashing-#{$color} {
-    0% {background-color: #fff; color: $value}
-    50% {background-color: $value; color: #fff}
-    100% {background-color: #fff; color: $value}
+    0% {background-color: #fff; color: $value; fill: $value}
+    50% {background-color: $value; color: #fff; fill: #fff}
+    100% {background-color: #fff; color: $value; fill: $value}
+  }
+
+  @keyframes btn-outline-flashing-svg-#{$color} {
+    0% {fill: $value}
+    50% {fill: #fff}
+    100% {fill: $value}
+  }
+
+  @-webkit-keyframes btn-outline-flashing-svg-#{$color} {
+    0% {fill: $value}
+    50% {fill: #fff}
+    100% {fill: $value}
   }
 }
 
