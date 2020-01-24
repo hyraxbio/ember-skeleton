@@ -22,8 +22,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^6.16.0",
-    "ember-cli-htmlbars": "^2.0.1",
-    "svg-repo": "git+ssh://git@github.com/andrew-paterson/svg-repo.git#master"
+    "ember-cli-htmlbars": "^2.0.1"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.3",
