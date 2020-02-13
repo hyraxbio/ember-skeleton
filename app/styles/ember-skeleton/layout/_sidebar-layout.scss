@@ -28,7 +28,7 @@
     overflow: hidden;
     margin: 0px;
     display: flex;
-    .sidebar {
+    .ember-skeleton-sidebar {
       height: 100%;
       flex-shrink: 0;
       min-width: $sidebar-expanded-min-width;
