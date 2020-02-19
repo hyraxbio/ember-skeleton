@@ -1,6 +1,6 @@
 {
   "name": "ember-skeleton",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^6.16.0",
+    "ember-cli-flash": "^1.8.0",
     "ember-cli-htmlbars": "^2.0.1"
   },
   "devDependencies": {
