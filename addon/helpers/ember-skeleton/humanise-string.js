@@ -8,16 +8,16 @@ export function humaniseString(params) {
     console.warn(`[Ember Skeleton] The humanise string function must receive a string as it's first argument. You passed an ${typeof string}.`);
     return;
   }
-  casing = casing || "titleCase";
+  casing = casing || "sentenceCase";
   string = string.replace(/_/g, ' ');
   if (casing === "lowerCase") {
     return string.toLowerCase();
-  } else if (casing === "sentenceCase") {
-    return toSentenceCase(string);
+  } else if (casing === "titleCase") {
+    return toTitleCase(string);
   } else if (casing === "upperCase") {
     return string.toUpperCase();
   } else {
-    return toTitleCase(string);
+    return toSentenceCase(string);
   }
 }
 
