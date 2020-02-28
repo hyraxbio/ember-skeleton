@@ -30,6 +30,9 @@ export function themeColorString(params, hash, defaultAssociations) {
   }
   var themeColor;
   stringObjects.forEach(stringObject => {
+    stringObject.matchStrings = stringObject.matchStrings.map(string => {
+      return string.toLowerCase();
+    });
     if (stringObject.matchStrings.indexOf(string) > -1) {
       themeColor = stringObject.returnString;
     }

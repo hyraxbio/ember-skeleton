@@ -5,7 +5,7 @@ export function emberSkeletonThemeIcon(params, hash, defaultAssociations) {
   var string = params[0];
   if (!string && !hash) { return; }
   hash = hash || {};
-  var defaultValue = hash.default || 'gray-medium';
+  var defaultValue = hash.default || 'svg-repo/icons/icon-info';
   if (!string) { return defaultValue; }
   string = string.toLowerCase();
   var stringObjects = defaultAssociations || hash.defaultAssociations || [];
@@ -26,16 +26,18 @@ export function emberSkeletonThemeIcon(params, hash, defaultAssociations) {
         matchStrings: [key]
       });
     }
-    
   }
-  var themeColor;
+  var themeIcon;
   stringObjects.forEach(stringObject => {
+    stringObject.matchStrings = stringObject.matchStrings.map(string => {
+      return string.toLowerCase();
+    });
     if (stringObject.matchStrings.indexOf(string) > -1) {
-      themeColor = stringObject.returnString;
+      themeIcon = stringObject.returnString;
     }
   });
-  themeColor = themeColor || defaultValue;
-  return themeColor;
+  themeIcon = themeIcon || defaultValue;
+  return themeIcon;
 }
 
 export default Helper.extend({
