@@ -34,6 +34,7 @@ div.wrapper.panel-layout {
 
   .text-column {
     max-width: 700px;
+    line-height: $text-column-line-height;
     @media (min-width: 480px) {
       p {
         text-align: justify;

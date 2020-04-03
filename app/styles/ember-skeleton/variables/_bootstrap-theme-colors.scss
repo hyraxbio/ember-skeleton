@@ -36,7 +36,8 @@ $theme-colors: map-merge((
   "gray-extra-light": $gray-extra-light,
   "gray-light":   $gray-light,
   "gray-medium":  $gray-medium,
-  "gray-dark":    $gray-dark
+  "gray-dark":    $gray-dark,
+  "white":        $white
 ), $theme-colors);
 
 // Set a specific jump point for requesting color jumps
