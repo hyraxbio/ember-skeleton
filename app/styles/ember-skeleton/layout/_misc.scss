@@ -69,3 +69,13 @@ div.wrapper  {
 .max-width-700px {
   max-width: 700px;
 }
+
+.text-column {
+  max-width: 700px;
+  line-height: $text-column-line-height;
+  @media (min-width: 480px) {
+    p {
+      text-align: justify;
+    }
+  }
+}
