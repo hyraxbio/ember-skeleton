@@ -40,8 +40,7 @@
 		bottomInset: inset 0px -3px 5px rgba(0,0,0,$opacity),
 		leftInset: inset 10px 0px 6px -6px rgba(0,0,0,$opacity),
 		rightInset: inset -10px 0px 6px -6px rgba(0,0,0,$opacity),
-    // bottomRight: 3px 3px 6px rgba(0,0,0,$opacity)
-    bottomRight: 0 1px 3px 0 rgba(0,0,0,0.16)
+    bottomRight: 0 1px 3px 0 rgba(0,0,0,$opacity)
   );
   $shadowValues: ();
   @each $shadowName in $shadowNames {
@@ -52,8 +51,6 @@
   }
   box-shadow: $shadowValues;
 }
-
-
 
 @mixin card-box-shadow($level: 1){
   @if ($level == 1) {

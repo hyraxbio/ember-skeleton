@@ -258,11 +258,33 @@ If there are no matches and no default is passed, the original string is returne
 
 ## Sidebar layout
 
+Includes a sidebar to the left, and a main content section to the right. The content is aligned to the left of the main content section.
+
 Invoked as below. If content header is true, the class `content-header` is added to the wrapper div, and the styles add additional padding to the top of the right hand section (The main section) allowing an additional fixed bar to be placed at the top of the section.
 
-    {{#ember-skeleton/sidebar-layout/outer-wrapper contentHeader=true}}`
+    {{#ember-skeleton/sidebar-layout/outer-wrapper contentHeader=true}}
     ...
     {{/ember-skeleton/sidebar-layout/outer-wrapper}}
+
+## Panel layout
+
+Created a layout with a horizontal panel spanning the full width of the screen. The content is centred within it. Invoked as below.
+
+    {{#ember-skeleton/panel-layout/outer-wrapper}}
+    ...
+    {{/ember-skeleton/panel-layout/outer-wrapper}}
+
+## Content wrapper
+
+To be used inside either of the they panel or sidebar layouts. Creates what you could think of as the main content area of the page, and implements text styles for "main content" text.
+
+Accepts one argument- the main title to be displayed on the page.
+
+    {{#ember-skeleton/panel-layout/outer-wrapper}}
+      {{#ember-skeleton/content-wrapper title=pageTitle}}
+        ...
+      {{/ember-skeleton/content-wrapper}}
+    {{/ember-skeleton/panel-layout/outer-wrapper}}
 
 # Styles
 
@@ -275,7 +297,27 @@ There are to stylesheets which need to be imported in `app/styles/app.scss`.
 @import 'ember-skeleton';
 ```
 
-## Fill and Stroke
+## Boostrap integration
+
+Bootstrap is used heavily, but not completely. The following components are used from Boostrap 4.1. Note that some of the original Boostrap stylesheets have been modified.
+
+### Bootstrap components
+
+[Alerts](https://getbootstrap.com/docs/4.1/components/alerts/)
+[Badge](https://getbootstrap.com/docs/4.1/components/badge/)
+[Buttons](https://getbootstrap.com/docs/4.1/components/buttons/)
+[List group](https://getbootstrap.com/docs/4.1/components/list-group/)
+
+### Bootstrap utilities
+
+[Borders](https://getbootstrap.com/docs/4.1/utilities/borders/)
+[Colours](https://getbootstrap.com/docs/4.1/utilities/colors/)
+
+## Flexbox styles
+
+There are flexbox related classes defined in `ember-skeleton/app/styles/layout/flex-layouts.scss`.
+
+## Fill and stroke styles
 
 The colour variants defined are extended to set the colour of both the fill and stroke properties. Example classes from the default bootstrap colour variants:
 
@@ -289,9 +331,9 @@ Note the following variables:
     $svg-foreground-graphic-fill
     $svg-foreground-graphic-stroke-color
 
-By adding the class `foreground-graphic` to any element inside an svg, the fill and stoke colours will be whatever the corresponding varaibles are set to (Default is `#fff`). 
+By adding the class `foreground-graphic` to any element inside an svg, the fill and stoke colours will be whatever the corresponding variables are set to (Default is `#fff`). 
 
-## Overlay background and fill classes
+### Overlay background and fill classes
 
 By default the following two sets of classes add a semi transparent css background that produce a semi transprent background. The number represents the opacity as a percentage.
 
@@ -351,6 +393,28 @@ The above examples would result in the following CSS:
     .overlay-fill-red-10 {
       background: rgba( 255,0,0 , 0.1 );
     }
+
+## Mixins
+
+### Box shadow
+
+The `box-shadow` mixin accepts two arguments- the position and opacity.
+
+The default opacity is 0.16.
+
+There are 9 positions available:
+
+`top`, `bottom`, `left`, `right`, `topInset`, `bottomInset`, `leftInset`, `rightInset`, `bottomRight`
+
+Add a single shadow with the default opacity.
+
+`@include box-shadow(bottomRight);`
+
+Multiple shadows can be added to one element, with a custom opacity.
+
+`@include box-shadow((leftInset, topInset, bottom), 0.2);`
+
+#
 
 Contributing
 ------------------------------------------------------------------------------
