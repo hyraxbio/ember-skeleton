@@ -56,8 +56,6 @@ You can make any component into a material card component by extending the mater
 
 When inserting the relevant component there are options.
 
-
-
 ## Helpers
 
 ### Humanise String
@@ -303,15 +301,15 @@ Bootstrap is used heavily, but not completely. The following components are used
 
 ### Bootstrap components
 
-[Alerts](https://getbootstrap.com/docs/4.1/components/alerts/)
-[Badge](https://getbootstrap.com/docs/4.1/components/badge/)
-[Buttons](https://getbootstrap.com/docs/4.1/components/buttons/)
-[List group](https://getbootstrap.com/docs/4.1/components/list-group/)
+* [Alerts](https://getbootstrap.com/docs/4.1/components/alerts/)
+* [Badge](https://getbootstrap.com/docs/4.1/components/badge/)
+* [Buttons](https://getbootstrap.com/docs/4.1/components/buttons/)
+* [List group](https://getbootstrap.com/docs/4.1/components/list-group/)
 
 ### Bootstrap utilities
 
-[Borders](https://getbootstrap.com/docs/4.1/utilities/borders/)
-[Colours](https://getbootstrap.com/docs/4.1/utilities/colors/)
+* [Borders](https://getbootstrap.com/docs/4.1/utilities/borders/)
+* [Colours](https://getbootstrap.com/docs/4.1/utilities/colors/)
 
 ## Flexbox styles
 
