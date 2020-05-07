@@ -10,6 +10,9 @@ Installation
 ember install ember-skeleton
 ```
 
+Requirements
+
+The addon `ember-cli-sass` must be installed.
 
 Usage
 ------------------------------------------------------------------------------
@@ -262,6 +265,15 @@ Invoked as below. If content header is true, the class `content-header` is added
     {{/ember-skeleton/sidebar-layout/outer-wrapper}}
 
 # Styles
+
+The styles are implemented using `SASS`, and thus the `ember-cli-sass` addon is required. Install by running `ember install ember-cli-sass`.
+
+There are to stylesheets which need to be imported in `app/styles/app.scss`.
+
+```
+@import "ember-skeleton-variables";
+@import 'ember-skeleton';
+```
 
 ## Fill and Stroke
 
