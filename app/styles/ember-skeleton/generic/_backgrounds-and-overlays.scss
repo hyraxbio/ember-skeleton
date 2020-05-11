@@ -1,0 +1,26 @@
+@each $color, $value in $theme-colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+@each $colorName, $rgbValue in $overlay-colors {
+  @each $level in $overlay-levels {
+    .overlay-bg-#{$colorName}-#{$level} {
+      $cssValue: "rgba("#{$rgbValue}","#{$level/100}")";
+      background: #{$cssValue};
+      fill: #{$cssValue};
+    }
+  }
+}
+
+@each $colorName, $rgbValue in $overlay-colors {
+  @each $level in $overlay-levels {
+    .overlay-fill-#{$colorName}-#{$level} {
+      $cssValue: "rgba("#{$rgbValue}","#{$level/100}")";
+      fill: #{$cssValue};
+    }
+  }
+}

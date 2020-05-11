@@ -1,0 +1,67 @@
+// BEGIN-SNIPPET basic-style-imports.scss
+@import "ember-skeleton-variables";
+@import 'ember-skeleton';
+// END-SNIPPET
+
+// BEGIN-SNIPPET overriding-default-scss-vars.scss
+$page-header-font-size: 3em;
+$page-header-color: #0097D3;
+
+@import "ember-skeleton-variables";
+@import 'ember-skeleton';
+// END-SNIPPET
+
+// BEGIN-SNIPPET adding-cutom-bootstrap-colours.scss
+$theme-colors: (
+  "twitter":      #1DA1F2,
+  "facebook":     #1877F2,
+  "reddit":       #FF4500,
+  "tripadvisor":  #34E0A1,
+);
+@import "ember-skeleton-variables";
+@import 'ember-skeleton';
+// END-SNIPPET
+
+// BEGIN-SNIPPET custom-overlay-colors.scss
+$overlay-levels: 10,30,50,80;
+
+$overlay-colours: map-merge((
+  "red": "255,0,0",
+  "green": "0,255,0"
+  "blue": "0,0,255"
+), $overlay-colours);
+// END-SNIPPET
+
+// BEGIN-SNIPPET extending-spacer-values.scss
+$spacer-xxxl: 48px;
+$spacer-xxxxl: 72px;
+
+$spacers: (
+  xxxl: $spacer-xxxl,
+  xxxxl: $spacer-xxxxl,
+);
+
+@import "ember-skeleton-variables";
+@import 'ember-skeleton';
+// END-SNIPPET
+
+// BEGIN-SNIPPET default-spacers.scss
+$spacer-sm: 3px !default;
+$spacer-md: 6px !default;
+$spacer-lg: 12px !default;
+$spacer-xl: 24px !default;
+$spacer-xxl: 36px !default;
+// END-SNIPPET
+
+// BEGIN-SNIPPET text-align-classes.scss
+.text-align-left
+.text-align-center
+.text-align-right
+.text-align-justify
+// END-SNIPPET
+
+// BEGIN-SNIPPET text-column-variables.scss
+$text-column-line-height: 150% !default;
+$text-column-max-width: 700px !default;
+$text-column-justify-paragraph-min-width: 480px !default;
+// END-SNIPPET

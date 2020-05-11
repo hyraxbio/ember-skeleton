@@ -1,6 +1,4 @@
-$body-text-form-label-color: $body-text-color !default;
-$body-text-form-label-float: none !default;
-$body-text-form-label-font-weight: 400 !default;
+$svg-data-uri-icon-tick: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 28"  class="single-colour tick"><path fill="%23fff" d="M13 28c-0.7 0-1.3-0.2-1.9-0.7l-10-8c-1.3-1-1.5-2.9-0.5-4.2 1-1.3 2.9-1.5 4.2-0.5l7.9 6.3L32.9 0.9c1.2-1.2 3.1-1.2 4.2 0 1.2 1.2 1.2 3.1 0 4.2l-22 22C14.5 27.7 13.8 28 13 28z"/></svg>') !default;
 
 $label-color: #444 !default;
 $label-font-family: $main-font-family !default;
@@ -38,5 +36,15 @@ $input-side-padding: $spacer-md !default;
 $input-top-bottom-padding: $spacer-sm !default;
 $input-border-radius: 3px !default;
 
+$radio-checkbox-width-height: 18px !default;
+$radio-checkbox-selected-background-color: #bbb !default;
+$radio-checkbox-hover-background-color: #eee !default;
+$radio-button-checkbox-width-height: 18px !default;
 $radio-checkbox-selected-background-size: 11px !default;
 $radio-checkbox-selected-background-position: center 3px !default;
+
+$fieldset-border-width: 2px !default;
+$fieldset-border-style: solid !default;
+$fieldset-border-color: green !default;
+$fieldset-border-radius: 3px !default;
+$fieldset-background-color: #eee !default;

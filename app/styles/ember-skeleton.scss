@@ -5,14 +5,19 @@
 @import "ember-skeleton/generic/_list-group";
 @import "ember-skeleton/generic/_badge";
 @import "ember-skeleton/generic/_alert";
-@import "ember-skeleton/generic/_bits-and-pieces";
+@import "ember-skeleton/generic/_misc";
 @import "ember-skeleton/generic/_text";
 @import "ember-skeleton/generic/_buttons";
 @import "ember-skeleton/generic/_tables";
 @import "ember-skeleton/generic/_inputs-and-labels";
 @import "ember-skeleton/generic/_bootstrap-tooltips";
 @import "ember-skeleton/generic/_box-arrows";
-@import "ember-skeleton/bootstrap/utilities/_borders";
+@import "ember-skeleton/generic/_borders";
+@import "ember-skeleton/generic/_card-box-shadow";
+@import "ember-skeleton/generic/_svg.scss";
+@import "ember-skeleton/generic/_backgrounds-and-overlays.scss";
+
+
 @import "ember-skeleton/layout/_utilities";
 @import "ember-skeleton/layout/_flex-layouts";
 @import "ember-skeleton/layout/_header";

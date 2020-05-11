@@ -53,8 +53,8 @@ $svg-foreground-graphic-stroke-color: #fff !default;
 
 $overlay-levels: 10,30,50 !default;
 
-$overlay-colours: () !default;
-$overlay-colours: map-merge((
+$overlay-colors: () !default;
+$overlay-colors: map-merge((
   "black": "0,0,0",
   "white": "255,255,255"
-), $overlay-colours);
+), $overlay-colors);

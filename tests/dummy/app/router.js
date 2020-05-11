@@ -1,16 +1,21 @@
-import EmberRouter from '@ember/routing/router';
+import AddonDocsRouter, { docsRoute } from 'ember-cli-addon-docs/router';
 import config from './config/environment';
 
-const Router = EmberRouter.extend({
+const Router = AddonDocsRouter.extend({
   location: config.locationType,
-  rootURL: config.rootURL
+  rootURL: config.rootURL,
 });
 
 Router.map(function() {
-  // Routes for tests
-  this.route('simple-layout');
-  this.route('sidebar-layout');
-  this.route('theme-color-string-acceptance');
+  docsRoute(this, function() { 
+    /* Your docs routes go here */ 
+    this.route('not-found', { path: '/*path' });
+    this.route('helpers');
+    this.route('styles');
+    this.route('layout-components');
+    this.route('utility-components');
+  });
+
 });
 
 export default Router;

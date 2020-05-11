@@ -159,7 +159,7 @@
 }
 
 @mixin stroke-variant($bg) {
-  fill: $bg;
+  stroke: $bg;
 }
 
 @mixin bg-variant($parent, $color) {

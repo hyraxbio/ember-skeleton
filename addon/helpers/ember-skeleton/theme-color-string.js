@@ -5,40 +5,45 @@ export function themeColorString(params, hash, defaultAssociations) {
   var string = params[0];
   if (!string && !hash) { return; }
   hash = hash || {};
-  var defaultValue = hash.default || 'gray-medium';
-  if (!string) { return defaultValue; }
+
+  var defaultFallBack = (defaultAssociations ||[]).find(item => {
+    return item.fallback;
+  });
+  var fallBackColor = hash.default || defaultFallBack;
+
+  if (!string) { return fallBackColor; }
   string = string.toLowerCase();
-  var stringObjects = defaultAssociations || hash.defaultAssociations || [];
+  defaultAssociations = defaultAssociations || hash.defaultAssociations || [];
+  var hashAssociations = [];
   for (var key in hash) {
-    stringObjects.forEach(stringObject => {
-      if (stringObject.matchStrings.indexOf(key) > -1) {
-        stringObject.matchStrings.splice(stringObject.matchStrings.indexOf(key));
-      }
+    var existingAssociation = hashAssociations.find(item => {
+      return item.returnString === hash[key];
     });
-    var currentObject = stringObjects.find(stringObject => {
-      return stringObject.returnString === hash[key];
-    });
-    if (currentObject) {
-      currentObject.matchStrings = currentObject.matchStrings.concat([key]);
+    if (existingAssociation) {
+      existingAssociation.matchStrings.push(key);
     } else {
-      stringObjects.push({
+      hashAssociations.push({
         returnString: hash[key],
         matchStrings: [key]
       });
     }
-    
   }
-  var themeColor;
-  stringObjects.forEach(stringObject => {
-    stringObject.matchStrings = stringObject.matchStrings.map(string => {
-      return string.toLowerCase();
-    });
-    if (stringObject.matchStrings.indexOf(string) > -1) {
-      themeColor = stringObject.returnString;
+  if (findReturnString(hashAssociations, string)) {
+    return findReturnString(hashAssociations, string);
+  } else if (findReturnString(defaultAssociations, string)) {
+   return findReturnString(defaultAssociations, string);
+  } else {
+    if (!fallBackColor) {
+      console.warn('[ember-skeleton/theme-color-string] You did not pass a fallback colour to the helper, and you do not have a fallback option set in the themeColorStringDefaults array in ember-skeleton.');
     }
-  });
-  themeColor = themeColor || defaultValue;
-  return themeColor;
+    return fallBackColor;
+  }
+}
+
+function findReturnString(array, string) {
+  return (array.find(item => {
+    return item.matchStrings.indexOf(string) > -1;
+  }) || {}).returnString;
 }
 
 export default Helper.extend({

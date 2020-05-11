@@ -26,6 +26,7 @@ a,
     text-decoration: $link-hover-text-decoration;
     cursor: pointer;
   }
+  &.no-underline,
   &.no-underline:hover {
     text-decoration: none;
   }
@@ -112,15 +113,57 @@ h4 {
   sup, sub {
     font-size: 0.7em;
   }
-  // a:hover {
-  //   text-decoration: $body-text-link-hover-text-decoration;
-  // }
 }
 
 .text-larger {
-  font-size: 1.2em;
+  font-size: $text-larger-size;
 }
 
 .text-smaller {
-  font-size: 0.9em;
+  font-size: $text-smaller-size;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.text-column {
+  max-width: $text-column-max-width;
+  line-height: $text-column-line-height;
+  @if $text-column-justify-paragraph-min-width {
+    @media (min-width: $text-column-justify-paragraph-min-width) {
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  @include text-emphasis-variant(".text-#{$color}", $value);
+}
+
+.monospace {
+  font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
+}
+
+.list-style-none {
+  list-style: none;
+  li, 
+  .body-text & li {
+    padding-left: 0;
+    margin-left: 0;
+  }
 }

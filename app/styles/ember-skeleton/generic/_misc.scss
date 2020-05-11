@@ -1,0 +1,32 @@
+.hidden {
+  display:none !important;
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+hr {
+  border-width: 0;
+  border-top: $hr-border-top-width solid $hr-border-top-color;
+  margin: 1em 0;
+}
+
+div.pop-up-box {
+  padding: 15px;
+  background: #fff;
+  @include box-shadow-bottom-right;
+  border: 1px solid #bbb;
+  border-radius: $button-border-radius;
+  margin: 10px 0;
+}
+
+
+
+

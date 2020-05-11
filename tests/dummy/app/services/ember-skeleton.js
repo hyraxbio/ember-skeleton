@@ -17,7 +17,8 @@ export default Service.extend({
     },
     {
       returnString: 'gray-medium',
-      matchStrings: ['pending']
+      matchStrings: ['pending'],
+      fallback: true
     }];
   },
   headerComponent: 'ember-skeleton/header',
@@ -25,5 +26,5 @@ export default Service.extend({
   footerComponent: 'ember-skeleton/footer',
   mainNavItemsComponent: 'main-nav-items',
   sidebarComponent: 'ember-skeleton/sidebar-layout/sidebar',
-  defaultThemeColorString: 'gray-medium',
+  fallbackThemeColor: 'gray-dark',
 });
