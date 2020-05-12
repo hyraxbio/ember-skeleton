@@ -1,0 +1,28 @@
+// BEGIN-SNIPPET adding-cutom-bootstrap-colours.scss
+$theme-colors: (
+  "twitter":      #1DA1F2,
+  "facebook":     #1877F2,
+  "reddit":       #FF4500,
+  "tripadvisor":  #34E0A1,
+);
+// END-SNIPPET
+
+// BEGIN-SNIPPET custom-overlay-colors.scss
+$overlay-levels: 10,30,50,80;
+
+$overlay-colors: (
+  "red": "255,0,0",
+  "green": "0,255,0",
+  "blue": "0,0,255",
+);
+// END-SNIPPET
+
+// BEGIN-SNIPPET extending-spacer-values.scss
+$spacer-xxxl: 48px;
+$spacer-xxxxl: 72px;
+
+$spacers: (
+  xxxl: $spacer-xxxl,
+  xxxxl: $spacer-xxxxl,
+);
+// END-SNIPPET

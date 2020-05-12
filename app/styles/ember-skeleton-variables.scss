@@ -1,6 +1,6 @@
 @import "ember-skeleton/variables/_bootstrap-theme-colors";
 @import "ember-skeleton/functions/_functions";
-@import "ember-skeleton/variables/_utilities";
+@import "ember-skeleton/variables/_spacers";
 @import "ember-skeleton/variables/_alert";
 @import "ember-skeleton/variables/_borders";
 @import "ember-skeleton/variables/_badge";
@@ -17,6 +17,6 @@
 @import "ember-skeleton/variables/_inputs-and-labels";
 @import "ember-skeleton/variables/_main-nav";
 
-@import "ember-skeleton/mixins/_misc";
+@import "ember-skeleton/mixins/_box-shadow";
+@import "ember-skeleton/mixins/_material-card-box-shadow";
 @import "ember-skeleton/mixins/_element-colour-variants";
-@import "ember-skeleton/mixins/_border-radius.scss";

@@ -156,13 +156,13 @@ h4 {
 }
 
 .monospace {
-  font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace !important;
 }
 
-.list-style-none {
+.list-style-none,
+.body-text .list-style-none {
   list-style: none;
-  li, 
-  .body-text & li {
+  li {
     padding-left: 0;
     margin-left: 0;
   }

@@ -1,6 +1,6 @@
 
-@import "ember-skeleton/layout/_html-and-body-elements";
-@import "ember-skeleton/generic/_spinning-svg";
+@import "ember-skeleton/layout/_layout-basics";
+@import "ember-skeleton/generic/_spinning-animation";
 
 @import "ember-skeleton/generic/_list-group";
 @import "ember-skeleton/generic/_badge";
@@ -15,14 +15,14 @@
 @import "ember-skeleton/generic/_borders";
 @import "ember-skeleton/generic/_card-box-shadow";
 @import "ember-skeleton/generic/_svg.scss";
-@import "ember-skeleton/generic/_backgrounds-and-overlays.scss";
+@import "ember-skeleton/generic/_backgrounds.scss";
+@import "ember-skeleton/generic/_overlays.scss";
+@import "ember-skeleton/generic/_flexbox";
+@import "ember-skeleton/generic/_spacer-margin-padding";
+@import "ember-skeleton/generic/_spacer-height-width";
 
-
-@import "ember-skeleton/layout/_utilities";
-@import "ember-skeleton/layout/_flex-layouts";
 @import "ember-skeleton/layout/_header";
 @import "ember-skeleton/layout/_footer";
-@import "ember-skeleton/layout/_misc";
 @import "ember-skeleton/layout/_sidebar-layout";
 @import "ember-skeleton/layout/_panel-layout";
 @import "ember-skeleton/layout/_main-nav";

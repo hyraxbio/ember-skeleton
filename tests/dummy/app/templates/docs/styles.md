@@ -28,19 +28,27 @@ Bootstrap is used heavily, but not completely. The following components are used
 * [Borders and border radius](https://getbootstrap.com/docs/4.1/utilities/borders/)
 * [Colours](https://getbootstrap.com/docs/4.1/utilities/colors/)
 
-### Cutomising the default boostrap theme colours
+## Theme colours
 
-By default, bootstrap includes a map of scss colours in the `$theme-colors` variable. See `app/styles/ember-skeleton/variables/_bootstrap-theme-colors.scss`. The default `$theme-colors` map includes the following colours: 
+A map of theme colours colours in the `$theme-colors` variable. This is borrowed from Bootstrap.
 
-    "primary", "secondary", "success", "info", "warning", "danger", "light", "dark", "gray-extra-light", "gray-light", "gray-medium:, "gray-dark", "white"
+{{docs-snippet name="default-bootstrap-colours.scss" language="sass"}}
 
-When generating CSS, bootstrap will include a version of each of the classes below for each colour defined in `$theme-colors`:
+### Theme color CSS selectors
 
-    alert-*, badge-*, bg-*, text-*, list-group-item-*, fill-*, stroke-*, btn-*, btn-outline-*, 
+The Ember Skeleton `SASS` code will create multiple CSS style rules for each of the selectors listed below- one for each item in the `$theme-colors` map. Each rule will apply the colour in the appropriate way.
 
-For example, with the Boostrap text component, the following classes will be created. Bootstrap SCSS will apply the mapped colour as the colour of the text.
+    .alert-*
+    .badge-*
+    .bg-*
+    .text-*
+    .list-group-item-*
+    .fill-*
+    .stroke-*
+    .btn-*
+    .btn-outline-*
 
-    text-primary, .text-secondary, .text-success, .text-info, .text-warning, .text-danger, .text-light, .text-dark, .text-gray-extra-light, .text-gray-light, .text-gray-medium, .text-gray-dark, .text-white
+### Text colours 
 
 {{#docs-demo as |demo|}}
   {{#demo.example name="text-colour-variants.hbs"}}
@@ -61,9 +69,7 @@ For example, with the Boostrap text component, the following classes will be cre
   {{demo.snippet "text-colour-variants.hbs"}}
 {{/docs-demo}}
 
-For a second example, with the Boostrap badge component, the following classes will be created. Bootstrap SCSS will apply the mapped colour as the background of the badge.
-
-    badge-primary, .badge-secondary, .badge-success, .badge-info, .badge-warning, .badge-danger, .badge-light, .badge-dark, .badge-gray-extra-light, .badge-gray-light, .badge-gray-medium, .badge-gray-dark, .badge-white
+### Badges
 
 {{#docs-demo as |demo|}}
   {{#demo.example name="badge-colour-variants.hbs"}}
@@ -82,6 +88,109 @@ For a second example, with the Boostrap badge component, the following classes w
     <div class="badge badge-white">badge-white</div>
   {{/demo.example}}
   {{demo.snippet "badge-colour-variants.hbs"}}
+{{/docs-demo}}
+
+### Alerts
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="alert-colour-variants.hbs"}}
+    <div class="alert alert-primary" role="alert">
+      A simple primary alert—check it out!
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      A simple secondary alert—check it out!
+    </div>
+    <div class="alert alert-success" role="alert">
+      A simple success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+      A simple danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+      A simple warning alert—check it out!
+    </div>
+    <div class="alert alert-info" role="alert">
+      A simple info alert—check it out!
+    </div>
+    <div class="alert alert-light" role="alert">
+      A simple light alert—check it out!
+    </div>
+    <div class="alert alert-dark" role="alert">
+      A simple dark alert—check it out!
+    </div>
+    {{/demo.example}}
+  {{demo.snippet "alert-colour-variants.hbs"}}
+{{/docs-demo}}
+
+### Buttons
+
+The `.btn` class applies general button styles, and `btn-{{theme-color}}` or `btn-outline-{{theme-color}}` applies a theme colour. The class `flashing` will cause the button to flash between outline state to normal state.
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="button-colour-variants.hbs"}}
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+    {{/demo.example}}
+  {{demo.snippet "button-colour-variants.hbs"}}
+{{/docs-demo}}
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="button-outline-colour-variants.hbs"}}
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+  {{/demo.example}}
+  {{demo.snippet "button-outline-colour-variants.hbs"}}
+{{/docs-demo}}
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="flashing-button.hbs"}}
+    <button class="btn btn-primary flashing">Flashing button</button>
+  {{/demo.example}}
+  {{demo.snippet "flashing-button.hbs"}}
+{{/docs-demo}}
+
+### List groups
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="list-group-general.hbs"}}
+    <div class="list-group">
+      <div class="list-group-item"><code>.list-group-item</code></div>
+      <div class="list-group-item list-group-item-action" role="button"><code>.list-group-item.list-group-item-action</code></div>
+      <div class="list-group-item list-group-item-action active" role="button"><code>.list-group-item.list-group-item-action.active</code></div>
+      <div class="list-group-item list-group-item-action disabled" role="button"><code>.list-group-item.list-group-item-action.disabled</code></div>
+    </div>
+  {{/demo.example}}
+  {{demo.snippet "list-group-general.hbs"}}
+{{/docs-demo}}
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="list-group-theme-colours.hbs"}}
+    <ul class="list-group list-style-none">
+      <li class="list-group-item list-group-item-action monospace list-style-none" role="button">.list-group-item.list-group-item-action</li>
+      <li class="list-group-item list-group-item-action list-group-item-primary monospace" role="button">.list-group-item.list-group-item-action.list-group-item-primary</li>
+      <li class="list-group-item list-group-item-action list-group-item-secondary monospace" role="button">.list-group-item.list-group-item-action.list-group-item-secondary</li>
+      <li class="list-group-item list-group-item-action list-group-item-success monospace" role="button">.list-group-item.list-group-item-action.list-group-item-success</li>
+      <li class="list-group-item list-group-item-action list-group-item-danger monospace" role="button">.list-group-item.list-group-item-action.list-group-item-danger</li>
+      <li class="list-group-item list-group-item-action list-group-item-warning monospace" role="button">.list-group-item.list-group-item-action.list-group-item-warning</li>
+      <li class="list-group-item list-group-item-action list-group-item-info monospace" role="button">.list-group-item.list-group-item-action.list-group-item-info</li>
+      <li class="list-group-item list-group-item-action list-group-item-light monospace" role="button">.list-group-item.list-group-item-action.list-group-item-light</li>
+      <li class="list-group-item list-group-item-action list-group-item-dark monospace" role="button">.list-group-item.list-group-item-action.list-group-item-dark</li>
+    </ul>
+  {{/demo.example}}
+  {{demo.snippet "list-group-theme-colours.hbs"}}
 {{/docs-demo}}
 
 Custom colours can be added to this map, by defining your own `$theme-colors` map *before* importing `ember-skeleton-variables`.
@@ -158,17 +267,6 @@ The `$overlay-colors` map can be extended in a similar way to `$theme-colors`. A
   {{demo.snippet "custom-overlay-colours.hbs"}}
 {{/docs-demo}}
 
-### Flashing buttons
-
-Add the class `flashing` to any element with the `btn` and `btn-*` classes, and it will flash form outline state to normal state.
-
-{{#docs-demo as |demo|}}
-  {{#demo.example name="flashing-button.hbs"}}
-    <button class="btn btn-primary flashing">Flashing button</button>
-  {{/demo.example}}
-  {{demo.snippet "flashing-button.hbs"}}
-{{/docs-demo}}
-
 ### Fill and stroke colours
 
 The Bootstap theme colours have are extended to incldue `fill` and `stroke`, for application to SVGs.
@@ -196,26 +294,6 @@ Note the following variables:
     $svg-foreground-graphic-stroke-color
 
 By adding the class `foreground-graphic` to any element inside an svg, the fill and stoke colours will be whatever the corresponding variables are set to (Default is `#fff`). 
-
-## Mixins
-
-### Box shadow
-
-The `box-shadow` mixin accepts two arguments- the position and opacity.
-
-The default opacity is 0.16.
-
-There are 9 positions available:
-
-`top`, `bottom`, `left`, `right`, `topInset`, `bottomInset`, `leftInset`, `rightInset`, `bottomRight`
-
-Add a single shadow with the default opacity.
-
-`@include box-shadow(bottomRight);`
-
-Multiple shadows can be added to one element, with a custom opacity.
-
-`@include box-shadow((leftInset, topInset, bottom), 0.2);`
 
 ## Spacers
 
@@ -374,7 +452,6 @@ Add additional spacers to the `$spacers` map in your `scss` code, *before* you i
       <div class="height-xxxxl width-xxxxl bg-gray-dark"></div>
     </div>
   {{/demo.example}}
-
   {{demo.snippet "extending-spacer-values.scss" label="scss"}}
   {{demo.snippet
     "extending-spacers.hbs"
@@ -433,7 +510,10 @@ The `.body-text` class will be applied to any content wrapped in the `ember-skel
 
 The following classes apply the corresponding value to the `text-align` property.
 
-{{docs-snippet name="text-align-classes.scss"}}
+    .text-align-left
+    .text-align-center
+    .text-align-right
+    .text-align-justify
 
 ### Text smaller and text larger 
 
@@ -490,6 +570,39 @@ The `.faux-link` class will apply all link styles to the element.
   {{demo.snippet "card-box-shaow-default.scss"}}
 {{/docs-demo}}
 
+## Box arrows
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="box-arrows.scss"}}
+      <div class="box-arrow arrow-direction-up arrow-position-left padding-lg border border-danger margin-bottom-lg bg-gray-light">
+        .box-arrow.arrow-direction-up.arrow-position-left
+      </div>
+      <div class="box-arrow arrow-direction-left arrow-position-top padding-lg border margin-bottom-lg">
+        .box-arrow.arrow-direction-left.arrow-position-top
+      </div>
+      <div class="box-arrow arrow-direction-down arrow-position-right padding-lg border margin-bottom-lg">
+        .box-arrow.arrow-direction-left.arrow-position-top
+      </div>
+      <div class="box-arrow arrow-direction-right arrow-position-bottom padding-lg border margin-bottom-lg">
+        .box-arrow.arrow-direction-left.arrow-position-top
+      </div>
+    {{/demo.example}}
+  {{demo.snippet "box-arrows.scss"}}
+{{/docs-demo}}
+
+# Spinner
+
+Any element with the classes `.spinner.on` will have a spinning animation.
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="spinning-badge.hbs"}}
+      <div class="spinner on badge badge-success">
+        .spinner.on
+      </div>
+    {{/demo.example}}
+  {{demo.snippet "spinning-badge.hbs"}}
+{{/docs-demo}}
+
 # Miscellaneous classes
 
     .inline-block
@@ -511,3 +624,109 @@ Applies `background-color: transparent` to the element.
     .hover-pointer 
 
 The cursor will be a pointer on hover.
+
+# Other
+
+All elements with `role="button"` will have `cursor: pointer` in hover state.
+
+All elements have `box-sizing: border-box`.
+
+## Mixins
+
+The following mixins can be called from anywhere in your `SASS` code _after_ importing `ember-skeleton-variables`.
+
+### Box shadow
+
+The `box-shadow` mixin accepts two arguments- the position and opacity.
+
+The default opacity is `0.16`.
+
+There are 12 positions available:
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="box-shadow-mixin-examples.hbs"}}
+    <div class="box-shadow-demo-top padding-lg margin-y-xl border">
+      <code>@include .box-shadow(top)</code>
+    </div>
+    <div class="box-shadow-demo-bottom padding-lg margin-y-xl border">
+      <code>@include .box-shadow(bottom)</code>
+    </div>
+    <div class="box-shadow-demo-left padding-lg margin-y-xl border">
+      <code>@include .box-shadow(left)</code>
+    </div>
+    <div class="box-shadow-demo-right padding-lg margin-y-xl border">
+      <code>@include .box-shadow(right)</code>
+    </div>
+    <div class="box-shadow-demo-topInset padding-lg margin-y-xl border">
+      <code>@include .box-shadow(topInset)</code>
+    </div>
+    <div class="box-shadow-demo-bottomInset padding-lg margin-y-xl border">
+      <code>@include .box-shadow(bottomInset)</code>
+    </div>
+    <div class="box-shadow-demo-leftInset padding-lg margin-y-xl border">
+      <code>@include .box-shadow(leftInset)</code>
+    </div>
+    <div class="box-shadow-demo-rightInset padding-lg margin-y-xl border">
+      <code>@include .box-shadow(rightInset)</code>
+    </div>
+    <div class="box-shadow-demo-bottomRight padding-lg margin-y-xl border">
+      <code>@include .box-shadow(bottomRight)</code>
+    </div>
+    <div class="box-shadow-demo-topRight padding-lg margin-y-xl border">
+      <code>@include .box-shadow(topRight)</code>
+    </div>
+    <div class="box-shadow-demo-bottomLeft padding-lg margin-y-xl border">
+      <code>@include .box-shadow(bottomLeft)</code>
+    </div>
+    <div class="box-shadow-demo-topLeft padding-lg margin-y-xl border">
+      <code>@include .box-shadow(topLeft)</code>
+    </div>
+  {{/demo.example}}
+  {{demo.snippet "box-shadow-mixin-usage.scss" label="scss"}}
+  {{demo.snippet
+    "box-shadow-mixin-examples.hbs"
+    label="hbs"
+    language="htmlbars"
+  }}
+{{/docs-demo}}
+
+The mixin can be given a list of positions to add multiple box shadows to one element.
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="box-shadow-mixin-multiple-examples.hbs"}}
+    <div class="box-shadow-demo-multiple padding-lg margin-y-xl border">
+      <code>@include box-shadow(topInset, rightInset, bottomInset, leftInset);</code>
+    </div>
+    {{/demo.example}}
+  {{demo.snippet "box-shadow-mixin-mutliple.scss" label="scss"}}
+  {{demo.snippet
+    "box-shadow-mixin-multiple-examples.hbs"
+    label="hbs"
+    language="htmlbars"
+  }}
+{{/docs-demo}}
+
+Opacity can also be passed as the second argument. The default is `0.16`.
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="box-shadow-mixin-opacity-examples.hbs"}}
+    <div class="box-shadow-demo-bottomRight-opacity-10 padding-lg margin-y-xl border">
+      <code>@include box-shadow(bottomRight, 0.1);</code>
+    </div>
+    <div class="box-shadow-demo-bottomRight-opacity-30 padding-lg margin-y-xl border">
+      <code>@include box-shadow(bottomRight, 0.3);</code>
+    </div>
+    <div class="box-shadow-demo-bottomRight-opacity-50 padding-lg margin-y-xl border">
+      <code>@include box-shadow(bottomRight, 0.5);</code>
+    </div>
+    <div class="box-shadow-demo-bottomRight-opacity-70 padding-lg margin-y-xl border">
+      <code>@include box-shadow(bottomRight, 0.7);</code>
+    </div>
+    {{/demo.example}}
+  {{demo.snippet "box-shadow-mixin-opacity.scss" label="scss"}}
+  {{demo.snippet
+    "box-shadow-mixin-opacity-examples.hbs"
+    label="hbs"
+    language="htmlbars"
+  }}
+{{/docs-demo}}

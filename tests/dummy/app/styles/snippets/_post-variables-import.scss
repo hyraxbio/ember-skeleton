@@ -1,0 +1,59 @@
+// BEGIN-SNIPPET box-shadow-mixin-usage.scss
+.box-shadow-demo-top {
+  @include box-shadow(top);
+}
+.box-shadow-demo-bottom {
+  @include box-shadow(bottom);
+}
+.box-shadow-demo-left {
+  @include box-shadow(left);
+}
+.box-shadow-demo-right {
+  @include box-shadow(right);
+}
+.box-shadow-demo-topInset {
+  @include box-shadow(topInset);
+}
+.box-shadow-demo-bottomInset {
+  @include box-shadow(bottomInset);
+}
+.box-shadow-demo-leftInset {
+  @include box-shadow(leftInset);
+}
+.box-shadow-demo-rightInset {
+  @include box-shadow(rightInset);
+}
+.box-shadow-demo-bottomRight {
+  @include box-shadow(bottomRight);
+}
+.box-shadow-demo-topRight {
+  @include box-shadow(topRight);
+}
+.box-shadow-demo-bottomLeft {
+  @include box-shadow(bottomLeft);
+}
+.box-shadow-demo-topLeft {
+  @include box-shadow(topLeft);
+}
+// END-SNIPPET
+
+// BEGIN-SNIPPET box-shadow-mixin-mutliple.scss
+.box-shadow-demo-multiple {
+  @include box-shadow((topInset, rightInset, bottomInset, leftInset));
+}
+// END-SNIPPET
+
+// BEGIN-SNIPPET box-shadow-mixin-opacity.scss
+.box-shadow-demo-bottomRight-opacity-10 {
+  @include box-shadow(bottomRight, 0.1);
+}
+.box-shadow-demo-bottomRight-opacity-30 {
+  @include box-shadow(bottomRight, 0.3);
+}
+.box-shadow-demo-bottomRight-opacity-50 {
+  @include box-shadow(bottomRight, 0.5);
+}
+.box-shadow-demo-bottomRight-opacity-70 {
+  @include box-shadow(bottomRight, 0.7);
+}
+// END-SNIPPET

@@ -1,5 +1,0 @@
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .bottom-row {
-    flex-shrink: 0; // Causes issues with auto scroll and stops wormhole elements from scrolling along witht he content.
-  }
-}

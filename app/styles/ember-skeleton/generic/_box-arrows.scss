@@ -123,3 +123,21 @@
 .box-arrow.arrow-position-bottom:before {
 	margin-bottom: -1px;
 }
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color}.box-arrow.arrow-direction-up:after {
+    border-bottom-color: $value;
+  }
+
+  .bg-#{$color}.box-arrow.arrow-direction-left:after {
+    border-right-color: $value;
+  }
+
+  .bg-#{$color}.box-arrow.arrow-direction-down:after {
+    border-top-color: $value;
+  }
+
+  .bg-#{$color}.box-arrow.arrow-direction-right:after {
+    border-left-color: $value;
+  }
+}

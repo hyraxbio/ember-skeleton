@@ -16,7 +16,7 @@
   	width: 100%;
   	top: $header-height;
   	z-index: $sidebar-layout-top-bar-z-index;
-  	@include box-shadow-bottom;
+  	@include box-shadow(bottom);
   }
 
   &.content-header div.main {

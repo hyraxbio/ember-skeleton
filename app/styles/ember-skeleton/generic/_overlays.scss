@@ -1,11 +1,3 @@
-@each $color, $value in $theme-colors {
-  @include bg-variant(".bg-#{$color}", $value);
-}
-
-.bg-transparent {
-  background-color: transparent !important;
-}
-
 @each $colorName, $rgbValue in $overlay-colors {
   @each $level in $overlay-levels {
     .overlay-bg-#{$colorName}-#{$level} {

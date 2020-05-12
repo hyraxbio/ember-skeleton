@@ -6,7 +6,7 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  @include border-radius($badge-border-radius);
+  border-radius: $badge-border-radius;
 
   // Empty badges collapse automatically
   &:empty {

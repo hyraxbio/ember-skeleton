@@ -1,18 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-$spacers: () !default;
-$spacers: map-merge((
-  sm: $spacer-sm,
-  md: $spacer-md,
-  lg: $spacer-lg,
-  xl: $spacer-xl,
-  xxl: $spacer-xxl
-), $spacers);
-
 @each $spacing-type in 'padding', 'margin' {
   @each $key, $value in $spacers {
     .#{$spacing-type}-#{$key} {
@@ -55,19 +40,4 @@ $spacers: map-merge((
 
 .body-text ul.margin-0 {
   margin: 0;
-}
-
-.width-100 {
-  width: 100%;
-}
-
-@each $spacing-type in 'height', 'width' {
-  @each $key, $value in $spacers {
-    .#{$spacing-type}-#{$key} {
-      #{$spacing-type}: $value;
-    }
-    .max-#{$spacing-type}-#{$key} {
-      max-#{$spacing-type}: $value;
-    }
-  }
 }

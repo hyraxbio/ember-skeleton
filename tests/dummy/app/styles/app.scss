@@ -1,33 +1,16 @@
-.ember-skeleton-styles {
-  font-size: 10px;
-  $theme-colors: (
-    "twitter":      #1DA1F2,
-    "facebook":     #1877F2,
-    "reddit":       #FF4500,
-    "tripadvisor":  #34E0A1,
-  );
-
-  $overlay-levels: 10,30,50,80;
-
-  $overlay-colors: (
-    "red": "255,0,0",
-    "green": "0,255,0",
-    "blue": "0,0,255",
-  );
-
-$spacer-xxxl: 48px;
-$spacer-xxxxl: 72px;
-
-$spacers: (
-  xxxl: $spacer-xxxl,
-  xxxxl: $spacer-xxxxl,
-);
-
-  @import "ember-skeleton-variables";
-  @import "ember-skeleton"; 
-}
-
-
 :root {
   --brand-primary: #3490DC;
- }
+}
+
+.ember-skeleton-styles {
+  font-size: 10px;
+  code {
+    background: transparent !important;
+  }
+  @import './snippets/_pre-variables-import';
+  // BEGIN-SNIPPET basic-style-imports.scss
+  @import "ember-skeleton-variables";
+  @import 'ember-skeleton';
+  // END-SNIPPET
+  @import './snippets/_post-variables-import';
+}

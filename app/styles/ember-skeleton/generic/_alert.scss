@@ -3,10 +3,10 @@
   font-size: $alert-font-size;
   padding: $alert-padding-y $alert-padding-x;
   border: $alert-border-width solid transparent;
-  @include border-radius($alert-border-radius);
+  border-radius: $alert-border-radius;
   overflow: hidden;
-  
 }
+
 .body-text .alert {
   font-size: #{$alert-font-size/$body-text-font-size}em;
 }
