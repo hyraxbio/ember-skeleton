@@ -155,6 +155,8 @@ The `.btn` class applies general button styles, and `btn-{{theme-color}}` or `bt
   {{demo.snippet "button-outline-colour-variants.hbs"}}
 {{/docs-demo}}
 
+Adding the class `flashing` will cause the button to chnage between normal and outline state.
+
 {{#docs-demo as |demo|}}
   {{#demo.example name="flashing-button.hbs"}}
     <button class="btn btn-primary flashing">Flashing button</button>
@@ -165,7 +167,7 @@ The `.btn` class applies general button styles, and `btn-{{theme-color}}` or `bt
 ### List groups
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="list-group-general.hbs"}}
+  {{#demo.example name="list-group-general"}}
     <div class="list-group">
       <div class="list-group-item"><code>.list-group-item</code></div>
       <div class="list-group-item list-group-item-action" role="button"><code>.list-group-item.list-group-item-action</code></div>
@@ -173,24 +175,24 @@ The `.btn` class applies general button styles, and `btn-{{theme-color}}` or `bt
       <div class="list-group-item list-group-item-action disabled" role="button"><code>.list-group-item.list-group-item-action.disabled</code></div>
     </div>
   {{/demo.example}}
-  {{demo.snippet "list-group-general.hbs"}}
+  {{demo.snippet "list-group-general"}}
 {{/docs-demo}}
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="list-group-theme-colours.hbs"}}
-    <ul class="list-group list-style-none">
-      <li class="list-group-item list-group-item-action monospace list-style-none" role="button">.list-group-item.list-group-item-action</li>
-      <li class="list-group-item list-group-item-action list-group-item-primary monospace" role="button">.list-group-item.list-group-item-action.list-group-item-primary</li>
-      <li class="list-group-item list-group-item-action list-group-item-secondary monospace" role="button">.list-group-item.list-group-item-action.list-group-item-secondary</li>
-      <li class="list-group-item list-group-item-action list-group-item-success monospace" role="button">.list-group-item.list-group-item-action.list-group-item-success</li>
-      <li class="list-group-item list-group-item-action list-group-item-danger monospace" role="button">.list-group-item.list-group-item-action.list-group-item-danger</li>
-      <li class="list-group-item list-group-item-action list-group-item-warning monospace" role="button">.list-group-item.list-group-item-action.list-group-item-warning</li>
-      <li class="list-group-item list-group-item-action list-group-item-info monospace" role="button">.list-group-item.list-group-item-action.list-group-item-info</li>
-      <li class="list-group-item list-group-item-action list-group-item-light monospace" role="button">.list-group-item.list-group-item-action.list-group-item-light</li>
-      <li class="list-group-item list-group-item-action list-group-item-dark monospace" role="button">.list-group-item.list-group-item-action.list-group-item-dark</li>
+  {{#demo.example name="list-group-colour-variants"}}
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-action" role="button">.list-group-item.list-group-item-action</li>
+      <li class="list-group-item list-group-item-action list-group-item-primary" role="button">.list-group-item.list-group-item-action.list-group-item-primary</li>
+      <li class="list-group-item list-group-item-action list-group-item-secondary" role="button">.list-group-item.list-group-item-action.list-group-item-secondary</li>
+      <li class="list-group-item list-group-item-action list-group-item-success" role="button">.list-group-item.list-group-item-action.list-group-item-success</li>
+      <li class="list-group-item list-group-item-action list-group-item-danger" role="button">.list-group-item.list-group-item-action.list-group-item-danger</li>
+      <li class="list-group-item list-group-item-action list-group-item-warning" role="button">.list-group-item.list-group-item-action.list-group-item-warning</li>
+      <li class="list-group-item list-group-item-action list-group-item-info" role="button">.list-group-item.list-group-item-action.list-group-item-info</li>
+      <li class="list-group-item list-group-item-action list-group-item-light" role="button">.list-group-item.list-group-item-action.list-group-item-light</li>
+      <li class="list-group-item list-group-item-action list-group-item-dark" role="button">.list-group-item.list-group-item-action.list-group-item-dark</li>
     </ul>
   {{/demo.example}}
-  {{demo.snippet "list-group-theme-colours.hbs"}}
+  {{demo.snippet "list-group-colour-variants"}}
 {{/docs-demo}}
 
 Custom colours can be added to this map, by defining your own `$theme-colors` map *before* importing `ember-skeleton-variables`.
@@ -206,6 +208,39 @@ Custom colours can be added to this map, by defining your own `$theme-colors` ma
   {{/demo.example}}
   {{demo.snippet "badge-custom-colour-variants.hbs"}}
 {{/docs-demo}}
+
+## Borders 
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="border-custom-colour-variants"}}
+    <div class="border">.border</div>
+    <div class="border border-primary">.border.border-primary</div>
+    <div class="border border-secondary">.border.border-secondary</div>
+    <div class="border border-success">.border.border-success</div>
+    <div class="border border-danger">.border.border-danger</div>
+    <div class="border border-warning">.border.border-warning</div>
+    <div class="border border-info">.border.border-info</div>
+    <div class="border border-light">.border.border-light</div>
+    <div class="border border-dark">.border.border-dark</div>
+    <div class="border border-white">.border.border-white</div>
+   {{/demo.example}}
+  {{demo.snippet "border-custom-colour-variants"}}
+{{/docs-demo}} 
+
+## Border radius
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="border-radius"}}
+      <div class="rounded">.rounded</div>
+      <div class="rounded-top">.rounded-top</div>
+      <div class="rounded-right">.rounded-right</div>
+      <div class="rounded-bottom">.rounded-bottom</div>
+      <div class="rounded-left">.rounded-left</div>
+      <div class="rounded-circle">.rounded-circle</div>
+      <div class="rounded-0">.rounded-0</div>
+   {{/demo.example}}
+  {{demo.snippet "border-radius" language="htmlbars"}}
+{{/docs-demo}} 
 
 ### Bootstrap YIQ threshold
 
@@ -623,13 +658,18 @@ Applies `background-color: transparent` to the element.
 
     .hover-pointer 
 
-The cursor will be a pointer on hover.
+The cursor will be a pointer on hover of the element.
+
+    .monospace
+  
+Applies the font family assigned to the `$monospace-font-family` variable to the element. The default value is `"Lucida Console", Monaco, "Courier New", Courier, monospace`.
 
 # Other
 
+All elements have `box-sizing: border-box`.
+
 All elements with `role="button"` will have `cursor: pointer` in hover state.
 
-All elements have `box-sizing: border-box`.
 
 ## Mixins
 

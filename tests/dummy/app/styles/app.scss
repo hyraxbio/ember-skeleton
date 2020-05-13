@@ -13,4 +13,48 @@
   @import 'ember-skeleton';
   // END-SNIPPET
   @import './snippets/_post-variables-import';
+
+  #example-list-group-colour-variants {
+    ul {
+      list-style: none;
+      li {
+        margin-left: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  #example-border-radius,
+  #example-border-custom-colour-variants {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      background: $gray-extra-light;
+      margin: $spacer-md;
+      padding: $spacer-md;
+      font-family: $monospace-font-family;
+    }
+  }
+
+  #example-border-radius {
+    & > div {
+      background: $gray-dark;
+      color: $white;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  #example-border-custom-colour-variants {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      margin: $spacer-md;
+      padding: $spacer-md;
+    }
+  }
 }
+

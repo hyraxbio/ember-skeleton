@@ -156,7 +156,7 @@ h4 {
 }
 
 .monospace {
-  font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace !important;
+  font-family: $monospace-font-family !important;
 }
 
 .list-style-none,

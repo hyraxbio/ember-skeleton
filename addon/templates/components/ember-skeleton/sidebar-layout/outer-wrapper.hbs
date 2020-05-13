@@ -1,11 +1,11 @@
 {{component emberSkeleton.headerComponent headerProps=headerProps}}
 <section id="columns">
-  {{#ember-skeleton/sidebar-layout/sidebar 
+  {{#ember-skeleton/sidebar-layout/sidebar-wrapper 
     class="ember-skeleton-sidebar"
     toggleSidebarExpanded=(action "toggleSidebarExpanded")  
   }}
     {{component emberSkeleton.sidebarComponent sidebarProps=sidebarProps}}
-  {{/ember-skeleton/sidebar-layout/sidebar}}
+  {{/ember-skeleton/sidebar-layout/sidebar-wrapper}}
   <div class="main">
     <div class="content {{if emberSkeleton.hideContent "hidden"}}">
       {{yield}}

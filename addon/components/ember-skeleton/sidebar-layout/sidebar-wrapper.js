@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import layout from '../../../templates/components/ember-skeleton/sidebar-layout/sidebar';
+import layout from '../../../templates/components/ember-skeleton/sidebar-layout/sidebar-wrapper';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({

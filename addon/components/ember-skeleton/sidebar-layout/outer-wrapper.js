@@ -19,6 +19,7 @@ export default Component.extend({
 
   actions: {
     toggleSidebarExpanded() {
+      console.log('toggle')
       this.toggleProperty('emberSkeleton.sidebarCollapsed');
       localStorage.setItem('userSidebarCollapsed', this.get('emberSkeleton.sidebarCollapsed'));
       this.set('emberSkeleton.sidebarToggled', true);
