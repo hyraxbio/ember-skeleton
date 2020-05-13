@@ -4,6 +4,7 @@
 
 .ember-skeleton-styles {
   font-size: 10px;
+  position: relative;
   code {
     background: transparent !important;
   }
@@ -14,7 +15,7 @@
   // END-SNIPPET
   @import './snippets/_post-variables-import';
 
-  #example-list-group-colour-variants {
+  #example-list-group-colour-variants .viewport {
     ul {
       list-style: none;
       li {
@@ -24,8 +25,8 @@
     }
   }
 
-  #example-border-radius,
-  #example-border-custom-colour-variants {
+  #example-border-radius .viewport,
+  #example-border-custom-colour-variants .viewport {
     display: flex;
     flex-wrap: wrap;
     & > div {
@@ -36,7 +37,7 @@
     }
   }
 
-  #example-border-radius {
+  #example-border-radius .viewport {
     & > div {
       background: $gray-dark;
       color: $white;
@@ -45,10 +46,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: $monospace-font-family;
     }
   }
 
-  #example-border-custom-colour-variants {
+  #example-border-custom-colour-variants .viewport {
     display: flex;
     flex-wrap: wrap;
     & > div {
@@ -56,5 +58,112 @@
       padding: $spacer-md;
     }
   }
+
+  #example-overlay-colours-white .viewport, 
+  #example-overlay-colours-black .viewport,
+  #example-custom-overlay-colours .viewport {
+    padding: $spacer-xl;
+    background: $gray-extra-light;
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      padding: $spacer-lg;
+      margin: $spacer-lg;
+      font-family: $monospace-font-family;
+    }
+  }
+  #example-overlay-colours-white .viewport {
+    background: $gray-dark;
+    color: #fff;
+  }
+
+  .padding-examples .viewport {
+    > div {
+      background: $gray-medium;
+      > div {
+        background: $gray-light;
+        font-family: $monospace-font-family;
+      }
+    }
+  }
+
+  .margin-examples .viewport {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      background: $gray-light;
+      padding: $spacer-lg;
+      font-family: $monospace-font-family;
+    }
+    &.vertical > div {
+      width: 100%;
+    }
+  }
+
+  .height-width-demo .viewport {
+    > div {
+      background: $gray-dark;
+      > div {
+        background: $gray-light;
+      }
+    }
+  }
+
+  .last-child-margin-bottom-0-demo .viewport {
+    > div {
+      padding: $spacer-sm;
+      background: $gray-dark;
+      > div {
+        background: $gray-light;
+        padding: $spacer-md;
+        font-family: $monospace-font-family;
+      }
+    }
+  }
+
+  .card-box-shadow-example .viewport {
+    & > div {
+      margin-bottom: $spacer-lg;
+      padding: $spacer-lg;
+      border-radius: 3px;
+      font-family: $monospace-font-family;
+    }
+  }
+
+  .box-arrow-example .viewport,
+  .box-arrow-bg-example .viewport {
+    & > div {
+      display: inline-flex;
+      border: 1px solid $gray-medium;
+      margin-bottom: $spacer-lg;
+      padding: $spacer-xxl $spacer-lg;
+      border-radius: 3px;
+      font-family: $monospace-font-family;
+    }
+  }
+
+  .box-arrow-bg-example .viewport {
+    & > div {
+      color: #fff;
+      border: 1px solid $gray-dark;
+    }
+  }
+
+  .layout-container {
+    height: 200px;
+    .viewport {
+      width: 200%;
+      height: 200%;
+      transform: scale(0.5);
+      transform-origin: top left;
+      padding: 0;
+      border: 1px solid $gray-light;
+      // .content {
+      //   min-height: 200px;
+      // }
+    }
+  }
+  
+
 }
 

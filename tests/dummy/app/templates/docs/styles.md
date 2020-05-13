@@ -71,6 +71,8 @@ The Ember Skeleton `SASS` code will create multiple CSS style rules for each of 
 
 ### Badges
 
+Taken from [Bootstrap badge](https://getbootstrap.com/docs/4.1/components/badge/)
+
 {{#docs-demo as |demo|}}
   {{#demo.example name="badge-colour-variants.hbs"}}
     <div class="badge badge-primary">badge-primary</div>
@@ -92,37 +94,25 @@ The Ember Skeleton `SASS` code will create multiple CSS style rules for each of 
 
 ### Alerts
 
+Taken from [Booststrap alerts](https://getbootstrap.com/docs/4.1/components/alerts/)
+
 {{#docs-demo as |demo|}}
   {{#demo.example name="alert-colour-variants.hbs"}}
-    <div class="alert alert-primary" role="alert">
-      A simple primary alert—check it out!
-    </div>
-    <div class="alert alert-secondary" role="alert">
-      A simple secondary alert—check it out!
-    </div>
-    <div class="alert alert-success" role="alert">
-      A simple success alert—check it out!
-    </div>
-    <div class="alert alert-danger" role="alert">
-      A simple danger alert—check it out!
-    </div>
-    <div class="alert alert-warning" role="alert">
-      A simple warning alert—check it out!
-    </div>
-    <div class="alert alert-info" role="alert">
-      A simple info alert—check it out!
-    </div>
-    <div class="alert alert-light" role="alert">
-      A simple light alert—check it out!
-    </div>
-    <div class="alert alert-dark" role="alert">
-      A simple dark alert—check it out!
-    </div>
+    <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
+    <div class="alert alert-secondary" role="alert">A simple secondary alert—check it out!</div>
+    <div class="alert alert-success" role="alert">A simple success alert—check it out!</div>
+    <div class="alert alert-danger" role="alert">A simple danger alert—check it out!</div>
+    <div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
+    <div class="alert alert-info" role="alert">A simple info alert—check it out!</div>
+    <div class="alert alert-light" role="alert">A simple light alert—check it out!</div>
+    <div class="alert alert-dark" role="alert">A simple dark alert—check it out!</div>
     {{/demo.example}}
   {{demo.snippet "alert-colour-variants.hbs"}}
 {{/docs-demo}}
 
 ### Buttons
+
+Taken from [Bootstrap buttons](https://getbootstrap.com/docs/4.1/components/buttons/).
 
 The `.btn` class applies general button styles, and `btn-{{theme-color}}` or `btn-outline-{{theme-color}}` applies a theme colour. The class `flashing` will cause the button to flash between outline state to normal state.
 
@@ -166,17 +156,37 @@ Adding the class `flashing` will cause the button to chnage between normal and o
 
 ### List groups
 
+#### Basic usage
+
 {{#docs-demo as |demo|}}
   {{#demo.example name="list-group-general"}}
-    <div class="list-group">
-      <div class="list-group-item"><code>.list-group-item</code></div>
-      <div class="list-group-item list-group-item-action" role="button"><code>.list-group-item.list-group-item-action</code></div>
-      <div class="list-group-item list-group-item-action active" role="button"><code>.list-group-item.list-group-item-action.active</code></div>
-      <div class="list-group-item list-group-item-action disabled" role="button"><code>.list-group-item.list-group-item-action.disabled</code></div>
+    <div class="list-group list-group">
+      <div class="list-group-item">.list-group-item</div>
+      <div class="list-group-item list-group-item-action" role="button">.list-group-item.list-group-item-action</div>
+      <div class="list-group-item list-group-item-action active" role="button">.list-group-item.list-group-item-action.active</div>
+      <div class="list-group-item list-group-item-action disabled" role="button">.list-group-item.list-group-item-action.disabled</div>
     </div>
   {{/demo.example}}
   {{demo.snippet "list-group-general"}}
 {{/docs-demo}}
+
+#### Flush
+
+Removes the side borders.
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="list-group-flush"}}
+    <div class="list-group list-group-flush">
+      <div class="list-group-item">.list-group-flush .list-group-item</div>
+      <div class="list-group-item">.list-group-flush .list-group-item</div>
+      <div class="list-group-item">.list-group-flush .list-group-item</div>
+      <div class="list-group-item">.list-group-flush .list-group-item</div>
+    </div>
+  {{/demo.example}}
+  {{demo.snippet "list-group-flush"}}
+{{/docs-demo}}
+
+#### List group with colour variants
 
 {{#docs-demo as |demo|}}
   {{#demo.example name="list-group-colour-variants"}}
@@ -195,6 +205,10 @@ Adding the class `flashing` will cause the button to chnage between normal and o
   {{demo.snippet "list-group-colour-variants"}}
 {{/docs-demo}}
 
+### List group header
+
+The boostrap list group styles are extended by adding the class `.list-group-item-header` which applies the font weight defined the the variable `$list-group-header-font-weight`. The default is 600.
+
 Custom colours can be added to this map, by defining your own `$theme-colors` map *before* importing `ember-skeleton-variables`.
 
 {{docs-snippet name="adding-cutom-bootstrap-colours.scss" language="css"}}
@@ -211,6 +225,8 @@ Custom colours can be added to this map, by defining your own `$theme-colors` ma
 
 ## Borders 
 
+Taken from [Bootstrap borders](https://getbootstrap.com/docs/4.1/utilities/borders/)
+ 
 {{#docs-demo as |demo|}}
   {{#demo.example name="border-custom-colour-variants"}}
     <div class="border">.border</div>
@@ -228,6 +244,8 @@ Custom colours can be added to this map, by defining your own `$theme-colors` ma
 {{/docs-demo}} 
 
 ## Border radius
+
+Taken from [Bootstrap border radius](https://getbootstrap.com/docs/4.1/utilities/borders/)
 
 {{#docs-demo as |demo|}}
   {{#demo.example name="border-radius"}}
@@ -265,17 +283,21 @@ Provides a set of classes that apply either a fill or background to an element i
     overlay-fill-white-10, overlay-fill-white-30, overlay-fill-white-50, overlay-fill-black-10, overlay-fill-black-30, overlay-fill-black-50
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="overlay-colours.hbs"}}
-    <div class="bg-secondary padding-md flex flex-wrap">
-      <div class="overlay-bg-white-10 padding-lg rounded text-white margin-md">overlay-bg-white-10</div>
-      <div class="overlay-bg-white-30 padding-lg rounded text-white margin-md">overlay-bg-white-30</div>
-      <div class="overlay-bg-white-50 padding-lg rounded text-white margin-md">overlay-bg-white-50</div>
-      <div class="overlay-bg-black-10 padding-lg rounded text-white margin-md">overlay-bg-black-10</div>
-      <div class="overlay-bg-black-30 padding-lg rounded text-white margin-md">overlay-bg-black-30</div>
-      <div class="overlay-bg-black-50 padding-lg rounded text-white margin-md">overlay-bg-black-50</div>
-    </div>
+  {{#demo.example name="overlay-colours-black"}}
+    <div class="overlay-bg-black-10">.overlay-bg-black-10</div>
+    <div class="overlay-bg-black-30">.overlay-bg-black-30</div>
+    <div class="overlay-bg-black-50">.overlay-bg-black-50</div>
   {{/demo.example}}
-  {{demo.snippet "overlay-colours.hbs"}}
+  {{demo.snippet "overlay-colours-black"}}
+{{/docs-demo}}
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="overlay-colours-white"}}
+    <div class="overlay-bg-white-10">.overlay-bg-white-10</div>
+    <div class="overlay-bg-white-30">.overlay-bg-white-30</div>
+    <div class="overlay-bg-white-50">.overlay-bg-white-50</div>
+  {{/demo.example}}
+  {{demo.snippet "overlay-colours-white"}}
 {{/docs-demo}}
 
 The `$overlay-colors` map can be extended in a similar way to `$theme-colors`. Additionally, you can customise the levels that are included. Note the the colours must be defined in `RGB` format.
@@ -283,23 +305,21 @@ The `$overlay-colors` map can be extended in a similar way to `$theme-colors`. A
 {{docs-snippet name="custom-overlay-colors.scss" language="css"}}
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="custom-overlay-colours.hbs"}}
-    <div class="bg-gray-extra-light padding-md flex flex-wrap">
-      <div class="overlay-bg-green-10 padding-lg rounded margin-md">overlay-bg-green-10</div>
-      <div class="overlay-bg-green-30 padding-lg rounded margin-md">overlay-bg-green-30</div>
-      <div class="overlay-bg-green-50 padding-lg rounded margin-md">overlay-bg-green-50</div>
-      <div class="overlay-bg-green-80 padding-lg rounded margin-md">overlay-bg-green-80</div>
-      <div class="overlay-bg-red-10 padding-lg rounded text-white margin-md">overlay-bg-red-10</div>
-      <div class="overlay-bg-red-30 padding-lg rounded text-white margin-md">overlay-bg-red-30</div>
-      <div class="overlay-bg-red-50 padding-lg rounded text-white margin-md">overlay-bg-red-50</div>
-      <div class="overlay-bg-red-80 padding-lg rounded margin-md">overlay-bg-red-80</div>
-      <div class="overlay-bg-blue-10 padding-lg rounded text-white margin-md">overlay-bg-blue-10</div>
-      <div class="overlay-bg-blue-30 padding-lg rounded text-white margin-md">overlay-bg-blue-30</div>
-      <div class="overlay-bg-blue-50 padding-lg rounded text-white margin-md">overlay-bg-blue-50</div>
-      <div class="overlay-bg-blue-80 padding-lg rounded margin-md">overlay-bg-blue-80</div>
-    </div>
+  {{#demo.example name="custom-overlay-colours"}}
+    <div class="overlay-bg-green-10">.overlay-bg-green-10</div>
+    <div class="overlay-bg-green-30">.overlay-bg-green-30</div>
+    <div class="overlay-bg-green-50">.overlay-bg-green-50</div>
+    <div class="overlay-bg-green-80">.overlay-bg-green-80</div>
+    <div class="overlay-bg-red-10">.overlay-bg-red-10</div>
+    <div class="overlay-bg-red-30">.overlay-bg-red-30</div>
+    <div class="overlay-bg-red-50">.overlay-bg-red-50</div>
+    <div class="overlay-bg-red-80">.overlay-bg-red-80</div>
+    <div class="overlay-bg-blue-10">.overlay-bg-blue-10</div>
+    <div class="overlay-bg-blue-30">.overlay-bg-blue-30</div>
+    <div class="overlay-bg-blue-50">.overlay-bg-blue-50</div>
+    <div class="overlay-bg-blue-80">.overlay-bg-blue-80</div>
   {{/demo.example}}
-  {{demo.snippet "custom-overlay-colours.hbs"}}
+  {{demo.snippet "custom-overlay-colours"}}
 {{/docs-demo}}
 
 ### Fill and stroke colours
@@ -364,103 +384,97 @@ A version of each class listed below is generated for each defined spacer.
 
 The padding is represented by the darker grey areas in the examples below.
 
-{{#docs-demo as |demo|}}
-  {{#demo.example name="padding-xxl.hbs"}}
-    <div class="bg-gray-medium padding-xxl">
-      <div class="bg-gray-extra-light">padding-xxl</div>
+{{#docs-demo class="test" as |demo|}}
+  {{#demo.example name="padding-xxl.hbs" class="padding-examples"}}
+    <div class="padding-xxl">
+      <div>padding-xxl</div>
     </div>
   {{/demo.example}}
   {{demo.snippet "padding-xxl.hbs" }}
 {{/docs-demo}}
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="padding-md.hbs"}}
-    <div class="bg-gray-medium padding-md">
-      <div class="bg-gray-extra-light">padding-md</div>
+  {{#demo.example name="padding-md.hbs" class="padding-examples"}}
+    <div class="padding-md">
+      <div>padding-md</div>
     </div>
   {{/demo.example}}
   {{demo.snippet "padding-md.hbs" }}
 {{/docs-demo}}
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="padding-x-xl.hbs"}}
-    <div class="bg-gray-medium padding-x-xl">
-      <div class="bg-gray-extra-light">padding-x-xl</div>
+  {{#demo.example name="padding-x-xl.hbs" class="padding-examples"}}
+    <div class="padding-x-xl">
+      <div>padding-x-xl</div>
     </div>
   {{/demo.example}}
   {{demo.snippet "padding-x-xl.hbs" }}
 {{/docs-demo}}
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="padding-y-xl.hbs"}}
-    <div class="bg-gray-medium padding-y-xl">
-      <div class="bg-gray-extra-light">padding-y-xl</div>
+  {{#demo.example name="padding-y-xl.hbs" class="padding-examples"}}
+    <div class="padding-y-xl">
+      <div>padding-y-xl</div>
     </div>
   {{/demo.example}}
   {{demo.snippet "padding-y-xl.hbs" }}
 {{/docs-demo}}
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="padding-left-xl.hbs"}}
-    <div class="bg-gray-medium padding-left-xl">
-      <div class="bg-gray-extra-light">padding-left-xl</div>
+  {{#demo.example name="padding-left-xl.hbs" class="padding-examples"}}
+    <div class="padding-left-xl">
+      <div>padding-left-xl</div>
     </div>
   {{/demo.example}}
   {{demo.snippet "padding-left-xl.hbs" }}
 {{/docs-demo}}
 
 ### Margin examples
+
 {{#docs-demo as |demo|}}
-  {{#demo.example name="margin-xl.hbs"}}
-    <div class="bg-gray-medium">
-      <div class="margin-xl badge badge-gray-dark">margin-xl</div>
-      <div class="margin-xl badge badge-gray-dark">margin-xl</div>
-      <div class="margin-xl badge badge-gray-dark">margin-xl</div>
-    </div>
+  {{#demo.example name="margin-xl.hbs" class="margin-examples"}}
+    <div class="margin-xl">margin-xl</div>
+    <div class="margin-xl">margin-xl</div>
+    <div class="margin-xl">margin-xl</div>
   {{/demo.example}}
   {{demo.snippet "margin-xl.hbs" }}
 {{/docs-demo}}
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="margin-sm.hbs"}}
-    <div class="bg-gray-medium">
-      <div class="margin-sm badge badge-gray-dark">margin-sm</div>
-      <div class="margin-sm badge badge-gray-dark">margin-sm</div>
-      <div class="margin-sm badge badge-gray-dark">margin-sm</div>
-    </div>
+  {{#demo.example name="margin-sm.hbs" class="margin-examples"}}
+    <div class="margin-sm">margin-sm</div>
+    <div class="margin-sm">margin-sm</div>
+    <div class="margin-sm">margin-sm</div>
   {{/demo.example}}
   {{demo.snippet "margin-sm.hbs" }}
 {{/docs-demo}}
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="margin-x-lg.hbs"}}
-    <div class="bg-gray-medium">
-      <div class="margin-x-lg badge badge-gray-dark">margin-x-lg</div>
-      <div class="margin-x-lg badge badge-gray-dark">margin-x-lg</div>
-      <div class="margin-x-lg badge badge-gray-dark">margin-x-lg</div>
-    </div>
+  {{#demo.example name="margin-x-lg.hbs" class="margin-examples"}}
+    <div class="margin-x-lg">margin-x-lg</div>
+    <div class="margin-x-lg">margin-x-lg</div>
+    <div class="margin-x-lg">margin-x-lg</div>
   {{/demo.example}}
   {{demo.snippet "margin-x-lg.hbs" }}
 {{/docs-demo}}
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="margin-y-lg.hbs"}}
-    <div class="bg-gray-medium">
-      <div class="margin-y-lg badge badge-gray-dark">margin-y-lg</div>
-      <div class="margin-y-lg badge badge-gray-dark">margin-y-lg</div>
-      <div class="margin-y-lg badge badge-gray-dark">margin-y-lg</div>
-    </div>
+  {{#demo.example name="margin-y-lg.hbs" class="margin-examples vertical"}}
+    <div class="margin-y-lg">margin-y-lg</div>
+    <div class="margin-y-lg">margin-y-lg</div>
+    <div class="margin-y-lg">margin-y-lg</div>
   {{/demo.example}}
   {{demo.snippet "margin-y-lg.hbs" }}
 {{/docs-demo}}
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="margin-bottom-lg-margin-right-lg.hbs"}}
-    <div class="bg-gray-medium">
-      <div class="margin-bottom-lg margin-right-lg badge badge-gray-dark">margin-bottom-lg margin-right-lg</div>
-      <div class="margin-bottom-lg margin-right-lg badge badge-gray-dark">margin-bottom-lg margin-right-lg</div>
-      <div class="margin-bottom-lg margin-right-lg badge badge-gray-dark">margin-bottom-lg margin-right-lg</div>
-    </div>
+  {{#demo.example name="margin-bottom-lg-margin-right-lg.hbs" class="margin-examples"}}
+    <div class="margin-bottom-lg margin-right-lg">margin-bottom-lg margin-right-lg</div>
+    <div class="margin-bottom-lg margin-right-lg">margin-bottom-lg margin-right-lg</div>
+    <div class="margin-bottom-lg margin-right-lg">margin-bottom-lg margin-right-lg</div>
+    <div class="margin-bottom-lg margin-right-lg">margin-bottom-lg margin-right-lg</div>
+    <div class="margin-bottom-lg margin-right-lg">margin-bottom-lg margin-right-lg</div>
+    <div class="margin-bottom-lg margin-right-lg">margin-bottom-lg margin-right-lg</div>
   {{/demo.example}}
   {{demo.snippet "margin-bottom-lg-margin-right-lg.hbs" }}
 {{/docs-demo}}
@@ -468,11 +482,8 @@ The padding is represented by the darker grey areas in the examples below.
 ### Height, width, max-width and max-height examples
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="height-width-max-height-max-width.hbs"}}
-    <div class="bg-gray-medium padding-xl">
-      <code>.height-xxl.max-width-xxl</code>  
-      <div class="max-width-xxl height-xxl bg-gray-dark "></div>
-    </div>
+  {{#demo.example name="height-width-max-height-max-width.hbs" class="height-width-demo"}} 
+      <div class="max-width-xxl height-xxl"></div>
   {{/demo.example}}
   {{demo.snippet "height-width-max-height-max-width.hbs" }}
 {{/docs-demo}}
@@ -482,9 +493,9 @@ The padding is represented by the darker grey areas in the examples below.
 Add additional spacers to the `$spacers` map in your `scss` code, *before* you import `ember-skeleton-variables`, and ten use in your templates as shown below.
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="extending-spacers.hbs"}}
-    <div class="bg-gray-medium padding-xxxl">
-      <div class="height-xxxxl width-xxxxl bg-gray-dark"></div>
+  {{#demo.example name="extending-spacers.hbs" class="height-width-demo"}}
+    <div class="padding-xxxl">
+      <div class="height-xxxxl width-xxxxl"></div>
     </div>
   {{/demo.example}}
   {{demo.snippet "extending-spacer-values.scss" label="scss"}}
@@ -515,11 +526,11 @@ Sets width to 100%
 Sets bottom margin to 0, if the element is the past child.
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="last-child-margin-bottom.hbs"}}
-    <div class="bg-gray-medium padding-sm">
-      <div class="margin-bottom-xl last-child-margin-bottom-0 bg-gray-light">margin-bottom-xl last-child-margin-bottom-0</div>
-      <div class="margin-bottom-xl last-child-margin-bottom-0 bg-gray-light">margin-bottom-xl last-child-margin-bottom-0</div>
-      <div class="margin-bottom-xl last-child-margin-bottom-0 bg-gray-light">margin-bottom-xl last-child-margin-bottom-0</div>
+  {{#demo.example name="last-child-margin-bottom.hbs" class="last-child-margin-bottom-0-demo"}}
+    <div> 
+      <div class="margin-bottom-xl last-child-margin-bottom-0">margin-bottom-xl last-child-margin-bottom-0</div>
+      <div class="margin-bottom-xl last-child-margin-bottom-0">margin-bottom-xl last-child-margin-bottom-0</div>
+      <div class="margin-bottom-xl last-child-margin-bottom-0">margin-bottom-xl last-child-margin-bottom-0</div>
     </div>
   {{/demo.example}}
   {{demo.snippet "last-child-margin-bottom.hbs"}}
@@ -582,23 +593,23 @@ The `.faux-link` class will apply all link styles to the element.
 ### Card box shadow
 
 {{#docs-demo as |demo|}}
-  {{#demo.example name="card-box-shaow-default.scss"}}
-    <div class="card-box-shadow rounded padding-lg margin-bottom-lg">
+  {{#demo.example name="card-box-shaow-default.scss" class="card-box-shadow-example"}}
+    <div class="card-box-shadow">
       .card-box-shadow
     </div>
-    <div class="card-box-shadow card-box-shadow-hover-effect rounded padding-lg margin-bottom-lg">
+    <div class="card-box-shadow card-box-shadow-hover-effect">
       .card-box-shadow.card-box-shadow-hover-effect
     </div>
-    <div class="card-box-shadow card-box-shadow-level-2 card-box-shadow-hover-effect rounded padding-lg margin-bottom-lg">
+    <div class="card-box-shadow card-box-shadow-level-2 card-box-shadow-hover-effect">
       .card-box-shadow.card-box-shadow-level-2.card-box-shadow-hover-effect
     </div>
-    <div class="card-box-shadow card-box-shadow-level-3 card-box-shadow-hover-effect rounded padding-lg margin-bottom-lg">
+    <div class="card-box-shadow card-box-shadow-level-3 card-box-shadow-hover-effect">
       .card-box-shadow.card-box-shadow-level-3.card-box-shadow-hover-effect
     </div>
-    <div class="card-box-shadow card-box-shadow-level-4 card-box-shadow-hover-effect rounded padding-lg margin-bottom-lg bg-transparent">
+    <div class="card-box-shadow card-box-shadow-level-4 card-box-shadow-hover-effect">
       .card-box-shadow.card-box-shadow-level-4.card-box-shadow-hover-effect
     </div>
-    <div class="card-box-shadow card-box-shadow-level-5 card-box-shadow-hover-effect rounded padding-lg margin-bottom-lg bg-white">
+    <div class="card-box-shadow card-box-shadow-level-5 card-box-shadow-hover-effect">
       .card-box-shadow.card-box-shadow-level-5.card-box-shadow-hover-effect
     </div>
   {{/demo.example}}
@@ -607,22 +618,50 @@ The `.faux-link` class will apply all link styles to the element.
 
 ## Box arrows
 
+Adds an arrow to a box. The examples below show all the available combinations of arrow direction and position.
+
 {{#docs-demo as |demo|}}
-  {{#demo.example name="box-arrows.scss"}}
-      <div class="box-arrow arrow-direction-up arrow-position-left padding-lg border border-danger margin-bottom-lg bg-gray-light">
+  {{#demo.example name="box-arrows.scss" class="box-arrow-example"}}
+      <div class="box-arrow arrow-direction-up arrow-position-left">
         .box-arrow.arrow-direction-up.arrow-position-left
       </div>
-      <div class="box-arrow arrow-direction-left arrow-position-top padding-lg border margin-bottom-lg">
+      <div class="box-arrow arrow-direction-up arrow-position-right">
+        .box-arrow.arrow-direction-up.arrow-position-right
+      </div>
+      <div class="box-arrow arrow-direction-left arrow-position-top">
         .box-arrow.arrow-direction-left.arrow-position-top
       </div>
-      <div class="box-arrow arrow-direction-down arrow-position-right padding-lg border margin-bottom-lg">
-        .box-arrow.arrow-direction-left.arrow-position-top
+      <div class="box-arrow arrow-direction-left arrow-position-bottom">
+        .box-arrow.arrow-direction-left.arrow-position-bottom
       </div>
-      <div class="box-arrow arrow-direction-right arrow-position-bottom padding-lg border margin-bottom-lg">
-        .box-arrow.arrow-direction-left.arrow-position-top
+      <div class="box-arrow arrow-direction-down arrow-position-right">
+        .box-arrow.arrow-direction-down.arrow-position-right
+      </div>
+      <div class="box-arrow arrow-direction-down arrow-position-left">
+        .box-arrow.arrow-direction-down.arrow-position-left
+      </div>
+      <div class="box-arrow arrow-direction-right arrow-position-bottom">
+        .box-arrow.arrow-direction-right.arrow-position-bottom
+      </div>
+      <div class="box-arrow arrow-direction-right arrow-position-top">
+        .box-arrow.arrow-direction-right.arrow-position-top
       </div>
     {{/demo.example}}
   {{demo.snippet "box-arrows.scss"}}
+{{/docs-demo}}
+
+By default, the arrow fill will be white, but if the element in question has any of the theme colours applied as a backgroud, the arrow fill will take in that colour.
+
+{{#docs-demo as |demo|}}
+  {{#demo.example name="box-arrows-bg.hbs" class="box-arrow-bg-example"}}
+      <div class="box-arrow arrow-direction-up arrow-position-left bg-success">
+        .box-arrow.arrow-direction-up.arrow-position-left.bg-success
+      </div>
+      <div class="box-arrow arrow-direction-up arrow-position-right bg-warning">
+        .box-arrow.arrow-direction-up.arrow-position-right.bg-warning
+      </div>
+    {{/demo.example}}
+  {{demo.snippet "box-arrows-bg.hbs"}}
 {{/docs-demo}}
 
 # Spinner

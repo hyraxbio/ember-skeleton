@@ -24,7 +24,6 @@ export default Service.extend({
   headerComponent: 'ember-skeleton/header',
   loadingComponent: 'ember-skeleton/loading-page',
   footerComponent: 'ember-skeleton/footer',
-  mainNavItemsComponent: 'main-nav-items',
-  sidebarComponent: 'ember-skeleton/sidebar-layout/sidebar',
+  sidebarContentComponent: 'ember-skeleton/sidebar-content',
   fallbackThemeColor: 'gray-dark',
 });
