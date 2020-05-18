@@ -15,6 +15,12 @@
   // END-SNIPPET
   @import './snippets/_post-variables-import';
 
+  .theme-icons-demo svg {
+    width: 30px;
+    display: inline-block;
+    margin-right: $spacer-lg;
+  }
+
   #example-list-group-colour-variants .viewport {
     ul {
       list-style: none;

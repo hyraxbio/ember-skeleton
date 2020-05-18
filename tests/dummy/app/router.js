@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('styles');
     this.route('layout-components');
     this.route('utility-components');
+    this.route('ember-skeleton-service');
   });
 
 });

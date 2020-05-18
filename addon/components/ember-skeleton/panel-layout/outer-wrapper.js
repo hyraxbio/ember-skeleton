@@ -7,6 +7,5 @@ export default Component.extend({
   emberSkeleton: service(),
   classNames: ['wrapper', 'panel-layout'],
   classNameBindings: ['emberSkeleton.hideContent:hide-content:show-content'],
-  attributeBindings: ['dataTestId:data-test-id'],
-  dataTestId: 'ember-skeleton-panel-layout',
+  'data-test-id': 'ember-skeleton-panel-layout',
 });

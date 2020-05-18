@@ -9,8 +9,7 @@ export function themeColorString(params, hash, defaultAssociations) {
   var defaultFallBack = (defaultAssociations ||[]).find(item => {
     return item.fallback;
   });
-  var fallBackColor = hash.default || defaultFallBack;
-
+  var fallBackColor = hash.fallback || defaultFallBack.returnString;
   if (!string) { return fallBackColor; }
   string = string.toLowerCase();
   defaultAssociations = defaultAssociations || hash.defaultAssociations || [];
