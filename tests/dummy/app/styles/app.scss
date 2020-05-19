@@ -15,10 +15,19 @@
   // END-SNIPPET
   @import './snippets/_post-variables-import';
 
-  .theme-icons-demo svg {
-    width: 30px;
-    display: inline-block;
-    margin-right: $spacer-lg;
+  .theme-icons-demo {
+    .viewport > div {
+      margin-bottom: $spacer-lg;
+      padding-bottom: $spacer-lg;
+      border-bottom: 1px solid #ccc;
+    }
+    svg {
+      max-width: 20px;
+      max-height: 20px;
+      display: inline-block;
+      margin-right: $spacer-md;
+    }
+    
   }
 
   #example-list-group-colour-variants .viewport {

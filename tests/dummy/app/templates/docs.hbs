@@ -1,12 +1,19 @@
 {{#docs-viewer as |viewer|}}
   {{#viewer.nav as |nav|}}
     {{nav.section "Introduction"}}
-    {{nav.item "Index" "docs.index"}}
-    {{nav.item "Helpers" "docs.helpers"}}
     {{nav.item "Styles" "docs.styles"}}
+    {{nav.item "Page layouts" "docs.page-layouts"}}
     {{nav.item "Layout components" "docs.layout-components"}}
     {{nav.item "Utility components" "docs.utility-components"}}
-    {{nav.item "Ember skeleton service" "docs.ember-skeleton-service"}}
+    {{nav.item "App wide options" "docs.default-options"}}
+    {{nav.item "Page loading state" "docs.page-loading-state"}}
+    {{nav.section "Helpers"}}
+    {{nav.item "Theme color string" "docs.theme-color-string"}}
+    {{nav.item "Theme icon" "docs.theme-icon"}}
+    {{nav.item "Humanise string" "docs.humanise-string"}}
+    {{nav.item "Custom inflector" "docs.custom-inflector"}}
+    {{nav.item "Replace string" "docs.replace-string"}}
+    {{nav.item "Readable file size" "docs.readable-file-size"}}
   {{/viewer.nav}}
 
   {{#viewer.main}}

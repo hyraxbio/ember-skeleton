@@ -1,20 +1,22 @@
-# Ember skeleton service
+# Deafult options
 
-Various addon related settings can be changed by extending the `ember-skeleton` service in `your-app/services/ember-skeleton.js`.
+App wide options can be set in the `emberSkeletonOptions` object, which must be a child of in the `ENV` object in `config/environment.js`.
 
-{{docs-snippet name="extend-ember-skeleton-service.js" language="javascript"}}
+{{docs-snippet name="app-wide-options.js" language="javascript" title="config/environment.js"}}
 
-## Defaults
+The defaults are as follows:
 
-The default settings define the paths to the components for the heade and footer (These apply to both the sidebar and panel layouts) as well as the sidebar content and the sidebar toggling icon.
+{{docs-snippet name="addon-default-options.js" language="javascript"}}
 
-{{docs-snippet name="ember-skeleton-service-defaults.js" language="javascript"}}
+Any additional settings can be added to the `emberSkeletonOptions` object. These are made available in the `options` property of the `emberSkeleton` service.
+
+{{docs-snippet name="options-in-service.js" language="javascript"}}
 
 ## Theme color string defaults
 
 Allows you to define default settings for use by the `ember-skeleton/theme-color-string` helper. The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
 
-{{docs-snippet name="theme-color-string-defaults.js" language="javascript"}}
+{{docs-snippet name="theme-color-string-app-defaults.js" language="javascript"}}
 
 The above settings would allow the following three use cases. 
 
@@ -34,7 +36,7 @@ The above settings would allow the following three use cases.
 
 Allows you to define default settings for use by the `ember-skeleton/theme-icon-string` helper. The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
 
-{{docs-snippet name="theme-icon-defaults.js" language="javascript"}}
+{{docs-snippet name="theme-icon-app-defaults.js" language="javascript"}}
 
 {{#docs-demo as |demo|}}
   {{#demo.example name="theme-icon-defaults-usage.hbs" class="theme-icons-demo"}}

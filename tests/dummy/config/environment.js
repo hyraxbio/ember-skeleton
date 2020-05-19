@@ -17,6 +17,34 @@ module.exports = function(environment) {
       }
     },
 
+    emberSkeletonOptions: {
+      themeColorStringDefaults: [{
+        returnString: 'success',
+        matchStrings: ['ok', 'passed', 'active']
+      },
+      {
+        returnString: 'warning',
+        matchStrings: ['absent']
+      },
+      {
+        returnString: 'danger',
+        matchStrings: ['failed', 'error']
+      },
+      {
+        returnString: 'gray-medium',
+        matchStrings: ['pending'],
+        fallback: true
+      }],
+
+      themeIconDefaults: [{
+        returnString: 'svg/icons/icon-alert',
+        matchStrings: ['danger', 'failed']
+      }, {
+        returnString: 'svg/icons/icon-tick',
+        matchStrings: ['success', 'passed']
+      }],
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

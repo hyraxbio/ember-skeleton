@@ -1,10 +1,10 @@
-{{component emberSkeleton.headerComponent headerProps=headerProps}}
+{{component emberSkeleton.options.headerComponent headerProps=headerProps}}
 <section id="columns">
   {{#ember-skeleton/sidebar-layout/sidebar-wrapper 
     class="ember-skeleton-sidebar"
     toggleSidebarExpanded=(action "toggleSidebarExpanded")  
   }}
-    {{component emberSkeleton.sidebarContentComponent sidebarProps=sidebarProps}}
+    {{component emberSkeleton.options.sidebarContentComponent sidebarProps=sidebarProps}}
   {{/ember-skeleton/sidebar-layout/sidebar-wrapper}}
   <div class="main">
     <div class="content {{if emberSkeleton.hideContent "hidden"}}">
@@ -12,9 +12,9 @@
     </div>
     {{#if emberSkeleton.hideContent}}
       <div class="loading-content flex-expand">
-        {{component emberSkeleton.loadingComponent}}
+        {{component emberSkeleton.options.loadingComponent loadingProps=loadingProps}}
       </div>
     {{/if}}
-    {{component emberSkeleton.footerComponent}}
+    {{component emberSkeleton.options.footerComponent footerProps=footerProps}}
   </div>
 </section>

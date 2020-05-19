@@ -1,4 +1,9 @@
+// import { getOwner } from '@ember/application';
+import config from 'ember-get-config';
+
 export default function naturalSort(a, b) {
+  // const config  = getOwner(this).resolveRegistration('config:environment');
+console.log(config);
   var ax = [],
     bx = [];
   a.replace(/(\d+)|(\D+)/g, function(_, $1, $2) {
