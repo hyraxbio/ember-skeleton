@@ -16,17 +16,31 @@ Router.map(function() {
     this.route('styles');
     this.route('utility-components');
     this.route('page-loading-state');
-    this.route('theme-icon');
-    this.route('theme-color-string');
-    this.route('humanise-string');
-    this.route('custom-inflector');
-    this.route('replace-string');
-    this.route('readable-file-size');
-    this.route('array-join');
+    this.route('helpers', function() {
+      this.route('theme-icon');
+      this.route('theme-color-string');
+      this.route('humanise-string');
+      this.route('custom-inflector');
+      this.route('replace-string');
+      this.route('readable-file-size');
+      this.route('array-join');
+      this.route('odd-or-even');
+      this.route('in-array');
+    });
+    this.route('utils', function() {
+      this.route('theme-icon');
+      this.route('theme-color-string');
+      this.route('humanise-string');
+      this.route('custom-inflector');
+      this.route('readable-file-size');
+      this.route('array-join');
+      this.route('odd-or-even');
+    });
   });
 
 
-  this.route('odd-or-even');
+
+  
 });
 
 export default Router;
