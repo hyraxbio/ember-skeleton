@@ -22,9 +22,11 @@ Router.map(function() {
     this.route('custom-inflector');
     this.route('replace-string');
     this.route('readable-file-size');
+    this.route('array-join');
   });
 
 
+  this.route('odd-or-even');
 });
 
 export default Router;

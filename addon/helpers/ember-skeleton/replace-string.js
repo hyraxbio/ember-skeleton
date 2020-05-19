@@ -2,8 +2,6 @@ import { helper } from '@ember/component/helper';
 
 export function replaceString(params, hash) {
   var string = params[0];
-  var simpleFind = params[1];
-  var simpleReplace = params[2];
   if (!string) { return; }
   if (typeof(string) !== 'string') { return; }
   var final;

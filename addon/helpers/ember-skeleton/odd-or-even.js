@@ -1,21 +1,8 @@
 import { helper } from '@ember/component/helper';
+import oddOrEvenUtil from 'ember-skeleton/utils/odd-or-even';
 
-export function oddOrEven(params) {
-  if (isEven(params[0])) {
-    return 'even';
-  } else if (isOdd(params[0])) {
-    return 'odd';
-  } else {
-    return;
-  }
-}
-
-function isEven(n) {
-  return n % 2 == 0;
-}
-
-function isOdd(n) {
-  return Math.abs(n % 2) == 1;
+export function oddOrEven([num]) {
+  return oddOrEvenUtil(num)
 }
 
 export default helper(oddOrEven);

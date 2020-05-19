@@ -1,9 +1,8 @@
 import { helper } from '@ember/component/helper';
+import customInflectorUtil from 'ember-skeleton/utils/custom-inflector';
 
-export function customInflector([value], {singular, plural}) {
-	var pluralised = plural ? plural : `${singular}s`;
-	var word = value !== 1 ? pluralised : singular;
-  return word;
+export function customInflector([value], hash) {
+  return customInflectorUtil(value, hash);
 }
 
 export default helper(customInflector);

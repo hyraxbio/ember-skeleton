@@ -1,12 +1,8 @@
 import { helper } from '@ember/component/helper';
+import arrayJoinUtil from 'ember-skeleton/utils/array-join';
 
-export function arrayJoin(params/*, hash*/) {
-  if (!params[0]) { return; }
-  if (!Array.isArray(params[0])) { 
-    console.warn(`[ember-skeleton/array-join] You must pass an array as the first argument, You passed ${params[0]}] `);
-    return params[0]; 
-  }
-  return params[0].join(params[1]);
+export function arrayJoin(params, hash) {
+  return arrayJoinUtil(params[0], params[1], hash);
 }
 
 export default helper(arrayJoin);
