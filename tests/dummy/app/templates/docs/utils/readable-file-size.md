@@ -2,18 +2,21 @@
 
 Returns a human readable filesize, after receiving a number of bytes as the only argument.
 
+## Import the util
+
+{{docs-snippet name="import-readable-file-size-util.js"}}
+
+## Usage
+
 {{#docs-demo as |demo|}}
-  {{#demo.example name="readable-file-size"}}
-    {{ember-skeleton/readable-file-size 2345234534}}<br>
-    {{ember-skeleton/readable-file-size 2230000000}}<br>
-    {{ember-skeleton/readable-file-size 1230000001}}<br>
-    {{ember-skeleton/readable-file-size 1230000000}}<br>
-    {{ember-skeleton/readable-file-size 1999999999}}<br>
-    {{ember-skeleton/readable-file-size 1000000000}}<br>
-    {{ember-skeleton/readable-file-size 2000000000}}<br>
-    {{ember-skeleton/readable-file-size 200000000}}<br>
-
+  {{#demo.example name="readable-file-size-util.hbs"}}
+    <ul> 
+      {{#each fileSizes as |fileSize|}}
+        <li>{{fileSize}}</li>
+      {{/each}}
+    </ul>
   {{/demo.example}}
-
-  {{demo.snippet "readable-file-size"}}
+  {{demo.snippet "readable-file-size-util.js" label="Controller" language="javascript"}}
+  {{demo.snippet "readable-file-size-util.hbs" label="Template" language="htmlbars"}}
+  {{demo.snippet "filesizes.js" label="Model" language="javascript"}}
 {{/docs-demo}}

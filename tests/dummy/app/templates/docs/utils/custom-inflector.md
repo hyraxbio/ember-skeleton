@@ -8,6 +8,8 @@ The plural version is optional- if not passed, the plural version of the phrase 
 
 {{docs-snippet name="import-custom-inflector-util.js"}}
 
+## Usage
+
 {{#docs-demo as |demo|}}
   {{#demo.example name="custom-inflector-basic"}}
     <ul> 

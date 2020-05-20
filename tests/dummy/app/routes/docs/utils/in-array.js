@@ -1,17 +1,5 @@
 import Route from '@ember/routing/route';
+import EmployeeLevels from '../../../mixins/model-data/employee-levels';
 
-export default Route.extend({
-  // BEGIN-SNIPPET employee-levels.js
-  model() {
-    var seniorEmployees = ['Ron Swanson', 'Lesley Knope'];
-    var juniorEmployees = ['Lil Sebastian', 'Andy Dwyer'];
-    var interns = ['April Ludgate'];
-    return {
-      seniorEmployees: seniorEmployees,
-      juniorEmployees: juniorEmployees,
-      interns: interns,
-      all: seniorEmployees.concat(juniorEmployees).concat(interns)
-    };
-    // END-SNIPPET
-  }
+export default Route.extend(EmployeeLevels, {
 });

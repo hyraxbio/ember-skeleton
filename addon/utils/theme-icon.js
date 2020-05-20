@@ -2,7 +2,6 @@ import emberSkeletonOptions from './ember-skeleton-options';
 
 export default function themeIcon(string, hash) {
   var defaultAssociations = emberSkeletonOptions().themeIconDefaults;
-  console.log(defaultAssociations);
   if (!string) { 
     throw('[ember-skeleton/theme-icon] You must pass a string as the first argument to the helper.');
   }
@@ -22,14 +21,12 @@ export default function themeIcon(string, hash) {
       });
     }
   }
-  console.log(string)
-  console.log(hash.fallback);
   if (findReturnString(hashAssociations, string)) {
     return findReturnString(hashAssociations, string);
   } else if (findReturnString(defaultAssociations, string)) {
    return findReturnString(defaultAssociations, string);
   } else {
-    if (hash.fallback) {
+    if ((hash || {}).fallback) {
       return hash.fallback;
     }
     return;

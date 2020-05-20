@@ -30,7 +30,6 @@ Router.map(function() {
     this.route('utils', function() {
       this.route('theme-icon');
       this.route('theme-color-string');
-      this.route('humanise-string');
       this.route('custom-inflector');
       this.route('readable-file-size');
       this.route('array-join');

@@ -71,7 +71,7 @@ Likewise, simply passing in the status as he relevant part of the badge doesn't 
 
 ## Basic usage
 
-The `ember-skeleton/theme-color-string` helper accepts a string as the first argument (`person.status` in the example below), and a hash of key value pairs, where each key is a potential value of `person.status` and each value is one othe the defined theme colours. The helper returns the relevant theme colour, and thus, the badges below display correctly.
+The `ember-skeleton/theme-color-string` helper accepts a string as the first argument (`person.status` in the example below), and a hash of key value pairs, where each key is a potential value of `person.status` and each value is one of the defined theme colours. The helper returns the relevant theme colour, and thus, the badges below display correctly.
 
 {{#docs-demo as |demo|}}
   {{#demo.example name="bootstrap-badges-dynamic-data-parsed-status"}}

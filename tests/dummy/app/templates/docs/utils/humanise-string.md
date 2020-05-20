@@ -1,3 +1,0 @@
-# Humanise string
-
-

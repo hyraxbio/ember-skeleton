@@ -1,11 +1,5 @@
 import Route from '@ember/routing/route';
+import Names from '../../../mixins/model-data/names';
 
-export default Route.extend({
-  // BEGIN-SNIPPET names.js
-  model() {
-    return {
-      names: ['Lil Sebastian', 'Lesley Knope', 'Andy Dwyer']
-    }
-    // END-SNIPPET
-  }
+export default Route.extend(Names, {
 });

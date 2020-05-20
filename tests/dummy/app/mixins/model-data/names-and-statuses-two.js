@@ -1,8 +1,8 @@
-import Route from '@ember/routing/route';
+import Mixin from '@ember/object/mixin';
 
-export default Route.extend({
-  // BEGIN-SNIPPET names-and-statuses-two.js
-  model() {
+export default Mixin.create({
+   // BEGIN-SNIPPET names-and-statuses-two.js
+   model() {
     return [{
       name: 'Lesley Knope',
       status: 'Passed'
@@ -13,6 +13,6 @@ export default Route.extend({
       name: 'Lil Sebastian',
       status: 'not-applicable'
     }];
-    // END-SNIPPET
   }
+  // END-SNIPPET
 });
