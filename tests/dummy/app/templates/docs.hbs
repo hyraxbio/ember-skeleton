@@ -1,13 +1,36 @@
 {{#docs-viewer as |viewer|}}
   {{#viewer.nav as |nav|}}
     {{nav.section "Introduction"}}
-    {{nav.item "Styles" "docs.styles"}}
-    {{nav.item "Page layouts" "docs.page-layouts"}}
-    {{nav.item "Layout components" "docs.layout-components"}}
-    {{nav.item "Utility components" "docs.utility-components"}}
+    {{nav.item "What is Ember Skeleton?" "docs.index"}}
     {{nav.item "App wide options" "docs.default-options"}}
     {{nav.item "Page loading state" "docs.page-loading-state"}}
+
+    {{nav.section "Styles"}}
+    {{nav.item "Introduction" "docs.styles.introduction"}}
+    {{nav.item "Theme colors" "docs.styles.theme-colors"}}
+    {{nav.item "Theme color variants" "docs.styles.theme-color-variants"}}
+    {{nav.item "Spacers" "docs.styles.spacers"}}
+    {{nav.item "Text" "docs.styles.text"}}
+    {{nav.item "Box arrows" "docs.styles.box-arrows"}}
+    {{nav.item "Box shadow mixin" "docs.styles.box-shadow-mixin"}}
+    {{nav.item "Card box shadow" "docs.styles.card-box-shadow"}}
+    {{nav.item "Flexbox" "docs.styles.flexbox"}}
+    {{nav.item "Miscellaneous" "docs.styles.miscellaneous"}}
     
+    {{nav.section "Main page layouts"}}
+    {{nav.item "Panel layout" "docs.main-page-layouts.panel-layout"}}
+    {{nav.item "Sidebar layout" "docs.main-page-layouts.sidebar-layout"}}
+
+    {{nav.section "Layout components"}}
+    {{nav.item "Content wrapper" "docs.layout-components.content-wrapper"}}
+    {{nav.item "Header component" "docs.layout-components.header-component"}}
+    {{nav.item "Loading component" "docs.layout-components.loading-component"}}
+    {{nav.item "Footer component" "docs.layout-components.footer-component"}}
+    {{nav.item "Sidebar component" "docs.layout-components.sidebar-components"}}
+
+    {{nav.section "Utility components"}}
+    {{nav.item "Material card" "docs.utility-components.material-card"}}
+
     {{nav.section "Helpers"}}
     {{nav.item "Array join" "docs.helpers.array-join"}}
     {{nav.item "Custom inflector" "docs.helpers.custom-inflector"}}

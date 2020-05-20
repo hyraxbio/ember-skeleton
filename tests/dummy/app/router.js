@@ -8,14 +8,34 @@ const Router = AddonDocsRouter.extend({
 
 Router.map(function() {
   docsRoute(this, function() { 
-    /* Your docs routes go here */ 
-    this.route('not-found', { path: '/*path' });
     this.route('default-options');
-    this.route('page-layouts');
-    this.route('layout-components');
-    this.route('styles');
-    this.route('utility-components');
+    this.route('styles', function() {
+      this.route('box-arrows');
+      this.route('box-shadow-mixin');
+      this.route('card-box-shadow');
+      this.route('flexbox');
+      this.route('introduction');
+      this.route('miscellaneous');
+      this.route('spacers');
+      this.route('text');
+      this.route('theme-color-variants');
+      this.route('theme-colors');
+    });
+    this.route('utility-components', function() {
+      this.route('material-card');
+    });
     this.route('page-loading-state');
+    this.route('main-page-layouts', function() {
+      this.route('panel-layout');
+      this.route('sidebar-layout');
+    }),
+    this.route('layout-components', function() {
+      this.route('content-wrapper');
+      this.route('header-component'),
+      this.route('footer-component'),
+      this.route('sidebar-components'),
+      this.route('loading-component')
+    }),
     this.route('helpers', function() {
       this.route('theme-icon');
       this.route('theme-color-string');
@@ -36,10 +56,7 @@ Router.map(function() {
       this.route('odd-or-even');
     });
   });
-
-
-
-  
+  this.route('not-found', { path: '/*path' });
 });
 
 export default Router;
