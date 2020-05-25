@@ -1,7 +1,7 @@
 import Component from '@ember/component';
 import layout from '../../templates/components/ember-skeleton/material-card';
 import { computed } from '@ember/object';
-import { themeColorString } from 'ember-skeleton/helpers/ember-skeleton/theme-color-string';
+import themeColorStringUtil from 'ember-skeleton/utils/theme-color-string';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
@@ -11,13 +11,10 @@ export default Component.extend({
   emberSkeleton: service(),
 
   borderColor: computed('borderColorProp', function() {
-    var themeColorStringCombinedHash = {};
-    themeColorStringCombinedHash.default = "gray-light";
-    for (var key in this.get('themeColorStringHash')) {
-      themeColorStringCombinedHash[key] = this.get('themeColorStringHash')[key];
+    if (!this.get('borderColorProp')) {
+      return;
     }
-    themeColorStringCombinedHash.defaultAssociations = this.get('emberSkeleton.themeColorStringDefaults');
-    return `border-${themeColorString([this.get('borderColorProp')], themeColorStringCombinedHash)}`;
+    return `border-${themeColorStringUtil(this.get('borderColorProp'), this.get('themeColorStringHash'))}`;
   }),
 
   shadowLevel: computed('depth', function() {
