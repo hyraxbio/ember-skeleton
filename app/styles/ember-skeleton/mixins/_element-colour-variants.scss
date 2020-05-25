@@ -155,11 +155,11 @@
 }
 
 @mixin fill-variant($bg) {
-  fill: $bg;
+  fill: $bg !important;
 }
 
 @mixin stroke-variant($bg) {
-  stroke: $bg;
+  stroke: $bg !important;
 }
 
 @mixin bg-variant($parent, $color) {

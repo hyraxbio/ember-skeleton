@@ -1,11 +1,11 @@
 {
   "name": "ember-skeleton",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/andrew-paterson/ember-skeleton",
   "license": "MIT",
   "author": "",
   "directories": {

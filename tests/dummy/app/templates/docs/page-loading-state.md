@@ -1,10 +1,10 @@
 # Page loading state
 
-Ember skeleton can be configured so that the main content area of your layouts shows a loading component when model data is being fetched,  or in fact at any time you choose.
+By toggling the `hideContent` property in the `emberSkeleton` service, you can toggle the main content area of your layouts between loading and loaded state. Your loading state will likely show some form of loading animation or gif, to indicate that a network request is in process.
 
-## The `hideContent` prop
+See {{link-to "layout components" "docs.layout-components"}} on how to customise what displays in loading state.
 
-The layouts resposnd to the `hideContent` property in the `emberSkeleton` service. Thus, you can inject that service into any component, route, controller or service. The example below shows how the loading state can be swtiched on when a network request is sent, and then switched off after it has completed. 
+The example below shows how the loading state can be toggled at anytime, and from any Ember class that the `emberSkeleton` service can be injected into.
 
 {{docs-snippet name="hide-content-explicit.js"}}
 
@@ -16,4 +16,4 @@ To automatically toggle the loading state of your layouts when Ember data is fet
 
 ## Customising the loading component
 
-See {{link-to "layout components" "docs.layout-components"}} on how to customise your loading UI.
+

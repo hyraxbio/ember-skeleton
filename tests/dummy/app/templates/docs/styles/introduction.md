@@ -2,19 +2,19 @@
 
 The styles are implemented using `SASS`, and thus the `ember-cli-sass` addon is required. Install by running `ember install ember-cli-sass`.
 
-There are to stylesheets which need to be imported in `app/styles/app.scss`.
+There are two stylesheets which need to be imported in `app/styles/app.scss`.
 
 {{docs-snippet name="basic-style-imports.scss" language="css"}}
 
 ## Overriding SASS variables
 
-All variables listed in `app/styles/ember-skeleton/variables` can be overridden. This must be done before the import of `ember-skeleton-variables` in `app.scss`.
+All variables listed in `app/styles/ember-skeleton/variables` can be overridden. This must be done before the import of `ember-skeleton-variables`.
 
-{{docs-snippet name="overriding-default-scss-vars.scss" language="css"}}
+{{docs-snippet name="overriding-default-scss-vars.scss" language="scss" title="app.scss"}}
 
 ## Boostrap integration
 
-Bootstrap is used heavily, but not completely. The following components are used from Boostrap 4.1. Please see the linked Boostrap docs for usage.
+Several components of Boostrap 4.1 SASS code have been borrowed, some of which have been slightly modified. The original Bootstrap docs are listed below. Note that additional CSS classes have been added to some of these components in the Ember Skeleton SASS code.
 
 ### Bootstrap components
 

@@ -161,20 +161,6 @@ Removes the side borders.
 
 The boostrap list group styles are extended by adding the class `.list-group-item-header` which applies the font weight defined the the variable `$list-group-header-font-weight`. The default is 600.
 
-Custom colours can be added to this map, by defining your own `$theme-colors` map *before* importing `ember-skeleton-variables`.
-
-{{docs-snippet name="adding-cutom-bootstrap-colours.scss" language="css"}}
-
-{{#docs-demo as |demo|}}
-  {{#demo.example name="badge-custom-colour-variants.hbs"}}
-    <div class="badge badge-twitter">badge-twitter</div>
-    <div class="badge badge-facebook">badge-facebook</div>
-    <div class="badge badge-tripadvisor">badge-tripadvisor</div>
-    <div class="badge badge-reddit">badge-reddit</div>
-  {{/demo.example}}
-  {{demo.snippet "badge-custom-colour-variants.hbs"}}
-{{/docs-demo}}
-
 # Borders 
 
 Taken from [Bootstrap borders](https://getbootstrap.com/docs/4.1/utilities/borders/)
@@ -216,9 +202,18 @@ Taken from [Bootstrap border radius](https://getbootstrap.com/docs/4.1/utilities
 
 Provides a set of classes that apply either a fill or background to an element in `RGBa` format, thus allowing transparency. The defaults provide both black and white at levels 10, 30 and 50. These numbers refer to percentage opacity. The classes are as follows:
 
-    overlay-bg-white-10, overlay-bg-white-30, overlay-bg-white-50, overlay-bg-black-10, overlay-bg-black-30, overlay-bg-black-50
-
-    overlay-fill-white-10, overlay-fill-white-30, overlay-fill-white-50, overlay-fill-black-10, overlay-fill-black-30, overlay-fill-black-50
+    .overlay-bg-white-10
+    .overlay-bg-white-30
+    .overlay-bg-white-50
+    .overlay-bg-black-10
+    .overlay-bg-black-30
+    .overlay-bg-black-50
+    .overlay-fill-white-10
+    .overlay-fill-white-30
+    .overlay-fill-white-50
+    .overlay-fill-black-10
+    .overlay-fill-black-30
+    .overlay-fill-black-50
 
 {{#docs-demo as |demo|}}
   {{#demo.example name="overlay-colours-black"}}
@@ -266,7 +261,7 @@ The Bootstap theme colours have are extended to incldue `fill` and `stroke`, for
 
 {{#docs-demo as |demo|}}
   {{#demo.example name="circle-svg.hbs"}}
-     <svg class="fill-gray-medium stroke-secondary" height="100" width="100">
+     <svg class="fill-info stroke-dark" height="100" width="100">
       <circle cx="50" cy="50" r="40" stroke-width="3" />
     </svg> 
   {{/demo.example}}

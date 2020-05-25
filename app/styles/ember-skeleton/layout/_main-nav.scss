@@ -1,6 +1,6 @@
 div.main-nav {
   max-width: $sidebar-expanded-width;
-  overflow: hidden;
+  overflow: auto;
   background: $sidebar-background;
   &.nav-collapsed  {
     max-width: $sidebar-collapsed-width;
@@ -28,6 +28,9 @@ div.main-nav {
     display: flex;
     align-items: center;
     background: $gray-dark;
+    &.no-link {
+      padding: 0 $spacer-lg;
+    }
   }
 
   .menu-toggle {
@@ -87,7 +90,7 @@ div.main-nav {
     fill: #fff;
     width: $sidebar-collapsed-width;
   	height: $sidebar-nav-item-height;
-  	padding: 10px 10px;
+  	padding: $spacer-lg;
   }
 }
 

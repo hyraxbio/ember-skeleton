@@ -14,7 +14,7 @@ Any additional settings can be added to the `emberSkeletonOptions` object. These
 
 ## Theme color string defaults
 
-Allows you to define default settings for use by the `ember-skeleton/theme-color-string` helper. The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
+Allows you to define default settings for use by the {{#link-to "docs.helpers.theme-color-string"}}`ember-skeleton/theme-color-string` helper{{/link-to}}. The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
 
 {{docs-snippet name="theme-color-string-app-defaults.js" language="javascript"}}
 
@@ -34,7 +34,7 @@ The above settings would allow the following three use cases.
 
 ## Theme icon defaults
 
-Allows you to define default settings for use by the `ember-skeleton/theme-icon-string` helper. The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
+Allows you to define default settings for use by the {{#link-to "docs.helpers.theme-icon"}}`ember-skeleton/theme-icon-string` helper{{/link-to}}. The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
 
 {{docs-snippet name="theme-icon-app-defaults.js" language="javascript"}}
 
