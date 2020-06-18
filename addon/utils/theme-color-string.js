@@ -3,7 +3,7 @@ import emberSkeletonOptions from './ember-skeleton-options';
 export default function themeColorString(string, hash = {}) {
   var defaultAssociations = emberSkeletonOptions().themeColorStringDefaults;
   if (!string) { 
-    throw('[ember-skeleton/theme-color-string] You must pass a string as the first argument to the helper.');
+    return;
   }
   string = string.toLowerCase();
   defaultAssociations = defaultAssociations || hash.defaultAssociations || [];
