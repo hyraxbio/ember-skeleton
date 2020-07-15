@@ -39,12 +39,9 @@
       flex-direction: column;
       .sidebar-toggle {
         background: $sidebar-toggle-menu-background;
-        display: flex;
-        justify-content: space-between;
         height: $sidebar-toggle-menu-list-item-height;
         border-width: 0;
         border-bottom: 1px solid #666;
-        justify-content: flex-end;
         .sidebar-collapse-icon {
           width: $sidebar-collapsed-width;
           svg {
