@@ -1,11 +1,13 @@
 {{component emberSkeleton.options.headerComponent headerProps=headerProps}}
+      {{log emberSkeleton.options.alternativeContentComponent}}
+
 <section class="panel-container">
-  <div class="main-content {{if emberSkeleton.hideContent "hidden"}}">
+  <div class="main-content {{if emberSkeleton.hideMainContent "hidden"}}">
     {{yield}}
   </div>
-  {{#if emberSkeleton.hideContent}}
+  {{#if emberSkeleton.hideMainContent}}
     <div class="loading-content flex-expand">
-      {{component emberSkeleton.options.loadingComponent loadingProps=loadingProps}}
+      {{component emberSkeleton.options.alternativeContentComponent loadingProps=loadingProps layoutType=emberSkeleton.layoutType isLoading=emberSkeleton.isLoading}}
     </div>
   {{/if}}
   {{component emberSkeleton.options.footerComponent footerProps=footerProps}}

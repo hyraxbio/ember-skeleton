@@ -1,10 +1,16 @@
 import Service from '@ember/service';
-import EmberSkeletonOptions from 'ember-skeleton/utils/ember-skeleton-options';
+import emberSkeletonOptions from 'ember-skeleton/utils/ember-skeleton-options';
+import { computed } from '@ember/object';
 
 export default Service.extend({
+  layoutType: 'main',
   init() {
     this._super(...arguments);
-    this.options = EmberSkeletonOptions();
-  }
+    this.options = emberSkeletonOptions();
+  },
+
+  hideMainContent: computed('layoutType', 'isLoading', function() {
+    return this.layoutType !== 'main' || this.isLoading;
+  }),
   
 });
