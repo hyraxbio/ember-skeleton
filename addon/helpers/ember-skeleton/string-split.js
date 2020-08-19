@@ -1,12 +1,14 @@
 import { helper } from '@ember/component/helper';
 
 export function emberSkeletonStringSplit(params/*, hash*/) {
-  var string = params[0];
-  if (!string) {
+  if (!params[0]) {
     return;
   }
+  if (typeof params[0] !== 'string') {
+    return params[0];
+  }
   var splitChar = params[1] || ',';
-  return string.split(splitChar);
+  return params[0].split(splitChar);
 }
 
 export default helper(emberSkeletonStringSplit);
