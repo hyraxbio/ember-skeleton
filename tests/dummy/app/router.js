@@ -8,6 +8,7 @@ const Router = AddonDocsRouter.extend({
 
 Router.map(function() {
   docsRoute(this, function() { 
+    this.route('introduction');
     this.route('default-options');
     this.route('styles', function() {
       this.route('box-arrows');
@@ -43,6 +44,7 @@ Router.map(function() {
       this.route('custom-inflector');
       this.route('replace-string');
       this.route('readable-file-size');
+      this.route('robotise-string');
       this.route('array-join');
       this.route('odd-or-even');
       this.route('in-array');
@@ -52,6 +54,7 @@ Router.map(function() {
       this.route('theme-color-string');
       this.route('custom-inflector');
       this.route('readable-file-size');
+      this.route('robotise-string');
       this.route('array-join');
       this.route('odd-or-even');
     });
