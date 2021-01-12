@@ -79,12 +79,12 @@ input[type=checkbox],
     border: 2px solid $input-border-color;
     content: "";
     background-color: $input-background-color;
-    border: 2px solid $input-hover-border-color;
     width: $radio-button-checkbox-width-height;
     height: $radio-button-checkbox-width-height;
     position: absolute;
     top: 0;
     left: 0px;
+   
   }
   &:checked:after, &.checked:after {
     background: $radio-checkbox-selected-background-color $svg-data-uri-icon-tick no-repeat $radio-checkbox-selected-background-position;
@@ -92,6 +92,9 @@ input[type=checkbox],
   }
   &:focus:after, &:focus:checked:after {
     border-color: $input-focus-border-color;
+  }
+  &:hover {
+    border-color: $input-hover-border-color;
   }
 }
 
