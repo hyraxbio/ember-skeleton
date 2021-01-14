@@ -106,6 +106,8 @@ To avoid having to explicitly pass these associations to the helper every time i
 
 The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponsing `returnString`.
 
+Note that you can set `fallback: true` on one of the objects. In this case, the returnString of that object will be returned if no matches are found. Note that this can be overriden by passing `fallback` to the helper as outlined below.
+
 {{#docs-demo as |demo|}}
   {{#demo.example name="bootstrap-badges-dynamic-data-default-status"}}
     <table>

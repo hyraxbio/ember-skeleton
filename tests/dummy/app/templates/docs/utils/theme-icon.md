@@ -51,6 +51,8 @@ To avoid having to explicitly pass these associations to the helper every time i
 
 The helper will check if the value of the first argument is present in any of the `matchStrings` arrays, and will return the corresponding `returnString`.
 
+Note that you can set `fallback: true` on one of the objects. In this case, the returnString of that object will be returned if no matches are found. Note that this can be overriden by passing `fallback` to the util as outlined below.
+
 {{#docs-demo as |demo|}}
   {{#demo.example name="util-default-theme-icons" class="theme-icons-demo"}}
     <table>

@@ -28,6 +28,13 @@ export default function themeIcon(string, hash) {
   } else {
     if ((hash || {}).fallback) {
       return hash.fallback;
+    } else {
+      var defaultFallbackObject = defaultAssociations.find(item => {
+        return item.fallback;
+      });
+      if (defaultFallbackObject) {
+        return defaultFallbackObject.returnString;
+      }
     }
     return;
   }

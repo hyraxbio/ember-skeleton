@@ -8,7 +8,8 @@ let ENV = {
       matchStrings: ['danger', 'failed']
     }, {
       returnString: 'svg/icons/icon-tick',
-      matchStrings: ['success', 'passed']
+      matchStrings: ['success', 'passed'],
+      default: true
     }]
   }
 };
