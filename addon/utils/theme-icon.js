@@ -2,9 +2,7 @@ import emberSkeletonOptions from './ember-skeleton-options';
 
 export default function themeIcon(string, hash) {
   var defaultAssociations = emberSkeletonOptions().themeIconDefaults;
-  if (!string) { 
-    throw('[ember-skeleton/theme-icon] You must pass a string as the first argument to the helper.');
-  }
+  console.warn('[ember-skeleton/theme-icon] You must pass a string as the first argument to the helper.');
   string = string.toLowerCase();
   defaultAssociations = defaultAssociations || hash.defaultAssociations || [];
   var hashAssociations = [];
