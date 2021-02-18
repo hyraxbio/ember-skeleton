@@ -12,6 +12,12 @@
 .border-bottom-0 { border-bottom: 0; }
 .border-left-0   { border-left: 0; }
 
+@each $width in (1,2,3,4,5) {
+  .border-#{$width}px {
+    border-width: #{$width}px;
+  }
+}
+
 @each $color, $value in $theme-colors {
   .border-#{$color} {
     border-color: $value;

@@ -14,10 +14,13 @@
   }
 }
 
-// Background
+// Backgrounds
 @mixin bg-variant($parent, $color) {
   #{$parent} {
     background-color: $color !important;
+    &.text-yiq {
+      color: color-yiq($color);
+    }
   }
   a#{$parent},
   button#{$parent} {
@@ -160,14 +163,4 @@
 
 @mixin stroke-variant($bg) {
   stroke: $bg !important;
-}
-
-@mixin bg-variant($parent, $color) {
-  #{$parent} {
-    background-color: $color !important;
-  }
-  a#{$parent},
-  button#{$parent} {
-   background-color: darken($color, 10%) !important;
-  }
 }
