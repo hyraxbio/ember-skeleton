@@ -22,10 +22,11 @@
       color: color-yiq($color);
     }
   }
+  
   a#{$parent},
   button#{$parent} {
-    &:hover,
-    &:focus {
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):focus {
       background-color: darken($color, 10%) !important;
     }
   }
@@ -52,8 +53,8 @@
     color: $color !important;
   }
   a#{$parent} {
-    &:hover,
-    &:focus {
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):focus {
       color: darken($color, 10%) !important;
     }
   }
@@ -101,7 +102,7 @@
   svg {
       fill: color-yiq($background);
     }
-  &:hover {
+  &:hover:not(:disabled):not(.disabled) {
     color: color-yiq($background);
     background: $hover-background;
     border-color:$hover-background;
@@ -110,13 +111,6 @@
     background: $hover-background;
     border-color:$hover-background;
     box-shadow: 0 0 0 3px rgba($background, .5);
-  }
-  // Disabled comes first so active can properly restyle
-  &.disabled,
-  &:disabled {
-    color: color-yiq($background);
-    background-color: $background;
-    border-color: $background;
   }
 }
 

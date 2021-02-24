@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.width-20px {
+  width: 20px;
+}
+
 @each $spacing-type in 'height', 'width' {
   @each $key, $value in $spacers {
     .#{$spacing-type}-#{$key} {

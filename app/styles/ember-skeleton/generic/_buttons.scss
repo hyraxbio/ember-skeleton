@@ -4,26 +4,19 @@
   }
 }
 
+
+
 .btn-content {
   padding: 0;
   background: transparent;
   border-width: 0;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
   &:focus, &:active {
     outline: none;
   }
-  &:hover {
-    cursor: pointer;
-  }
-  // svg {
-  //   margin: 0;
-  //   height: 16px;
-  //   width: auto;
-  //   margin-right: $spacer-md;
-  //   &.button-right {
-  //     margin-right: 0;
-  //     margin-left: $spacer-md;
-  //   }
-  // }
 }
 
 .btn {
@@ -41,7 +34,6 @@
   font-family: $button-font-family;
   height: $button-height;
   font-weight: $button-font-weight;
-  cursor: pointer;
   padding: 0 $button-padding-x;
   &:focus,
   &.focus {
@@ -268,10 +260,4 @@ input[type="button"] {
   &.btn-block {
     width: 100%;
   }
-}
-
-.btn {
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
 }
