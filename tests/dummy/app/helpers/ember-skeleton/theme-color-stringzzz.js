@@ -11,8 +11,8 @@ export function themeColorString(params, hash, defaultAssociations) {
   var defaultFallBack = (defaultAssociations ||[]).find(item => {
     return item.fallback;
   });
-  var fallBackColor = hash.fallback || defaultFallBack.returnString;
-  if (!string) { return fallBackColor; }
+  var fallbackColor = hash.fallback || defaultFallBack.returnString;
+  if (!string) { return fallbackColor; }
   string = string.toLowerCase();
   defaultAssociations = defaultAssociations || hash.defaultAssociations || [];
   var hashAssociations = [];
@@ -34,10 +34,10 @@ export function themeColorString(params, hash, defaultAssociations) {
   } else if (findReturnString(defaultAssociations, string)) {
    return findReturnString(defaultAssociations, string);
   } else {
-    if (!fallBackColor) {
+    if (!fallbackColor) {
       console.warn('[ember-skeleton/theme-color-string] You did not pass a fallback colour to the helper, and you do not have a fallback option set in the themeColorStringDefaults array in ember-skeleton.');
     }
-    return fallBackColor;
+    return fallbackColor;
   }
 }
 

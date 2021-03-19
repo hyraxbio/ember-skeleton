@@ -18,7 +18,7 @@ let ENV = {
     {
       returnString: 'gray-medium',
       matchStrings: ['pending'],
-      fallBack: true
+      fallback: true
     }],
   }
 };
