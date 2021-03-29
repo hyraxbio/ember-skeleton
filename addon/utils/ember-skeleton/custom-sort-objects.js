@@ -1,22 +1,33 @@
 export default function customSortJsonArray(params) {
-  var order = params.order || [];
-  var array = params.array || [];
-  var key = params.key || "";
-  var orderedArray = [];
+  const order = params.order || [];
+  const array = params.array ? [...params.array] : [];
+  const key = params.key || "";
+  const orderedArray = [];
   //Include all items in the order list that is included in the passed params.
   order.forEach(orderItem => {
-    var arraySubset = array.filter((arrayItem) => {
-      return arrayItem[key] === orderItem;
+    const arraySubset = array.filter((arrayItem) => {
+      return orderItemMatch(orderItem, arrayItem, key);
     });
     arraySubset.forEach(arrayItem => {
       orderedArray.push(arrayItem);
     });
   });
-  //Fallback to include items not in the order list in the passed params.
-  array.forEach(item => {
-    if (order.indexOf(item[key]) < 0) {
-      orderedArray.push(item);
-    }
-  });
-  return orderedArray;
+  const leftOvers = array.filter(arrayItem => {
+    let nomatch = true;
+    order.forEach(orderItem => {
+      if (orderItemMatch(orderItem, arrayItem, key)) {
+        nomatch = false;
+      }
+    });
+    return nomatch;
+  })
+  return orderedArray.concat(leftOvers);
+}
+
+function orderItemMatch(orderItem, arrayItem, key) {
+  if (orderItem instanceof RegExp) {
+    return orderItem.test(arrayItem[key])
+  } else {
+    return arrayItem[key] === orderItem;
+  }
 }
