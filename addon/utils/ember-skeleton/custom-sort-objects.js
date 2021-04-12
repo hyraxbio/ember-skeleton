@@ -1,6 +1,6 @@
 export default function customSortJsonArray(params) {
   const order = params.order || [];
-  const array = params.array ? [...params.array] : [];
+  const array = params.array ? params.array : [];
   const key = params.key || "";
   const orderedArray = [];
   //Include all items in the order list that is included in the passed params.
