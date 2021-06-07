@@ -1,6 +1,7 @@
 div.main-nav {
   max-width: $sidebar-expanded-width;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   background: $sidebar-background;
   &.nav-collapsed  {
     max-width: $sidebar-collapsed-width;
