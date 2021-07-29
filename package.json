@@ -1,6 +1,6 @@
 {
   "name": "ember-skeleton",
-  "version": "1.4.15",
+  "version": "1.4.16",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
@@ -62,7 +62,8 @@
     "install": "^0.13.0",
     "loader.js": "^4.7.0",
     "qunit-dom": "^0.8.0",
-    "sass": "^1.14.3"
+    "sass": "^1.14.3",
+    "tag-and-release": "^1.0.12"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
