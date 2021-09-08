@@ -1,6 +1,6 @@
 {
   "name": "ember-skeleton",
-  "version": "1.4.18",
+  "version": "1.4.19",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
