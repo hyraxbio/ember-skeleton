@@ -21,6 +21,29 @@
     &.text-yiq {
       color: color-yiq($color);
     }
+    .fill-yiq {
+      fill: color-yiq($color);
+    }
+  }
+  
+  a#{$parent},
+  button#{$parent} {
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):focus {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+}
+
+@mixin bg-hover-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+    &.text-yiq {
+      color: color-yiq($color);
+    }
+    .fill-yiq {
+      fill: color-yiq($color);
+    }
   }
   
   a#{$parent},

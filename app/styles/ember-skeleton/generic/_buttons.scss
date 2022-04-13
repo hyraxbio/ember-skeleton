@@ -19,6 +19,14 @@
   }
 }
 
+@mixin button-text() {
+  font-size: $button-font-size;
+  letter-spacing: $button-letter-spacing;
+  text-transform: $button-text-transform;
+  font-family: $button-font-family;
+  font-weight: $button-font-weight;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -28,14 +36,10 @@
   user-select: none;
   border: $button-border-width solid transparent;
   border-radius: $button-border-radius;
-  font-size: $button-font-size;
-  letter-spacing: $button-letter-spacing;
-  text-transform: $button-text-transform;
-  font-family: $button-font-family;
   height: $button-height;
-  font-weight: $button-font-weight;
   padding: 0 $button-padding-x;
   text-decoration: none;
+  @include button-text();
   &:focus,
   &.focus {
     outline: 0;
