@@ -37,7 +37,7 @@ const contigs = [{
   },
 }];
 
-const ordered = customSortObjects({
+var ordered = customSortObjects({
   array: contigs,
   order: ['PRRT', 'IN'],
   key: 'code'
@@ -80,7 +80,7 @@ const ordered = customSortObjects({
 //END-SNIPPET
 
 // BEGIN-SNIPPET custom-sort-objects-regex-match.js
-const ordered = customSortObjects({
+var ordered = customSortObjects({
   array: contigs,
   order: [new RegExp(`.*?RT`), 'IN'],
   key: 'code'

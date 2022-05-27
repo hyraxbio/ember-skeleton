@@ -31,14 +31,14 @@ $theme-colors: map-merge((
   "info":         $info,
   "warning":      $warning,
   "danger":       $danger,
-  "light":        $light,
-  "dark":         $dark,
   "gray-extra-light": $gray-extra-light,
   "gray-light":   $gray-light,
   "gray-medium":  $gray-medium,
   "gray-dark":    $gray-dark,
   "white":        $white
 ), $theme-colors);
+
+$button-theme-colors: $theme-colors !default;
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;

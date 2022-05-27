@@ -18,6 +18,12 @@ The Ember Skeleton `SASS` code will create multiple CSS style rules for each of 
     .btn-*
     .btn-outline-*
 
+## Button theme colours
+
+If you don't want the full map of `$theme-colors` applied to buttons, you can define a buttons specific map and pass it to the variable `$button-theme-colors`. The format is the same a the `&theme-colors` variable.
+
+This map of colours will then be used to generate the colour variants of the `.btn-*` and `.btn-outline-*` variants.
+
 ## Adding custom theme colors
 
 Custom colours can be added to this map, by defining your own `$theme-colors` map *before* importing `ember-skeleton-variables`.

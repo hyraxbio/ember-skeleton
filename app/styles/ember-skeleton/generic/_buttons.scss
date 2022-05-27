@@ -4,8 +4,6 @@
   }
 }
 
-
-
 .btn-content {
   padding: 0;
   background: transparent;
@@ -97,7 +95,7 @@ fieldset:disabled a.btn {
 
 // Button colours
 @each $color,
-$value in $theme-colors {
+$value in $button-theme-colors {
   .btn-#{$color} {
     @include button-variant($value);
     cursor: pointer;
@@ -136,7 +134,7 @@ $value in $theme-colors {
 }
 
 @each $color,
-$value in $theme-colors {
+$value in $button-theme-colors {
   .btn-outline-#{$color} {
     @include button-outline-variant($value);
     &.flashing {
