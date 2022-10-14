@@ -3,6 +3,10 @@
     .#{$spacing-type}-#{$key} {
       #{$spacing-type}: $value;
     }
+  }
+}
+@each $spacing-type in 'padding', 'margin' {
+  @each $key, $value in $spacers {
     .#{$spacing-type}-x-#{$key} {
       #{$spacing-type}-left: $value;
       #{$spacing-type}-right: $value;
@@ -11,6 +15,11 @@
       #{$spacing-type}-top: $value;
       #{$spacing-type}-bottom: $value;
     }
+  }
+}
+
+@each $spacing-type in 'padding', 'margin' {
+  @each $key, $value in $spacers {
     .#{$spacing-type}-top-#{$key} {
       #{$spacing-type}-top: $value;
     }
