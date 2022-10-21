@@ -76,7 +76,7 @@
     width: 22px;
   }
   &.btn-lg svg {
-    height: 30px;
+    height: $spacer-lg + $spacer-md;
   }
   &.btn-lc {
     text-transform: none;
