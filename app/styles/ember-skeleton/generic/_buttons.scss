@@ -1,6 +1,8 @@
+@use "sass:math";
+
 .body-text {
   .btn {
-    font-size: #{($button-font-size / $body-text-font-size)}em;
+    font-size: #{math.div($button-font-size, $body-text-font-size)}em;
   }
 }
 

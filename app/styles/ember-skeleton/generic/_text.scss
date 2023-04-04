@@ -1,3 +1,5 @@
+@use "sass:math";
+
 body {
   font-size: 62.5%;
   color: $body-color;
@@ -81,16 +83,16 @@ h4 {
   }
 
   h1 {
-    font-size: #{($body-text-header-h1-font-size/$body-text-font-size)}em;
+    font-size: #{math.div($body-text-header-h1-font-size, $body-text-font-size)}em;
   }
   h2 {
-    font-size: #{($body-text-header-h2-font-size/$body-text-font-size)}em;
+    font-size: #{math.div($body-text-header-h2-font-size, $body-text-font-size)}em;
   }
   h3 {
-    font-size: #{($body-text-header-h3-font-size/$body-text-font-size)}em;
+    font-size: #{math.div($body-text-header-h3-font-size, $body-text-font-size)}em;
   }
   h4 {
-    font-size: #{($body-text-header-h4-font-size/$body-text-font-size)}em;
+    font-size: #{math.div($body-text-header-h4-font-size, $body-text-font-size)}em;
   }
   p {
     margin-bottom: $body-text-paragraph-space-after;

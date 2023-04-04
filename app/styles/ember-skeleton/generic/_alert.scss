@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .alert {
   position: relative;
   font-size: $alert-font-size;
@@ -8,7 +10,7 @@
 }
 
 .body-text .alert {
-  font-size: #{$alert-font-size/$body-text-font-size}em;
+  font-size: #{math.div($alert-font-size, $body-text-font-size)}em;
 }
 
 .alert-heading {

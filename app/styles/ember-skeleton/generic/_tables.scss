@@ -1,3 +1,5 @@
+@use "sass:math";
+
 table {
   border-radius: 0px;
   -moz-border-radius: 0px;
@@ -11,7 +13,7 @@ table {
   th {
     color: $table-header-cell-color;
     background-color: $table-header-cell-background-color;
-    font-size: #{$table-header-cell-font-size/$body-text-font-size}em;
+    font-size: #{math.div($table-header-cell-font-size, $body-text-font-size)}em;
     text-transform: $table-header-cell-text-transform;
     text-align: $table-header-cell-text-align;
     font-family: $table-header-cell-font-family;
