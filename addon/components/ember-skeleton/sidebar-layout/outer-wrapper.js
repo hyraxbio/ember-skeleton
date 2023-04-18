@@ -10,7 +10,8 @@ export default Component.extend({
   tagName: 'div',
   classNames: ['wrapper', 'sidebar-layout'],
   classNameBindings: ['emberSkeleton.hideContent:hide-content:show-content', 'contentHeader:content-header', 'emberSkeleton.navFrozen:nav-frozen', 'emberSkeleton.appNamespace'],
-  'data-test-id': 'ember-skeleton-sidebar-layout',
+  attributeBindings: ['dataTestId:data-test-id'],
+  dataTestId: 'ember-skeleton-sidebar-layout',
 
   headerComponent: computed('emberSkeleton.settings.headerComponent', function() {
     return this.get('emberSkeleton.settings.headerComponent');
