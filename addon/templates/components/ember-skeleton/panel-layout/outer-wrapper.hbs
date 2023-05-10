@@ -1,12 +1,14 @@
-{{component emberSkeleton.options.headerComponent headerProps=headerProps}}
-<section class="panel-container">
-  <div class="main-content {{if emberSkeleton.hideMainContent "hidden"}}">
-    {{yield}}
-  </div>
-  {{#if emberSkeleton.hideMainContent}}
-    <div class="loading-content flex-expand">
-      {{component emberSkeleton.options.alternativeContentComponent loadingProps=loadingProps layoutType=emberSkeleton.layoutType isLoading=emberSkeleton.isLoading}}
+<div data-test-id={{this.dataTestId}} class="wrapper panel-layout {{if this.emberSkeleton.hideContent "hide-content" "show-content"}}" ...attributes>
+  {{component emberSkeleton.options.headerComponent headerProps=headerProps}}
+  <section class="panel-container">
+    <div class="main-content {{if emberSkeleton.hideMainContent "hidden"}}">
+      {{yield}}
     </div>
-  {{/if}}
-  {{component emberSkeleton.options.footerComponent footerProps=footerProps}}
-</section>
+    {{#if emberSkeleton.hideMainContent}}
+      <div class="loading-content flex-expand">
+        {{component emberSkeleton.options.alternativeContentComponent loadingProps=loadingProps layoutType=emberSkeleton.layoutType isLoading=emberSkeleton.isLoading}}
+      </div>
+    {{/if}}
+    {{component emberSkeleton.options.footerComponent footerProps=footerProps}}
+  </section>
+</div>

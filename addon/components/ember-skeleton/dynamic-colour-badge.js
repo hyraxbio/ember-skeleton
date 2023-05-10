@@ -4,10 +4,8 @@ import { computed } from '@ember/object';
 import layout from '../../templates/components/ember-skeleton/dynamic-colour-badge';
 
 export default Component.extend({
+  tagName: "",
   layout,
-  classNames: ['badge', 'badge-gray-medium'],
-  classNameBindings: ['textClass'],
-  attributeBindings: ['style:style'],
 
   textClass: computed('background', function() {
     return this.background ? `text-${contrastColour(this.background)}` : null;

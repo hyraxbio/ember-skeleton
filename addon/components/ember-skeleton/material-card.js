@@ -5,9 +5,10 @@ import themeColorStringUtil from 'ember-skeleton/utils/theme-color-string';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
+  tagName: "",
   layout,
-  classNames: ['border', 'rounded', 'padding-lg', 'card-box-shadow'],
-  classNameBindings: ['borderColor', 'shadowLevel', 'materialCardHoverEffect:card-box-shadow-hover-effect'],
+
+  // classNameBindings: ['borderColor', 'shadowLevel'],
   emberSkeleton: service(),
 
   borderColor: computed('borderColorProp', function() {

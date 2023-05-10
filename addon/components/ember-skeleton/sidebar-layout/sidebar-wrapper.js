@@ -3,7 +3,7 @@ import layout from '../../../templates/components/ember-skeleton/sidebar-layout/
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
+  tagName: "",
   layout,
-  classNameBindings: ['emberSkeleton.sidebarCollapsed:sidebar-collapsed', 'emberSkeleton.sidebarToggled:sidebar-toggled'],
   emberSkeleton: service(),
 });

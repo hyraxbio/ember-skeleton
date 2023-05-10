@@ -7,10 +7,7 @@ import { computed } from '@ember/object';
 export default Component.extend({
   layout,
   emberSkeleton: service(),
-  tagName: 'div',
-  classNames: ['wrapper', 'sidebar-layout'],
-  classNameBindings: ['emberSkeleton.hideContent:hide-content:show-content', 'contentHeader:content-header', 'emberSkeleton.navFrozen:nav-frozen', 'emberSkeleton.appNamespace'],
-  attributeBindings: ['dataTestId:data-test-id'],
+  tagName: "",
   dataTestId: 'ember-skeleton-sidebar-layout',
 
   headerComponent: computed('emberSkeleton.settings.headerComponent', function() {

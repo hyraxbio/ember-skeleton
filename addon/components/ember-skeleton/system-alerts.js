@@ -4,10 +4,7 @@ import layout from '../../templates/components/ember-skeleton/system-alerts';
 
 export default Component.extend({
   layout,
-  tagName: 'div',
-  classNames: ['alert'],
-  classNameBindings: ['dismissible:alert-dismissible', 'alertTypeClass'],
-  attributeBindings: ['data-test-id'],
+  tagName: "",
   dismissible: true,
 
   alertTypeClass: computed('systemAlert.type', function() {

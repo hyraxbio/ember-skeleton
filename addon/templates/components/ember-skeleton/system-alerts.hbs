@@ -1,2 +1,4 @@
-{{#if dismissible}}<button class="close btn-content" {{action "dismissMessage"}}>{{svg-repo/icons/icon-cross}}</button>{{/if}}
-<div class="message-content">{{systemAlert.content}}</div>
+<div data-test-id={{this.data-test-id}} class="alert {{this.alertTypeClass}} {{if this.dismissible "alert-dismissible"}}" ...attributes>
+  {{#if dismissible}}<button class="close btn-content" {{action "dismissMessage"}}>{{svg-repo/icons/icon-cross}}</button>{{/if}}
+  <div class="message-content">{{systemAlert.content}}</div>
+</div>

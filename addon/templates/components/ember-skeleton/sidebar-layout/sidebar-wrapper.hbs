@@ -1,6 +1,8 @@
-<button {{action toggleSidebarExpanded}} class="sidebar-toggle top-row btn-content flex flex-align-center flex-justify-end">
-  <div class="sidebar-collapse-icon ">
-    {{component emberSkeleton.options.collapseSideBarIconComponent}}
-  </div>
-</button>
-{{yield}}
+<div class="{{if this.emberSkeleton.sidebarCollapsed "sidebar-collapsed"}} {{if this.emberSkeleton.sidebarToggled "sidebar-toggled"}}" ...attributes>
+  <button {{action toggleSidebarExpanded}} class="sidebar-toggle top-row btn-content flex flex-align-center flex-justify-end">
+    <div class="sidebar-collapse-icon ">
+      {{component emberSkeleton.options.collapseSideBarIconComponent}}
+    </div>
+  </button>
+  {{yield}}
+</div>
