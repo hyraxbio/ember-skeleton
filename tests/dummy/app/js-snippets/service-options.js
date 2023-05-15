@@ -5,7 +5,7 @@ import { inject as service } from '@ember/service';
 export default Component.extend({
   emberSkeleton: service(),
   didInsertElement() {
-    console.log(this.get('emberSkeleton.options'));
+    console.log(this.emberSkeleton.options);
   }
 });
 // END-SNIPPET

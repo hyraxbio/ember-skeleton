@@ -8,7 +8,7 @@ export default Component.extend({
   dismissible: true,
 
   alertTypeClass: computed('systemAlert.type', function() {
-    return `alert-${this.get('systemAlert.type')}`;
+    return `alert-${this.systemAlert.type}`;
   }),
 
   actions: {

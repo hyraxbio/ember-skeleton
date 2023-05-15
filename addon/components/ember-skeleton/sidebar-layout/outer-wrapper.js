@@ -11,13 +11,13 @@ export default Component.extend({
   dataTestId: 'ember-skeleton-sidebar-layout',
 
   headerComponent: computed('emberSkeleton.settings.headerComponent', function() {
-    return this.get('emberSkeleton.settings.headerComponent');
+    return this.emberSkeleton.settings.headerComponent;
   }),
 
   actions: {
     toggleSidebarExpanded() {
       this.toggleProperty('emberSkeleton.sidebarCollapsed');
-      localStorage.setItem('userSidebarCollapsed', this.get('emberSkeleton.sidebarCollapsed'));
+      localStorage.setItem('userSidebarCollapsed', this.emberSkeleton.sidebarCollapsed);
       this.set('emberSkeleton.sidebarToggled', true);
     }
   }

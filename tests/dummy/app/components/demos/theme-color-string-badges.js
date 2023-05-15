@@ -8,10 +8,10 @@ export default Component.extend({
   emberSkeleton: service(),
   init() {
     this._super(...arguments);
-    this.one = themeColorString(['ok'], null, this.get('emberSkeleton.themeColorStringDefaults'));
-    this.two = themeColorString(['ok'], {ok:'danger'}, this.get('emberSkeleton.themeColorStringDefaults'));
-    this.three = themeColorString(['missing'], null, this.get('emberSkeleton.themeColorStringDefaults'));
-    this.four = themeColorString(['missing'], {missing: 'secondary'}, this.get('emberSkeleton.themeColorStringDefaults'));
-    this.five = themeColorString(['missing'], {fallback: 'info'}, this.get('emberSkeleton.themeColorStringDefaults'));
+    this.one = themeColorString(['ok'], null, this.emberSkeleton.themeColorStringDefaults);
+    this.two = themeColorString(['ok'], {ok:'danger'}, this.emberSkeleton.themeColorStringDefaults);
+    this.three = themeColorString(['missing'], null, this.emberSkeleton.themeColorStringDefaults);
+    this.four = themeColorString(['missing'], {missing: 'secondary'}, this.emberSkeleton.themeColorStringDefaults);
+    this.five = themeColorString(['missing'], {fallback: 'info'}, this.emberSkeleton.themeColorStringDefaults);
   }
 });

@@ -5,7 +5,7 @@ import arrayJoinUtil from 'ember-skeleton/utils/array-join';
 
 export default Controller.extend({
   sentence: computed('model', function() {
-    return `My favourte characters are ${arrayJoinUtil(this.get('model.names'), ', ', {finalJoinString: ' and '})}.`;
+    return `My favourte characters are ${arrayJoinUtil(this.model.names, ', ', {finalJoinString: ' and '})}.`;
   })
 });
 //END-SNIPPET

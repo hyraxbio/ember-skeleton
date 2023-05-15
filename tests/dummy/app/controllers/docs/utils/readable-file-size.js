@@ -6,7 +6,7 @@ import readableFileSizeUtil from 'ember-skeleton/utils/readable-file-size';
 export default Controller.extend({
   // BEGIN-SNIPPET readable-file-size-util.js
   fileSizes: computed('model', function() {
-   return this.get('model').map(item => {
+   return this.model.map(item => {
      return readableFileSizeUtil(item);
    });
   }),

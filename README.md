@@ -160,7 +160,7 @@ import { inject as service } from '@ember/service';
 
 ...
 emberSkeleton: service(),
-themeColorString(['test'], {defaultAssociations: this.get('emberSkeleton.themeColorStringDefaults')});
+themeColorString(['test'], {defaultAssociations: this.emberSkeleton.themeColorStringDefaults});
 ```
 
 ### Custom Inflector

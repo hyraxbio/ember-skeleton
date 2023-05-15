@@ -51,7 +51,7 @@ export default Helper.extend({
   emberSkeleton: service(),
 
   compute(params, hash) {
-    var defaultAssociations = this.get('emberSkeleton.themeColorStringDefaults');
+    var defaultAssociations = this.emberSkeleton.themeColorStringDefaults;
     return themeColorString(params, hash, defaultAssociations);
   }
 });

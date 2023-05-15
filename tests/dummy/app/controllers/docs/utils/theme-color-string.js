@@ -16,7 +16,7 @@ export default Controller.extend({
 
   // BEGIN-SNIPPET theme-color-string-util-basic.js
   parsedBasic: computed('model', function() {
-   return this.get('model').map(person => {
+   return this.model.map(person => {
     person.set('statusClass', ThemeColorStringUtil(person.status, {complete: 'success', absent: 'warning', failed: 'danger'}));
     return person;
    });
@@ -25,7 +25,7 @@ export default Controller.extend({
 
   // BEGIN-SNIPPET theme-color-string-util-defaults.js
   parsedDefaults: computed('model', function() {
-    return this.get('model').map(person => {
+    return this.model.map(person => {
     person.set('statusClassDefault', ThemeColorStringUtil(person.status));
     return person;
     });
@@ -34,7 +34,7 @@ export default Controller.extend({
 
   // BEGIN-SNIPPET theme-color-string-util-default-overridden.js
   defaultOverriden: computed('model', function() {
-    return this.get('model').map(person => {
+    return this.model.map(person => {
     person.set('statusClassDefaultOverridden', ThemeColorStringUtil(person.status, {absent: 'info'}));
     return person;
     });

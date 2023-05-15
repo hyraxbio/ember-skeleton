@@ -12,14 +12,14 @@ export default Component.extend({
   emberSkeleton: service(),
 
   borderColor: computed('borderColorProp', function() {
-    if (!this.get('borderColorProp')) {
+    if (!this.borderColorProp) {
       return;
     }
-    return `border-${themeColorStringUtil(this.get('borderColorProp'), this.get('themeColorStringHash'))}`;
+    return `border-${themeColorStringUtil(this.borderColorProp, this.themeColorStringHash)}`;
   }),
 
   shadowLevel: computed('depth', function() {
-    if (!this.get('depth')) { return; }
-    return `card-box-shadow-level-${this.get('depth')}`;
+    if (!this.depth) { return; }
+    return `card-box-shadow-level-${this.depth}`;
   })
 });

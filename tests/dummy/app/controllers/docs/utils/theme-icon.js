@@ -15,7 +15,7 @@ export default Controller.extend({
   },
 
   basicThemeIcon: computed('model', function() {
-    return this.get('model').map(person => {
+    return this.model.map(person => {
       person.set('statusIcon', ThemeIconUtil(person.status, {passed: 'svg/icons/icon-tick', failed: 'svg/icons/icon-alert'}));
       return person;
     })
@@ -23,7 +23,7 @@ export default Controller.extend({
 
   // BEGIN-SNIPPET theme-icon-util-defaults.js
   defaultThemeIcons: computed('model', function() {
-    return this.get('model').map(person => {
+    return this.model.map(person => {
     person.set('statusIconDefault', ThemeIconUtil(person.status));
     return person;
     });
@@ -32,7 +32,7 @@ export default Controller.extend({
 
   // BEGIN-SNIPPET theme-icon-util-default-overridden.js
   themeIconsDefaultsOverriden: computed('model', function() {
-    return this.get('model').map(person => {
+    return this.model.map(person => {
       person.set('statusIconDefaultsOverriden', ThemeIconUtil(person.status, {failed: 'svg/icons/icon-info'}));
       return person;
     });
