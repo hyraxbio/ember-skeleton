@@ -4,21 +4,29 @@
     {{if this.emberSkeleton.hideContent 'hide-content' 'show-content'}}"
   ...attributes
 >
-  {{component emberSkeleton.options.headerComponent headerProps=headerProps}}
+  {{component
+    this.emberSkeleton.options.headerComponent
+    headerProps=@headerProps
+  }}
   <section class="panel-container">
-    <div class="main-content {{if emberSkeleton.hideMainContent 'hidden'}}">
+    <div
+      class="main-content {{if this.emberSkeleton.hideMainContent 'hidden'}}"
+    >
       {{yield}}
     </div>
-    {{#if emberSkeleton.hideMainContent}}
+    {{#if this.emberSkeleton.hideMainContent}}
       <div class="loading-content flex-expand">
         {{component
-          emberSkeleton.options.alternativeContentComponent
-          loadingProps=loadingProps
-          layoutType=emberSkeleton.layoutType
-          isLoading=emberSkeleton.isLoading
+          this.emberSkeleton.options.alternativeContentComponent
+          loadingProps=@loadingProps
+          layoutType=this.emberSkeleton.layoutType
+          isLoading=this.emberSkeleton.isLoading
         }}
       </div>
     {{/if}}
-    {{component emberSkeleton.options.footerComponent footerProps=footerProps}}
+    {{component
+      this.emberSkeleton.options.footerComponent
+      footerProps=@footerProps
+    }}
   </section>
 </div>

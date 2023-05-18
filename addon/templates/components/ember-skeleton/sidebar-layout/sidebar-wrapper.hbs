@@ -4,11 +4,11 @@
   ...attributes
 >
   <button
-    {{action toggleSidebarExpanded}}
+    {{action @toggleSidebarExpanded}}
     class="sidebar-toggle top-row btn-content flex flex-align-center flex-justify-end"
   >
     <div class="sidebar-collapse-icon">
-      {{component emberSkeleton.options.collapseSideBarIconComponent}}
+      {{component this.emberSkeleton.options.collapseSideBarIconComponent}}
     </div>
   </button>
   {{yield}}

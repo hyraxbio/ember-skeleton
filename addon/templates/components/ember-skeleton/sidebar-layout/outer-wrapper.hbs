@@ -7,34 +7,37 @@
     {{if this.emberSkeleton.navFrozen 'nav-frozen'}}"
   ...attributes
 >
-  {{component emberSkeleton.options.headerComponent headerProps=headerProps}}
+  {{component
+    this.emberSkeleton.options.headerComponent
+    headerProps=@headerProps
+  }}
   <section id="columns">
     <EmberSkeleton::SidebarLayout::SidebarWrapper
       class="ember-skeleton-sidebar"
       @toggleSidebarExpanded={{action "toggleSidebarExpanded"}}
     >
       {{component
-        emberSkeleton.options.sidebarContentComponent
-        sidebarProps=sidebarProps
+        this.emberSkeleton.options.sidebarContentComponent
+        sidebarProps=@sidebarProps
       }}
     </EmberSkeleton::SidebarLayout::SidebarWrapper>
     <div class="main">
-      <div class="content {{if emberSkeleton.hideMainContent 'hidden'}}">
+      <div class="content {{if this.emberSkeleton.hideMainContent 'hidden'}}">
         {{yield}}
       </div>
-      {{#if emberSkeleton.hideMainContent}}
+      {{#if this.emberSkeleton.hideMainContent}}
         <div class="loading-content flex-expand">
           {{component
-            emberSkeleton.options.alternativeContentComponent
-            loadingProps=loadingProps
-            layoutType=emberSkeleton.layoutType
-            isLoading=emberSkeleton.isLoading
+            this.emberSkeleton.options.alternativeContentComponent
+            loadingProps=@loadingProps
+            layoutType=this.emberSkeleton.layoutType
+            isLoading=this.emberSkeleton.isLoading
           }}
         </div>
       {{/if}}
       {{component
-        emberSkeleton.options.footerComponent
-        footerProps=footerProps
+        this.emberSkeleton.options.footerComponent
+        footerProps=@footerProps
       }}
     </div>
   </section>

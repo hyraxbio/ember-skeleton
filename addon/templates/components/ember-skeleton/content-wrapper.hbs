@@ -1,8 +1,8 @@
 <div class="padding-xxl content-container" ...attributes>
-  {{#if title}}<h1 class="page-header">{{title}}</h1>{{/if}}
-  {{#if titleComponent}}{{component
-      titleComponent
-      titleComponentProps=titleComponentProps
+  {{#if @title}}<h1 class="page-header">{{@title}}</h1>{{/if}}
+  {{#if @titleComponent}}{{component
+      @titleComponent
+      titleComponentProps=@titleComponentProps
     }}{{/if}}
   <div class="content-body body-text">
     {{yield}}
