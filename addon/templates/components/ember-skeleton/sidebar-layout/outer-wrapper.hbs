@@ -1,20 +1,41 @@
-<div data-test-id={{this.dataTestId}} class="wrapper sidebar-layout {{this.emberSkeleton.appNamespace
-}} {{if this.emberSkeleton.hideContent "hide-content" "show-content"}} {{if this.contentHeader "content-header"}} {{if this.emberSkeleton.navFrozen "nav-frozen"}}" ...attributes>
+<div
+  data-test-id={{this.dataTestId}}
+  class="wrapper sidebar-layout
+    {{this.emberSkeleton.appNamespace}}
+    {{if this.emberSkeleton.hideContent 'hide-content' 'show-content'}}
+    {{if this.contentHeader 'content-header'}}
+    {{if this.emberSkeleton.navFrozen 'nav-frozen'}}"
+  ...attributes
+>
   {{component emberSkeleton.options.headerComponent headerProps=headerProps}}
   <section id="columns">
-    <EmberSkeleton::SidebarLayout::SidebarWrapper class="ember-skeleton-sidebar" @toggleSidebarExpanded={{action "toggleSidebarExpanded"}}>
-      {{component emberSkeleton.options.sidebarContentComponent sidebarProps=sidebarProps}}
+    <EmberSkeleton::SidebarLayout::SidebarWrapper
+      class="ember-skeleton-sidebar"
+      @toggleSidebarExpanded={{action "toggleSidebarExpanded"}}
+    >
+      {{component
+        emberSkeleton.options.sidebarContentComponent
+        sidebarProps=sidebarProps
+      }}
     </EmberSkeleton::SidebarLayout::SidebarWrapper>
     <div class="main">
-      <div class="content {{if emberSkeleton.hideMainContent "hidden"}}">
+      <div class="content {{if emberSkeleton.hideMainContent 'hidden'}}">
         {{yield}}
       </div>
       {{#if emberSkeleton.hideMainContent}}
         <div class="loading-content flex-expand">
-          {{component emberSkeleton.options.alternativeContentComponent loadingProps=loadingProps layoutType=emberSkeleton.layoutType isLoading=emberSkeleton.isLoading}}
+          {{component
+            emberSkeleton.options.alternativeContentComponent
+            loadingProps=loadingProps
+            layoutType=emberSkeleton.layoutType
+            isLoading=emberSkeleton.isLoading
+          }}
         </div>
       {{/if}}
-      {{component emberSkeleton.options.footerComponent footerProps=footerProps}}
+      {{component
+        emberSkeleton.options.footerComponent
+        footerProps=footerProps
+      }}
     </div>
   </section>
 </div>
