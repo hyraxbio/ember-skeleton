@@ -2,6 +2,7 @@ import Component from '@ember/component';
 import contrastColour from 'ember-skeleton/utils/contrast-colour';
 import { computed } from '@ember/object';
 import layout from '../../templates/components/ember-skeleton/dynamic-colour-badge';
+import { htmlSafe } from '@ember/template';
 
 export default Component.extend({
   tagName: "",
@@ -12,6 +13,6 @@ export default Component.extend({
   }),
 
   style: computed('background', function() {
-    return this.background ? `background: #${this.background}`.replace('##', '#').htmlSafe() : null;
+    return this.background ? htmlSafe(`background: #${this.background}`.replace('##', '#')) : null;
   })
 });

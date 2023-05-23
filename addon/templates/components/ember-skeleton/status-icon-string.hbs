@@ -1,7 +1,10 @@
 <div
   class="flex flex-align-center {{ember-skeleton/theme-color-string @status}}"
 >
-  {{#let (component ember-skeleton/theme-icon @status) as |ThemeIconComponent|}}
+  {{#let
+    (component (ember-skeleton/theme-icon @status))
+    as |ThemeIconComponent|
+  }}
     <ThemeIconComponent
       class={{concat
         "width-"
