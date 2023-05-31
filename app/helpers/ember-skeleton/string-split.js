@@ -1,1 +1,4 @@
-export { default, emberSkeletonStringSplit } from 'ember-skeleton/helpers/ember-skeleton/string-split';
+export {
+  default,
+  emberSkeletonStringSplit,
+} from 'ember-skeleton/helpers/ember-skeleton/string-split';

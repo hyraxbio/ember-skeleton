@@ -1,1 +1,4 @@
-export { default, customInflector } from 'ember-skeleton/helpers/ember-skeleton/custom-inflector';
+export {
+  default,
+  customInflector,
+} from 'ember-skeleton/helpers/ember-skeleton/custom-inflector';

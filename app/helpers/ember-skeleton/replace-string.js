@@ -1,1 +1,4 @@
-export { default, replaceString } from 'ember-skeleton/helpers/ember-skeleton/replace-string';
+export {
+  default,
+  replaceString,
+} from 'ember-skeleton/helpers/ember-skeleton/replace-string';

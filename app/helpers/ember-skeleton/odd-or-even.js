@@ -1,1 +1,4 @@
-export { default, oddOrEven } from 'ember-skeleton/helpers/ember-skeleton/odd-or-even';
+export {
+  default,
+  oddOrEven,
+} from 'ember-skeleton/helpers/ember-skeleton/odd-or-even';
