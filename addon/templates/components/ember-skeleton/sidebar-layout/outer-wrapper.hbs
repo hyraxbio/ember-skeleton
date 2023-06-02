@@ -14,7 +14,7 @@
   <section id="columns">
     <EmberSkeleton::SidebarLayout::SidebarWrapper
       class="ember-skeleton-sidebar"
-      @toggleSidebarExpanded={{action "toggleSidebarExpanded"}}
+      @toggleSidebarExpanded={{fn (action "toggleSidebarExpanded")}}
     >
       {{component
         this.emberSkeleton.options.sidebarContentComponent

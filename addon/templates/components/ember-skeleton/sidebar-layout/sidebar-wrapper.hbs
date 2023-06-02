@@ -4,7 +4,8 @@
   ...attributes
 >
   <button
-    {{action @toggleSidebarExpanded}}
+    type="button"
+    {{on "click" @toggleSidebarExpanded}}
     class="sidebar-toggle top-row btn-content flex flex-align-center flex-justify-end"
   >
     <div class="sidebar-collapse-icon">
