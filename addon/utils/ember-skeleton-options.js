@@ -1,5 +1,4 @@
 /* eslint-disable ember/new-module-imports */
-import { assign } from '@ember/polyfills';
 import config from 'ember-get-config';
 
 export default function() {
@@ -11,5 +10,5 @@ export default function() {
     sidebarContentComponent: 'ember-skeleton/sidebar-content',
     collapseSideBarIconComponent: 'ember-skeleton/svg/icon-collapse-sidebar',
   };
-  return assign(addonDefaults, configOverrides);
+  return Object.assign(addonDefaults, configOverrides);
 }
