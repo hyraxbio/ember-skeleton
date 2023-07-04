@@ -1,7 +1,9 @@
-@use "sass:math";
+@use 'sass:math';
 
 .body-text {
-  input, .input, textarea {
+  input,
+  .input,
+  textarea {
     font-size: #{math.div($input-font-size, $body-text-font-size)}em;
   }
   label {
@@ -25,7 +27,8 @@ fieldset {
 
 input,
 .input,
-textarea {
+textarea,
+#{chain-selectors($input-selectors)} {
   background-color: $input-background-color;
   color: $input-color;
   border: $input-border-width $input-border-style $input-border-color;
@@ -51,7 +54,8 @@ textarea {
   }
 }
 
-.input {
+.input,
+#{chain-selectors($input-selectors)} {
   display: inline-flex;
   align-items: center;
 }
@@ -61,8 +65,8 @@ textarea {
   line-height: 150%;
 }
 
-input[type=radio],
-input[type=checkbox],
+input[type='radio'],
+input[type='checkbox'],
 .checkbox,
 .radio {
   display: inline-block;
@@ -79,20 +83,23 @@ input[type=checkbox],
   border-width: 0 !important;
   &:after {
     border: 2px solid $input-border-color;
-    content: "";
+    content: '';
     background-color: $input-background-color;
     width: $radio-button-checkbox-width-height;
     height: $radio-button-checkbox-width-height;
     position: absolute;
     top: 0;
     left: 0px;
-   
   }
-  &:checked:after, &.checked:after {
-    background: $radio-checkbox-selected-background-color $svg-data-uri-icon-tick no-repeat $radio-checkbox-selected-background-position;
+  &:checked:after,
+  &.checked:after {
+    background: $radio-checkbox-selected-background-color
+      $svg-data-uri-icon-tick no-repeat
+      $radio-checkbox-selected-background-position;
     background-size: $radio-checkbox-selected-background-size;
   }
-  &:focus:after, &:focus:checked:after {
+  &:focus:after,
+  &:focus:checked:after {
     border-color: $input-focus-border-color;
   }
   &:hover {
@@ -100,9 +107,9 @@ input[type=checkbox],
   }
 }
 
-input[type=radio],
-input[type=radio]:before,
-input[type=radio]:after,
+input[type='radio'],
+input[type='radio']:before,
+input[type='radio']:after,
 .radio,
 .radio:before,
 .radio:after {
@@ -111,7 +118,7 @@ input[type=radio]:after,
   border-radius: 50%;
 }
 
-input[type=radio]+label {
+input[type='radio'] + label {
   line-height: 150%;
   margin: 0;
 }

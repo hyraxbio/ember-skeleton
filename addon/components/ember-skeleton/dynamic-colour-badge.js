@@ -5,14 +5,16 @@ import layout from '../../templates/components/ember-skeleton/dynamic-colour-bad
 import { htmlSafe } from '@ember/template';
 
 export default Component.extend({
-  tagName: "",
+  tagName: '',
   layout,
 
-  textClass: computed('background', function() {
+  textClass: computed('background', function () {
     return this.background ? `text-${contrastColour(this.background)}` : null;
   }),
 
-  style: computed('background', function() {
-    return this.background ? htmlSafe(`background: #${this.background}`.replace('##', '#')) : null;
-  })
+  style: computed('background', function () {
+    return this.background
+      ? { background: `#${this.background}`.replace('##', '#') }
+      : null;
+  }),
 });
