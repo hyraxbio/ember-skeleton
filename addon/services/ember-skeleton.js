@@ -9,8 +9,16 @@ export default Service.extend({
     this.options = emberSkeletonOptions();
   },
 
-  hideMainContent: computed('layoutType', 'isLoading', function() {
+  hideMainContent: computed('layoutType', 'isLoading', function () {
     return this.layoutType !== 'main' || this.isLoading;
   }),
-  
+
+  toggleSidebarExpanded() {
+    this.toggleProperty('sidebarCollapsed');
+    localStorage.setItem(
+      'userSidebarCollapsed',
+      this.emberSkeleton.sidebarCollapsed
+    );
+    this.set('sidebarToggled', true);
+  },
 });

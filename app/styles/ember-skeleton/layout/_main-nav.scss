@@ -3,7 +3,7 @@ div.main-nav {
   overflow-y: auto;
   overflow-x: hidden;
   background: $sidebar-background;
-  &.nav-collapsed  {
+  &.nav-collapsed {
     max-width: $sidebar-collapsed-width;
   }
 
@@ -11,13 +11,13 @@ div.main-nav {
     transition: $sidebar-toggle-transition;
   }
 
-   ul {
+  ul {
     padding: 0;
     margin: 0;
     list-style: none;
   }
 
-   ul li {
+  ul li {
     margin: 0;
     list-style: none;
     height: $sidebar-nav-item-height;
@@ -34,6 +34,7 @@ div.main-nav {
     }
   }
 
+  // TODO move to Hyrax
   .menu-toggle {
     background: $sidebar-toggle-menu-background;
     display: flex;
@@ -43,26 +44,28 @@ div.main-nav {
     width: $sidebar-expanded-width;
   }
 
-  .menu-toggle span.hamburger-stripe {
-    height: 2px;
-    width: 26px;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    background: $sidebar-nav-item-color;
-    display: block;
-  }
-
-  .menu-toggle span.hamburger-stripe:not(:last-child) {
-    margin-bottom: 4px;
-  }
-
   .menu-toggle svg.nav-collapse {
     height: 18px;
     fill: $sidebar-nav-item-color;
   }
 
-   a {
+  .hamburger {
+    .hamburger-stripe {
+      height: 2px;
+      width: 26px;
+      border-radius: 2px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      background: $sidebar-hamburger-color;
+      display: block;
+    }
+  }
+
+  .hamburger .hamburger-stripe:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  a {
     display: block;
     text-decoration: none;
     font-size: 1em;
@@ -75,23 +78,23 @@ div.main-nav {
     flex-grow: 1;
   }
 
-   a:hover  {
+  a:hover {
     color: $sidebar-nav-item-active-hover-color;
     background-color: #777;
     text-decoration: none;
   }
 
-   a.active {
+  a.active {
     background-color: #777;
     color: $sidebar-nav-item-active-hover-color;
     cursor: default;
   }
 
-   li svg {
+  li svg {
     fill: #fff;
     width: $sidebar-collapsed-width;
-  	height: $sidebar-nav-item-height;
-  	padding: $spacer-lg;
+    height: $sidebar-nav-item-height;
+    padding: $spacer-lg;
   }
 }
 
