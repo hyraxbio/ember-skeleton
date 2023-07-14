@@ -17,11 +17,14 @@ $table-cell-text-align: left !default;
 
 $table-header-cell-color: #fff !default;
 $table-header-cell-background-color: #aaa !default;
-$table-header-cell-border-color: darken($table-header-cell-background-color, 15%) !default;
+$table-header-cell-border-color: darken(
+  $table-header-cell-background-color,
+  15%
+) !default;
 $table-header-cell-background-image: none !default;
 $table-header-cell-text-transform: none !default;
 $table-header-cell-text-align: left !default;
 $table-header-cell-font-family: $main-font-family !default;
-$table-header-cell-font-weight: 700 !default;
+$table-header-cell-font-weight: $bold-font-weight !default;
 $table-header-cell-font-style: normal !default;
 $table-header-cell-font-size: $body-text-font-size !default;
