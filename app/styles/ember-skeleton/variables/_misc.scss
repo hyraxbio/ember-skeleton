@@ -6,10 +6,5 @@ DEFAULT INTERFACE ELEMENT STYLES
 $general-asterisk-color: $primary !default;
 $general-asterisk-font-size: 36px !default;
 $general-asterisk-line-height: 0px !default;
-$general-asterisk-font-weight: 700 !default;
+$general-asterisk-font-weight: $bold-font-weight !default;
 $general-asterisk-baseline-shift: -19px !default;
-
-
-
-
-

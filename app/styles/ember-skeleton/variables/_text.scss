@@ -1,11 +1,11 @@
-$main-font-family:  "Arial", sans-serif !default;
+$main-font-family: 'Arial', sans-serif !default;
 $body-color: #000 !default;
-
+$bold-font-weight: 700 !default;
 $page-header-font-size: 2.6em !default;
 $page-header-text-transform: none !default;
 $page-header-text-align: initial !default;
 $page-header-font-family: $main-font-family !default;
-$page-header-font-weight: 700 !default;
+$page-header-font-weight: $bold-font-weight !default;
 $page-header-margin-bottom: $spacer-xl !default;
 $page-header-line-height: 100% !default;
 $page-header-font-style: normal !default;
@@ -16,7 +16,7 @@ $body-text-header-background-color: transparent !default;
 $body-text-header-text-transform: none !default;
 $body-text-header-text-align: left !default;
 $body-text-header-font-family: $main-font-family !default;
-$body-text-header-font-weight: 700 !default;
+$body-text-header-font-weight: $bold-font-weight !default;
 
 $body-text-header-margin-bottom: 0.8em !default;
 $body-text-header-font-style: normal !default;
@@ -36,7 +36,7 @@ $body-text-paragraph-space-after: 1em !default;
 $body-text-paragraph-text-align: justify !default;
 $body-text-paragraph-line-height: 170% !default;
 
-$link-font-weight: 700 !default;
+$link-font-weight: $bold-font-weight !default;
 $link-color: $primary !default;
 $link-text-decoration: none !default;
 $link-hover-color: $link-color !default;
@@ -49,4 +49,5 @@ $text-column-justify-paragraph-min-width: 480px !default;
 $text-smaller-size: 0.9em !default;
 $text-larger-size: 1.2em !default;
 
-$monospace-font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
+$monospace-font-family: 'Lucida Console', Monaco, 'Courier New', Courier,
+  monospace;
