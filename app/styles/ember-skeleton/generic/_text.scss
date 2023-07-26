@@ -1,4 +1,4 @@
-@use "sass:math";
+@use 'sass:math';
 
 body {
   font-size: 62.5%;
@@ -77,8 +77,11 @@ h4 {
   font-style: $body-text-font-style;
   font-size: $body-text-font-size;
   font-weight: $body-text-font-weight;
- 
-  h1, h2, h3, h4 {
+
+  h1,
+  h2,
+  h3,
+  h4 {
     margin-bottom: $body-text-header-margin-bottom;
   }
 
@@ -97,28 +100,42 @@ h4 {
   p {
     margin-bottom: $body-text-paragraph-space-after;
   }
-  p, dd, dt, ul li, ol li {
+  p,
+  dd,
+  dt,
+  ul li,
+  ol li {
     line-height: $body-text-line-height;
   }
-  ul, ol {
+  ul,
+  ol {
     margin-bottom: $body-text-paragraph-space-after;
     padding: 0px;
   }
-  ul ul, ul ol, ol ul, ol ol {
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
     margin-bottom: 0;
   }
-  ul li, ol li {
+  ul li,
+  ol li {
     font-family: $main-font-family;
     margin-left: 1em;
     padding-left: 0.5em;
   }
-  sup, sub {
+  sup,
+  sub {
     font-size: 0.7em;
   }
 }
 
 .text-larger {
   font-size: $text-larger-size;
+}
+
+.text-bold {
+  font-weight: $bold-font-weight;
 }
 
 .text-smaller {
@@ -154,7 +171,7 @@ h4 {
 }
 
 @each $color, $value in $theme-colors {
-  @include text-emphasis-variant(".text-#{$color}", $value);
+  @include text-emphasis-variant('.text-#{$color}', $value);
 }
 
 .monospace {
