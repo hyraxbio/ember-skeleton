@@ -1,18 +1,38 @@
 // stylelint-disable declaration-no-important
 
-.border         { border: $border-width solid $border-color; }
-.border-top     { border-top: $border-width solid $border-color; }
-.border-right   { border-right: $border-width solid $border-color; }
-.border-bottom  { border-bottom: $border-width solid $border-color; }
-.border-left    { border-left: $border-width solid $border-color; }
+.border {
+  border: $border-width solid $border-color;
+}
+.border-top {
+  border-top: $border-width solid $border-color;
+}
+.border-right {
+  border-right: $border-width solid $border-color;
+}
+.border-bottom {
+  border-bottom: $border-width solid $border-color;
+}
+.border-left {
+  border-left: $border-width solid $border-color;
+}
 
-.border-0        { border: 0; }
-.border-top-0    { border-top: 0; }
-.border-right-0  { border-right: 0; }
-.border-bottom-0 { border-bottom: 0; }
-.border-left-0   { border-left: 0; }
+.border-0 {
+  border: 0;
+}
+.border-top-0 {
+  border-top: 0;
+}
+.border-right-0 {
+  border-right: 0;
+}
+.border-bottom-0 {
+  border-bottom: 0;
+}
+.border-left-0 {
+  border-left: 0;
+}
 
-@each $width in (1,2,3,4,5) {
+@each $width in (1, 2, 3, 4, 5) {
   .border-#{$width}px {
     border-width: #{$width}px;
   }

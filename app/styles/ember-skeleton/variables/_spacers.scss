@@ -6,11 +6,14 @@ $spacer-xl: 24px !default;
 $spacer-xxl: 36px !default;
 
 $spacers: () !default;
-$spacers: map-merge((
-  sm: $spacer-sm,
-  md: $spacer-md,
-  lg: $spacer-lg,
-  mxl: $spacer-mxl,
-  xl: $spacer-xl,
-  xxl: $spacer-xxl
-), $spacers);
+$spacers: map-merge(
+  (
+    sm: $spacer-sm,
+    md: $spacer-md,
+    lg: $spacer-lg,
+    mxl: $spacer-mxl,
+    xl: $spacer-xl,
+    xxl: $spacer-xxl,
+  ),
+  $spacers
+);

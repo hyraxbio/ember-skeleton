@@ -3,5 +3,5 @@ import layout from '../../../templates/components/ember-skeleton/svg/icon-collap
 
 export default Component.extend({
   layout,
-  tagName: ''
+  tagName: '',
 });

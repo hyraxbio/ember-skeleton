@@ -1,6 +1,6 @@
 import { helper } from '@ember/component/helper';
 
-export function emberSkeletonStringSplit(params/*, hash*/) {
+export function emberSkeletonStringSplit(params /*, hash*/) {
   if (!params[0]) {
     return;
   }

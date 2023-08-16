@@ -4,30 +4,30 @@
   transition: all 250ms;
   @include card-box-shadow;
   &.card-box-shadow-hover-effect:hover {
-    @include card-box-shadow($level:2);
+    @include card-box-shadow($level: 2);
   }
   &.card-box-shadow-level-2 {
-    @include card-box-shadow($level:2);
+    @include card-box-shadow($level: 2);
     &.card-box-shadow-hover-effect:hover {
-      @include card-box-shadow($level:3);
+      @include card-box-shadow($level: 3);
     }
   }
   &.card-box-shadow-level-3 {
-    @include card-box-shadow($level:3);
+    @include card-box-shadow($level: 3);
     &.card-box-shadow-hover-effect:hover {
-      @include card-box-shadow($level:4);
+      @include card-box-shadow($level: 4);
     }
   }
   &.card-box-shadow-level-4 {
-    @include card-box-shadow($level:4);
+    @include card-box-shadow($level: 4);
     &.card-box-shadow-hover-effect:hover {
-      @include card-box-shadow($level:5);
+      @include card-box-shadow($level: 5);
     }
   }
   &.card-box-shadow-level-5 {
-    @include card-box-shadow($level:5);
+    @include card-box-shadow($level: 5);
     &.card-box-shadow-hover-effect:hover {
-      @include card-box-shadow($level:5);
+      @include card-box-shadow($level: 5);
     }
   }
   &.card-box-shadow-hover-effect:hover {

@@ -3,9 +3,6 @@ let ENV = {
   //...
   emberSkeletonOptions: {
     // ...
-  }
+  },
 };
 // END-SNIPPET
-
-
-  

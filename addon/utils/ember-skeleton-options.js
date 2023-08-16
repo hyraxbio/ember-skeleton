@@ -1,7 +1,7 @@
 /* eslint-disable ember/new-module-imports */
 import config from 'ember-get-config';
 
-export default function() {
+export default function () {
   var configOverrides = config.emberSkeletonOptions;
   const addonDefaults = {
     headerComponent: 'ember-skeleton/header',

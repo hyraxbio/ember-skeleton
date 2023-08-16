@@ -16,13 +16,13 @@ header {
     overflow: hidden;
     height: $header-height;
   }
-  
+
   div.logo-container svg,
-  div.logo-container img  {
-    height: $header-height - 2*$header-padding-vertical;
+  div.logo-container img {
+    height: $header-height - 2 * $header-padding-vertical;
     width: auto;
   }
-  
+
   div.logo-container a {
     display: block;
   }

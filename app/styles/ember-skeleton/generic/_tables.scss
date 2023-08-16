@@ -1,4 +1,4 @@
-@use "sass:math";
+@use 'sass:math';
 
 table {
   border-radius: 0px;
@@ -38,15 +38,10 @@ table {
       padding: 3px 10px;
     }
   }
-  
+
   &.light-header > thead > tr > th {
     color: inherit;
     background-color: $table-cell-background-color;
     border: 1px $table-border-style $table-border-color;
   }
 }
-
-
-
-
-

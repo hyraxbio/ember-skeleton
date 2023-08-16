@@ -69,5 +69,10 @@
 }
 
 @each $color, $value in $theme-colors {
-  @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 2), theme-color-level($color));
+  @include list-group-item-variant(
+    $color,
+    theme-color-level($color, -9),
+    theme-color-level($color, 2),
+    theme-color-level($color)
+  );
 }

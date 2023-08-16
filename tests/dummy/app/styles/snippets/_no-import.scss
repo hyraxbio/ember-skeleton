@@ -1,8 +1,8 @@
 // BEGIN-SNIPPET overriding-default-scss-vars.scss
 $page-header-font-size: 3em;
-$page-header-color: #0097D3;
+$page-header-color: #0097d3;
 
-@import "ember-skeleton-variables";
+@import 'ember-skeleton-variables';
 @import 'ember-skeleton';
 // END-SNIPPET
 
@@ -21,45 +21,48 @@ $text-column-justify-paragraph-min-width: 480px !default;
 // END-SNIPPET
 
 // BEGIN-SNIPPET default-bootstrap-colours.scss
-$blue:             #007bff !default;
-$indigo:           #6610f2 !default;
-$purple:           #6f42c1 !default;
-$pink:             #e83e8c !default;
-$red:              #dc3545 !default;
-$orange:           #fd7e14 !default;
-$yellow:           #ffc107 !default;
-$green:            #28a745 !default;
-$teal:             #20c997 !default;
-$cyan:             #17a2b8 !default;
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
 $gray-extra-light: #f3f3f3 !default;
-$gray-light:       #cccccc !default;
-$gray-medium:      #999999 !default;
-$gray-dark:        #333333 !default;
-$white:            #ffffff !default;
+$gray-light: #cccccc !default;
+$gray-medium: #999999 !default;
+$gray-dark: #333333 !default;
+$white: #ffffff !default;
 
-$primary:     $blue !default;
-$secondary:   $indigo !default;
-$success:     $green !default;
-$info:        $cyan !default;
-$warning:     $orange !default;
-$danger:      $red !default;
-$light:       $gray-light !default;
-$dark:        $gray-dark !default;
+$primary: $blue !default;
+$secondary: $indigo !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $orange !default;
+$danger: $red !default;
+$light: $gray-light !default;
+$dark: $gray-dark !default;
 
 $theme-colors: () !default;
-$theme-colors: map-merge((
-  "primary":      $primary,
-  "secondary":    $secondary,
-  "success":      $success,
-  "info":         $info,
-  "warning":      $warning,
-  "danger":       $danger,
-  "light":        $light,
-  "dark":         $dark,
-  "gray-extra-light": $gray-extra-light,
-  "gray-light":   $gray-light,
-  "gray-medium":  $gray-medium,
-  "gray-dark":    $gray-dark,
-  "white":        $white
-), $theme-colors);
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
+    'gray-extra-light': $gray-extra-light,
+    'gray-light': $gray-light,
+    'gray-medium': $gray-medium,
+    'gray-dark': $gray-dark,
+    'white': $white,
+  ),
+  $theme-colors
+);
 // END-SNIPPET

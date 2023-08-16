@@ -7,25 +7,49 @@
 }
 
 @-webkit-keyframes spinner {
-  0% { -webkit-transform: rotate(0deg) }
-  20% { -webkit-transform: rotate(-45deg) }
-  100% { -webkit-transform: rotate(360deg) }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @-moz-keyframes spinner {
-  0% { -moz-transform: rotate(0deg) }
-  20% { -moz-transform: rotate(-45deg) }
-  100% { -moz-transform: rotate(360deg) }
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  20% {
+    -moz-transform: rotate(-45deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
 }
 
 @-o-keyframes spinner {
-  0% { -o-transform: rotate(0deg) }
-  20% { -o-transform: rotate(-45deg) }
-  100% { -o-transform: rotate(360deg) }
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  20% {
+    -o-transform: rotate(-45deg);
+  }
+  100% {
+    -o-transform: rotate(360deg);
+  }
 }
 
 @keyframes spinner {
-  0% { transform: rotate(0deg) }
-  20% { transform: rotate(-45deg) }
-  100% { transform: rotate(360deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

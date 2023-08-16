@@ -1,19 +1,19 @@
 // BEGIN-SNIPPET adding-cutom-bootstrap-colours.scss
 $theme-colors: (
-  "twitter":      #1DA1F2,
-  "facebook":     #1877F2,
-  "reddit":       #FF4500,
-  "tripadvisor":  #34E0A1,
+  'twitter': #1da1f2,
+  'facebook': #1877f2,
+  'reddit': #ff4500,
+  'tripadvisor': #34e0a1,
 );
 // END-SNIPPET
 
 // BEGIN-SNIPPET custom-overlay-colors.scss
-$overlay-levels: 10,30,50,80;
+$overlay-levels: 10, 30, 50, 80;
 
 $overlay-colors: (
-  "red": "255,0,0",
-  "green": "0,255,0",
-  "blue": "0,0,255",
+  'red': '255,0,0',
+  'green': '0,255,0',
+  'blue': '0,0,255',
 );
 // END-SNIPPET
 

@@ -8,14 +8,16 @@ export default Component.extend({
   actions: {
     sumbitForm(data) {
       this.set('emberSkeleton.hideContent', true);
-      this.submitForm(data).then(response => {
-        this.set('emberSkeleton.hideContent', false);
-        // Handle success
-      }).catch(err => {
-        this.set('emberSkeleton.hideContent', false);
-        // Handle err
-      })
-    }
-  }
+      this.submitForm(data)
+        .then((response) => {
+          this.set('emberSkeleton.hideContent', false);
+          // Handle success
+        })
+        .catch((err) => {
+          this.set('emberSkeleton.hideContent', false);
+          // Handle err
+        });
+    },
+  },
 });
 // END-SNIPPET

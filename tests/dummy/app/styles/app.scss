@@ -1,5 +1,5 @@
 :root {
-  --brand-primary: #3490DC;
+  --brand-primary: #3490dc;
 }
 
 .ember-skeleton-styles {
@@ -10,7 +10,7 @@
   }
   @import './snippets/_pre-variables-import';
   // BEGIN-SNIPPET basic-style-imports.scss
-  @import "ember-skeleton-variables";
+  @import 'ember-skeleton-variables';
   @import 'ember-skeleton';
   // END-SNIPPET
   @import './snippets/_post-variables-import';
@@ -27,7 +27,6 @@
       display: inline-block;
       margin-right: $spacer-md;
     }
-    
   }
 
   #example-list-group-colour-variants .viewport {
@@ -74,7 +73,7 @@
     }
   }
 
-  #example-overlay-colours-white .viewport, 
+  #example-overlay-colours-white .viewport,
   #example-overlay-colours-black .viewport,
   #example-custom-overlay-colours .viewport {
     padding: $spacer-xl;
@@ -178,7 +177,4 @@
       // }
     }
   }
-  
-
 }
-

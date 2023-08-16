@@ -6,6 +6,6 @@ export default Component.extend({
   emberSkeleton: service(),
   didInsertElement() {
     console.log(this.emberSkeleton.options);
-  }
+  },
 });
 // END-SNIPPET

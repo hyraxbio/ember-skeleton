@@ -1,9 +1,9 @@
 @each $color, $value in $theme-colors {
-  @include bg-variant(".bg-#{$color}", $value);
+  @include bg-variant('.bg-#{$color}', $value);
 }
 
 @each $color, $value in $theme-colors {
-  @include bg-hover-variant(".bg-hover-#{$color}:hover", $value);
+  @include bg-hover-variant('.bg-hover-#{$color}:hover', $value);
 }
 
 .bg-transparent {

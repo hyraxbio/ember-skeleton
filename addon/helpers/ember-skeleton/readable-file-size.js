@@ -6,4 +6,3 @@ export function readableFileSize([numberOfBytes]) {
 }
 
 export default helper(readableFileSize);
-

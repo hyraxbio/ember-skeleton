@@ -10,8 +10,8 @@ export default Mixin.create({
       seniorEmployees: seniorEmployees,
       juniorEmployees: juniorEmployees,
       interns: interns,
-      all: seniorEmployees.concat(juniorEmployees).concat(interns)
+      all: seniorEmployees.concat(juniorEmployees).concat(interns),
     };
-  }
+  },
   // END-SNIPPET
 });

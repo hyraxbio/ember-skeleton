@@ -1,26 +1,26 @@
 .wrapper.sidebar-layout {
-	background-color: #f6f6f6;
-	height: 100%;
+  background-color: #f6f6f6;
+  height: 100%;
 
   &.sidebar-toggled {
-  	transition: $sidebar-toggle-transition;
+    transition: $sidebar-toggle-transition;
   }
 
   &.text-column .body-text {
-  	max-width: 660px;
+    max-width: 660px;
   }
 
   div.sidebar-layout-top-bar {
-  	height: $sidebar-layout-top-bar-height;
-  	position: fixed;
-  	width: 100%;
-  	top: $header-height;
-  	z-index: $sidebar-layout-top-bar-z-index;
-  	@include box-shadow(bottom);
+    height: $sidebar-layout-top-bar-height;
+    position: fixed;
+    width: 100%;
+    top: $header-height;
+    z-index: $sidebar-layout-top-bar-z-index;
+    @include box-shadow(bottom);
   }
 
   &.content-header div.main.top-bar-active {
-  	padding-top: $sidebar-layout-top-bar-height;
+    padding-top: $sidebar-layout-top-bar-height;
   }
 
   #columns {
@@ -49,10 +49,9 @@
             fill: $sidebar-nav-item-color;
           }
         }
-        
       }
-      
-      &.sidebar-collapsed  {
+
+      &.sidebar-collapsed {
         min-width: 0;
         max-width: $sidebar-collapsed-width;
         .sidebar-collapse-icon {
@@ -71,13 +70,12 @@
       height: 100%;
       width: 100%;
       position: relative;
-      box-shadow: inset 10px 0px 6px -6px rgba(0,0,0,0.2);
+      box-shadow: inset 10px 0px 6px -6px rgba(0, 0, 0, 0.2);
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
-
     }
     .content {
       flex-grow: 1;

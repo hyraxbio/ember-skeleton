@@ -5,13 +5,13 @@ import { inject as service } from '@ember/service';
 export default Route.extend({
   emberSkeleton: service(),
 
-  actions: {   
+  actions: {
     loading(transition) {
       this.set('emberSkeleton.hideContent', true);
       transition.promise.finally(() => {
         this.set('emberSkeleton.hideContent', false);
       });
-    }
-  }
+    },
+  },
 });
 // END-SNIPPET

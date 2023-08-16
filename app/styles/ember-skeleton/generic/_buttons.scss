@@ -1,4 +1,4 @@
-@use "sass:math";
+@use 'sass:math';
 
 .body-text {
   .btn {
@@ -14,7 +14,8 @@
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  &:focus, &:active {
+  &:focus,
+  &:active {
     outline: none;
   }
 }
@@ -59,7 +60,7 @@
     }
   }
 
-  .spin  {
+  .spin {
     text-align: left;
   }
 
@@ -96,8 +97,7 @@ fieldset:disabled a.btn {
 }
 
 // Button colours
-@each $color,
-$value in $button-theme-colors {
+@each $color, $value in $button-theme-colors {
   .btn-#{$color} {
     @include button-variant($value);
     cursor: pointer;
@@ -111,32 +111,61 @@ $value in $button-theme-colors {
     }
   }
   @keyframes btn-flashing-#{$color} {
-    0% {background-color: $value; color: #fff}
-    50% {background-color: #fff; color: $value}
-    100% {background-color: $value; color: #fff}
+    0% {
+      background-color: $value;
+      color: #fff;
+    }
+    50% {
+      background-color: #fff;
+      color: $value;
+    }
+    100% {
+      background-color: $value;
+      color: #fff;
+    }
   }
 
   @-webkit-keyframes btn-flashing-#{$color} {
-    0% {background-color: $value; color: #fff}
-    50% {background-color: #fff; color: $value}
-    100% {background-color: $value; color: #fff}
+    0% {
+      background-color: $value;
+      color: #fff;
+    }
+    50% {
+      background-color: #fff;
+      color: $value;
+    }
+    100% {
+      background-color: $value;
+      color: #fff;
+    }
   }
 
   @keyframes btn-flashing-svg-#{$color} {
-    0% {fill: #fff}
-    50% {fill: $value}
-    100% {fill: #fff}
+    0% {
+      fill: #fff;
+    }
+    50% {
+      fill: $value;
+    }
+    100% {
+      fill: #fff;
+    }
   }
 
   @-webkit-keyframes btn-flashing-svg-#{$color} {
-    0% {fill: #fff}
-    50% {fill: $value}
-    100% {fill: #fff}
+    0% {
+      fill: #fff;
+    }
+    50% {
+      fill: $value;
+    }
+    100% {
+      fill: #fff;
+    }
   }
 }
 
-@each $color,
-$value in $button-theme-colors {
+@each $color, $value in $button-theme-colors {
   .btn-outline-#{$color} {
     @include button-outline-variant($value);
     &.flashing {
@@ -149,27 +178,60 @@ $value in $button-theme-colors {
     }
   }
   @keyframes btn-outline-flashing-#{$color} {
-    0% {background-color: #fff; color: $value}
-    50% {background-color: $value; color: #fff}
-    100% {background-color: #fff; color: $value}
+    0% {
+      background-color: #fff;
+      color: $value;
+    }
+    50% {
+      background-color: $value;
+      color: #fff;
+    }
+    100% {
+      background-color: #fff;
+      color: $value;
+    }
   }
 
   @-webkit-keyframes btn-outline-flashing-#{$color} {
-    0% {background-color: #fff; color: $value; fill: $value}
-    50% {background-color: $value; color: #fff; fill: #fff}
-    100% {background-color: #fff; color: $value; fill: $value}
+    0% {
+      background-color: #fff;
+      color: $value;
+      fill: $value;
+    }
+    50% {
+      background-color: $value;
+      color: #fff;
+      fill: #fff;
+    }
+    100% {
+      background-color: #fff;
+      color: $value;
+      fill: $value;
+    }
   }
 
   @keyframes btn-outline-flashing-svg-#{$color} {
-    0% {fill: $value}
-    50% {fill: #fff}
-    100% {fill: $value}
+    0% {
+      fill: $value;
+    }
+    50% {
+      fill: #fff;
+    }
+    100% {
+      fill: $value;
+    }
   }
 
   @-webkit-keyframes btn-outline-flashing-svg-#{$color} {
-    0% {fill: $value}
-    50% {fill: #fff}
-    100% {fill: $value}
+    0% {
+      fill: $value;
+    }
+    50% {
+      fill: #fff;
+    }
+    100% {
+      fill: $value;
+    }
   }
 }
 
@@ -253,15 +315,15 @@ $value in $button-theme-colors {
   display: flex;
   width: 100%;
   // Vertically space out multiple block buttons
-  +.btn-block {
+  + .btn-block {
     margin-top: 15px;
   }
 }
 
 // Specificity overrides
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
   &.btn-block {
     width: 100%;
   }

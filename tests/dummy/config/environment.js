@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'dummy',
     environment,
@@ -13,42 +13,47 @@ module.exports = function(environment) {
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
+        Date: false,
+      },
     },
 
     emberSkeletonOptions: {
-      themeColorStringDefaults: [{
-        returnString: 'success',
-        matchStrings: ['ok', 'passed', 'active']
-      },
-      {
-        returnString: 'warning',
-        matchStrings: ['absent']
-      },
-      {
-        returnString: 'danger',
-        matchStrings: ['failed', 'error']
-      },
-      {
-        returnString: 'gray-medium',
-        matchStrings: ['pending'],
-        fallback: true
-      }],
+      themeColorStringDefaults: [
+        {
+          returnString: 'success',
+          matchStrings: ['ok', 'passed', 'active'],
+        },
+        {
+          returnString: 'warning',
+          matchStrings: ['absent'],
+        },
+        {
+          returnString: 'danger',
+          matchStrings: ['failed', 'error'],
+        },
+        {
+          returnString: 'gray-medium',
+          matchStrings: ['pending'],
+          fallback: true,
+        },
+      ],
 
-      themeIconDefaults: [{
-        returnString: 'svg/icons/icon-alert',
-        matchStrings: ['danger', 'failed']
-      }, {
-        returnString: 'svg/icons/icon-tick',
-        matchStrings: ['success', 'passed']
-      }],
+      themeIconDefaults: [
+        {
+          returnString: 'svg/icons/icon-alert',
+          matchStrings: ['danger', 'failed'],
+        },
+        {
+          returnString: 'svg/icons/icon-tick',
+          matchStrings: ['success', 'passed'],
+        },
+      ],
     },
 
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
   };
 
   if (environment === 'development') {
