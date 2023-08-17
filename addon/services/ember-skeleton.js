@@ -1,17 +1,19 @@
+import { computed } from '@ember/object';
 import Service from '@ember/service';
 import emberSkeletonOptions from 'ember-skeleton/utils/ember-skeleton-options';
-import { computed } from '@ember/object';
 
-export default Service.extend({
-  layoutType: 'main',
+export default class EmberSkeletonService extends Service {
+  layoutType = 'main';
+
   init() {
-    this._super(...arguments);
+    super.init(...arguments);
     this.options = emberSkeletonOptions();
-  },
+  }
 
-  hideMainContent: computed('layoutType', 'isLoading', function () {
+  @computed('layoutType', 'isLoading')
+  get hideMainContent() {
     return this.layoutType !== 'main' || this.isLoading;
-  }),
+  }
 
   toggleSidebarExpanded() {
     this.toggleProperty('sidebarCollapsed');
@@ -20,5 +22,5 @@ export default Service.extend({
       this.emberSkeleton.sidebarCollapsed
     );
     this.set('sidebarToggled', true);
-  },
-});
+  }
+}

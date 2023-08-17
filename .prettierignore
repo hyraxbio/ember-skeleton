@@ -2,7 +2,6 @@
 **/node_modules
 package.json
 package-lock.json
-addon-test-support/test-helpers/htmlminifier.min.js
 dist
 vendor
-**/*.md
+addon-test-support/test-helpers/htmlminifier.min.js
