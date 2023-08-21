@@ -5,9 +5,8 @@ import emberSkeletonOptions from 'ember-skeleton/utils/ember-skeleton-options';
 export default class EmberSkeletonService extends Service {
   layoutType = 'main';
 
-  init() {
-    super.init(...arguments);
-    this.options = emberSkeletonOptions();
+  get options() {
+    return emberSkeletonOptions();
   }
 
   @computed('layoutType', 'isLoading')

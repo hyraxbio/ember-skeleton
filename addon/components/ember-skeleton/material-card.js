@@ -8,12 +8,6 @@ import themeColorStringUtil from 'ember-skeleton/utils/theme-color-string';
 @tagName('')
 @templateLayout(layout)
 export default class MaterialCard extends Component {
-  init() {
-    super.init(...arguments);
-    this.classes = ' border rounded padding-lg card-box-shadow';
-  }
-
-  // classNameBindings: ['borderColor', 'shadowLevel'],
   @service
   emberSkeleton;
 
