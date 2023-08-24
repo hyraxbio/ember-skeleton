@@ -7,6 +7,7 @@ export default class EmberSkeletonService extends Service {
 
   @tracked layoutType;
   @tracked isLoading;
+  @tracked sidebarCollapsed;
 
   get options() {
     return emberSkeletonOptions();
@@ -17,11 +18,8 @@ export default class EmberSkeletonService extends Service {
   }
 
   toggleSidebarExpanded() {
-    this.toggleProperty('sidebarCollapsed');
-    localStorage.setItem(
-      'userSidebarCollapsed',
-      this.emberSkeleton.sidebarCollapsed
-    );
-    this.set('sidebarToggled', true);
+    this.sidebarCollapsed = !this.sidebarCollapsed;
+    localStorage.setItem('userSidebarCollapsed', this.sidebarCollapsed);
+    this.sidebarToggled = true;
   }
 }

@@ -3,14 +3,6 @@
     {{if this.emberSkeleton.sidebarToggled 'sidebar-toggled'}}"
   ...attributes
 >
-  {{!-- <button
-    type="button"
-    {{on "click" @toggleSidebarExpanded}}
-    class="sidebar-toggle top-row btn-content flex flex-align-center flex-justify-end"
-  >
-    <div class="sidebar-collapse-icon">
-      {{component this.emberSkeleton.options.collapseSideBarIconComponent}}
-    </div>
-  </button> --}}
+
   {{yield}}
 </div>
