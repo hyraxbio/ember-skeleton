@@ -22,6 +22,5 @@ export default class EmberSkeletonService extends Service {
   toggleSidebarExpanded() {
     this.sidebarCollapsed = !this.sidebarCollapsed;
     localStorage.setItem('userSidebarCollapsed', this.sidebarCollapsed);
-    this.sidebarToggled = true;
   }
 }
