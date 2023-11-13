@@ -8,7 +8,7 @@ export default class SidebarWrapper extends Component {
 
   @action
   checkToggled() {
-    if (localStorage.getItem('userSidebarCollapsed')) {
+    if (localStorage.getItem('emberSkeletonSidebarCollapsed')) {
       this.emberSkeleton.sidebarCollapsed = true;
     }
   }

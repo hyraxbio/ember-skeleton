@@ -21,6 +21,10 @@ export default class EmberSkeletonService extends Service {
   @action
   toggleSidebarExpanded() {
     this.sidebarCollapsed = !this.sidebarCollapsed;
-    localStorage.setItem('userSidebarCollapsed', this.sidebarCollapsed);
+    if (this.sidebarCollapsed) {
+      localStorage.setItem('emberSkeletonSidebarCollapsed', 'true');
+    } else {
+      localStorage.removeItem('emberSkeletonSidebarCollapsed');
+    }
   }
 }
