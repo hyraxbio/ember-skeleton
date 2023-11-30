@@ -9,6 +9,7 @@ export default class EmberSkeletonService extends Service {
   @tracked layoutType;
   @tracked isLoading;
   @tracked sidebarCollapsed;
+  @tracked navFrozen;
 
   get options() {
     return emberSkeletonOptions();
