@@ -10,13 +10,10 @@ export default class EmberSkeletonService extends Service {
   @tracked isLoading;
   @tracked sidebarCollapsed;
   @tracked navFrozen;
+  @tracked alternativeLayout;
 
   get options() {
     return emberSkeletonOptions();
-  }
-
-  get hideMainContent() {
-    return this.layoutType !== 'main' || this.isLoading;
   }
 
   @action

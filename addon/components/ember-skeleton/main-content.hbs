@@ -1,0 +1,29 @@
+{{#if this.emberSkeleton.alternativeLayout}}
+  <div class="ember-skeleton-alternative-content flex-expand">
+    {{#let
+      (component this.emberSkeleton.options.alternativeContentComponent)
+      as |AlternativeContentComponent|
+    }}
+      <AlternativeContentComponent
+        @alternativeLayout={{this.emberSkeleton.alternativeLayout}}
+      />
+    {{/let}}
+  </div>
+{{else}}
+  {{#if this.emberSkeleton.isLoading}}
+    {{#let
+      (component this.emberSkeleton.options.loadingComponent)
+      as |LoadingComponent|
+    }}
+      <div class="flex flex-expand flex-align-center flex-justify-center">
+        <LoadingComponent />
+      </div>
+    {{/let}}
+  {{/if}}
+  <div
+    class="main-content {{if this.emberSkeleton.isLoading 'hidden'}}"
+    data-test-id="ember-skeleton-main-content"
+  >
+    {{yield}}
+  </div>
+{{/if}}

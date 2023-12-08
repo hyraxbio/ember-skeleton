@@ -1,5 +1,6 @@
 <div
   data-test-id={{this.dataTestId}}
+  data-test-ember-skeleton-panel-layout
   class="wrapper panel-layout
     {{if this.emberSkeleton.hideContent 'hide-content' 'show-content'}}"
   ...attributes
@@ -9,21 +10,9 @@
     headerProps=@headerProps
   }}
   <section class="panel-container">
-    <div
-      class="main-content {{if this.emberSkeleton.hideMainContent 'hidden'}}"
-    >
+    <EmberSkeleton::MainContent>
       {{yield}}
-    </div>
-    {{#if this.emberSkeleton.hideMainContent}}
-      <div class="loading-content flex-expand">
-        {{component
-          this.emberSkeleton.options.alternativeContentComponent
-          loadingProps=@loadingProps
-          layoutType=this.emberSkeleton.layoutType
-          isLoading=this.emberSkeleton.isLoading
-        }}
-      </div>
-    {{/if}}
+    </EmberSkeleton::MainContent>
     {{component
       this.emberSkeleton.options.footerComponent
       footerProps=@footerProps
