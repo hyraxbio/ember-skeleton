@@ -3,6 +3,10 @@
     @include fill-variant($value);
   }
 
+  .hover-fill-#{$color}:hover {
+    @include fill-variant($value);
+  }
+
   .stroke-#{$color} {
     @include stroke-variant($value);
   }

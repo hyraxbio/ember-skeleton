@@ -6,12 +6,14 @@
   textarea {
     font-size: #{math.div($input-font-size, $body-text-font-size)}em;
   }
-  label {
+  label,
+  legend {
     font-size: #{math.div($label-font-size, $body-text-font-size)}em;
   }
 }
 
-label {
+label,
+legend {
   color: $label-color;
   font-family: $label-font-family;
   font-size: $label-font-size;
