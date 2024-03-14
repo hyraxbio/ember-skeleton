@@ -2,9 +2,9 @@
 
 ## Use case
 
-In general, you should be using the <LinkTo @route="docs.helpers.theme-color-string">helper"</LinkTo> directly in your templates. The util should only be used when this is not possible.
+In general, you should be using the <LinkTo class="docs-md__a" @route="docs.helpers.theme-color-string">helper"</LinkTo> directly in your templates. The util should only be used when this is not possible.
 
-For a general explanation of the use case, see <LinkTo @route="docs.helpers.theme-color-string">the helper docs"</LinkTo>.
+For a general explanation of the use case, see <LinkTo class="docs-md__a" @route="docs.helpers.theme-color-string">the helper docs"</LinkTo>.
 
 ## Import the util
 

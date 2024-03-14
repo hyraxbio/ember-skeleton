@@ -59,7 +59,7 @@ If the `materialCardHoverEffect` prop is `true`, a hover effect will be applied 
 
 ## Theme color integration
 
-Uses the <LinkTo @route="docs.styles.theme-colors">defined theme colours"</LinkTo> along with <LinkTo @route="docs.helpers.theme-color-string">theme color string helper"</LinkTo> to apply a coloured borde to the car, based on the `borderColorProp`.
+Uses the <LinkTo class="docs-md__a" @route="docs.styles.theme-colors">defined theme colours"</LinkTo> along with <LinkTo class="docs-md__a" @route="docs.helpers.theme-color-string">theme color string helper"</LinkTo> to apply a coloured borde to the car, based on the `borderColorProp`.
 
 The simplest scenario is when `borderColorProp` is the name of one of the theme colours.
 
@@ -75,7 +75,7 @@ The simplest scenario is when `borderColorProp` is the name of one of the theme 
 </DocsDemo>
 </div>
 
-The second scenario is where the `borderColorProp` is not one of the <LinkTo @route="docs.styles.theme-colors">defined theme colours"</LinkTo>, but it is handled by the theme color string defaults in `config/environment.js`.
+The second scenario is where the `borderColorProp` is not one of the <LinkTo class="docs-md__a" @route="docs.styles.theme-colors">defined theme colours"</LinkTo>, but it is handled by the theme color string defaults in `config/environment.js`.
 
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>
@@ -92,7 +92,7 @@ The second scenario is where the `borderColorProp` is not one of the <LinkTo @ro
 </DocsDemo>
 </div>
 
-You can pass a hash of custom theme color string associations using the `themeColorStringHash` prop. Note that you can also pass `fallback="..."` to this hash to provide a fallback border color. See the <LinkTo @route="docs.helpers.theme-color-string">theme color string helper docs"</LinkTo> for more.
+You can pass a hash of custom theme color string associations using the `themeColorStringHash` prop. Note that you can also pass `fallback="..."` to this hash to provide a fallback border color. See the <LinkTo class="docs-md__a" @route="docs.helpers.theme-color-string">theme color string helper docs"</LinkTo> for more.
 
 <div class="ember-skeleton-styles">
 <DocsDemo class="body-text" as |demo|>

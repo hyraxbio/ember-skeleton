@@ -1,10 +1,14 @@
 :root {
   --brand-primary: #3490dc;
 }
+@import 'ember-skeleton-variables';
 
 .ember-skeleton-styles {
   font-size: 10px;
   position: relative;
+  header {
+    position: absolute !important;
+  }
   code {
     background: transparent !important;
   }
@@ -162,19 +166,14 @@
       border: 1px solid $gray-dark;
     }
   }
+}
 
-  .layout-container {
+.layout-container {
+  .main-content {
     height: 200px;
-    .viewport {
-      width: 200%;
-      height: 200%;
-      transform: scale(0.5);
-      transform-origin: top left;
-      padding: 0;
-      border: 1px solid $gray-light;
-      // .content {
-      //   min-height: 200px;
-      // }
-    }
+  }
+  .viewport {
+    padding: 0;
+    border: 1px solid $gray-light;
   }
 }

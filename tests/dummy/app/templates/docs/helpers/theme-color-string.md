@@ -2,7 +2,7 @@
 
 ## Use case
 
-The styles documentation outlines how you can define a map of theme colours, which then generates classes for displaying a range of UI elements in any of the defined colours. See **Theme colours** and **Theme colour CSS selectors** in <LinkTo @route="docs.styles">Styles"</LinkTo>.
+The styles documentation outlines how you can define a map of theme colours, which then generates classes for displaying a range of UI elements in any of the defined colours. See **Theme colours** and **Theme colour CSS selectors** in <LinkTo class="docs-md__a" @route="docs.styles">Styles"</LinkTo>.
 
 Often we want to associate strings in our data with certain colours- for example, a green badge for a data item with a status of `complete` and a red badge for an item with a status of `failed`, as below.
 

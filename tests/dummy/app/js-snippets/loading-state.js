@@ -9,14 +9,14 @@ export default class LoadingState extends Component {
 
   @action
   sumbitForm(data) {
-    this.set('emberSkeleton.hideContent', true);
+    this.set('emberSkeleton.isLoading', true);
     this.submitForm(data)
       .then((response) => {
-        this.set('emberSkeleton.hideContent', false);
+        this.set('emberSkeleton.isLoading', false);
         // Handle success
       })
       .catch((err) => {
-        this.set('emberSkeleton.hideContent', false);
+        this.set('emberSkeleton.isLoading', false);
         // Handle err
       });
   }

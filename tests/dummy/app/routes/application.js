@@ -9,9 +9,9 @@ export default class Application extends Route {
 
   @action
   loading(transition) {
-    this.set('emberSkeleton.hideContent', true);
+    this.set('emberSkeleton.isLoading', true);
     transition.promise.finally(() => {
-      this.set('emberSkeleton.hideContent', false);
+      this.set('emberSkeleton.isLoading', false);
     });
   }
 }

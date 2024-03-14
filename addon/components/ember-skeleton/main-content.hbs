@@ -1,11 +1,11 @@
-{{#if this.emberSkeleton.alternativeLayout}}
+{{#if this.emberSkeleton.alternativeContent}}
   <div class="ember-skeleton-alternative-content flex-expand">
     {{#let
       (component this.emberSkeleton.options.alternativeContentComponent)
       as |AlternativeContentComponent|
     }}
       <AlternativeContentComponent
-        @alternativeLayout={{this.emberSkeleton.alternativeLayout}}
+        @alternativeContent={{this.emberSkeleton.alternativeContent}}
       />
     {{/let}}
   </div>

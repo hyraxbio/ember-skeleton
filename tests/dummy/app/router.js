@@ -32,10 +32,11 @@ Router.map(function () {
     }),
       this.route('layout-components', function () {
         this.route('content-wrapper');
-        this.route('header-component'),
-          this.route('footer-component'),
-          this.route('sidebar-components'),
-          this.route('loading-component');
+        this.route('header-component');
+        this.route('footer-component');
+        this.route('sidebar-components');
+        this.route('loading-component');
+        this.route('alternative-content');
       }),
       this.route('helpers', function () {
         this.route('theme-icon');

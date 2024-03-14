@@ -1,6 +1,6 @@
 # Header component
 
-To create your own header component, you can either create a component in your app with the path `ember-skeleton/header`, or specify a custom path in the `headerComponent` property in your <LinkTo @route="docs.default-options">app wide default options</LinkTo>.
+To create your own header component, you can either create a component in your app with the path `ember-skeleton/header`, or specify a custom path in the `headerComponent` property in your <LinkTo class="docs-md__a" @route="docs.default-options">app wide default options</LinkTo>.
 
 ## headerProps
 

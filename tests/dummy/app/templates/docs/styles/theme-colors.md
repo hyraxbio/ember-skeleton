@@ -6,7 +6,7 @@ This concept has been borrowed from Bootstrap. Many of the CSS classes available
 
 ## Theme color CSS selectors
 
-The Ember Skeleton `SASS` code will create multiple CSS style rules for each of the selectors listed below- one for each item in the `$theme-colors` map. See <LinkTo @route="docs.styles.theme-color-variants">Theme color variants"</LinkTo> for the full CSS API based on theme colours.
+The Ember Skeleton `SASS` code will create multiple CSS style rules for each of the selectors listed below- one for each item in the `$theme-colors` map. See <LinkTo class="docs-md__a" @route="docs.styles.theme-color-variants">Theme color variants"</LinkTo> for the full CSS API based on theme colours.
 
     .alert-*
     .badge-*
