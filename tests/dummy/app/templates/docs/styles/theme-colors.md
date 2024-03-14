@@ -14,6 +14,7 @@ The Ember Skeleton `SASS` code will create multiple CSS style rules for each of 
     .text-*
     .list-group-item-*
     .fill-*
+    .hover-fill-*
     .stroke-*
     .btn-*
     .btn-outline-*
