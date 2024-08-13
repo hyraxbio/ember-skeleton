@@ -2,7 +2,7 @@ import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import Service from '@ember/service';
 import emberSkeletonOptions from 'ember-skeleton/utils/ember-skeleton-options';
-
+import window from 'ember-window-mock';
 export default class EmberSkeletonService extends Service {
   layoutType = 'main';
 
@@ -20,9 +20,9 @@ export default class EmberSkeletonService extends Service {
   toggleSidebarExpanded() {
     this.sidebarCollapsed = !this.sidebarCollapsed;
     if (this.sidebarCollapsed) {
-      localStorage.setItem('emberSkeletonSidebarCollapsed', 'true');
+      window.localStorage.setItem('emberSkeletonSidebarCollapsed', 'true');
     } else {
-      localStorage.removeItem('emberSkeletonSidebarCollapsed');
+      window.localStorage.removeItem('emberSkeletonSidebarCollapsed');
     }
   }
 }

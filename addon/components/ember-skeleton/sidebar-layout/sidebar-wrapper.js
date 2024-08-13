@@ -1,6 +1,7 @@
 import { inject as service } from '@ember/service';
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
+import window from 'ember-window-mock';
 
 export default class SidebarWrapper extends Component {
   @service
@@ -8,7 +9,7 @@ export default class SidebarWrapper extends Component {
 
   @action
   checkToggled() {
-    if (localStorage.getItem('emberSkeletonSidebarCollapsed')) {
+    if (window.localStorage.getItem('emberSkeletonSidebarCollapsed')) {
       this.emberSkeleton.sidebarCollapsed = true;
     }
   }
