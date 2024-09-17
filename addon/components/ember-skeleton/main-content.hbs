@@ -19,11 +19,10 @@
         <LoadingComponent />
       </div>
     {{/let}}
+  {{else}}
+    <div class="main-content" data-test-id="ember-skeleton-main-content">
+      {{yield}}
+    </div>
   {{/if}}
-  <div
-    class="main-content {{if this.emberSkeleton.isLoading 'hidden'}}"
-    data-test-id="ember-skeleton-main-content"
-  >
-    {{yield}}
-  </div>
+
 {{/if}}
