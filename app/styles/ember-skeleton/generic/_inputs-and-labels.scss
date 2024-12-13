@@ -126,3 +126,8 @@ input[type='radio'] + label {
   line-height: 150%;
   margin: 0;
 }
+
+input[type='range'] {
+  padding: 0;
+  border-width: 0;
+}
